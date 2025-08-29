@@ -1,24 +1,70 @@
-# Add to your update_all.py file
+#!/usr/bin/env python3
+"""
+BETTING AI: REAL-TIME DATA SCANNER
+Fetches live odds from Bovada and projections from PrizePicks
+Sends alerts to Discord and saves data locally
+"""
 
-from github_deployer import GitHubDeployer
+import os
+import sys
+import time
+import json
+from datetime import datetime
+import traceback
 
-# Add this to your BettingAI class
+# Import our custom modules
+from bovada_scanner import BovadaScanner
+from prizepicks_scanner import PrizePicksScanner
+from discord_alert import DiscordAlert
+from ai_analyzer import BettingAIAnalyzer
+
+# Simple GitHub deploy functionality (no separate file needed)
+def deploy_to_github():
+    """Simple function to copy data files to docs folder for GitHub Pages"""
+    try:
+        # Create docs folder structure
+        os.makedirs("docs", exist_ok=True)
+        os.makedirs("docs/data", exist_ok=True)
+        
+        # Copy data files
+        data_files = [
+            "prizepicks_analysis.json",
+            "bovada_analysis.json", 
+            "prizepicks_current.json",
+            "bovada_current.json"
+        ]
+        
+        import shutil
+        for file in data_files:
+            src = os.path.join("data", file)
+            dst = os.path.join("docs/data", file)
+            
+            if os.path.exists(src):
+                shutil.copy2(src, dst)
+                print(f"Copied {file} to docs/data/")
+        
+        print("Files ready for GitHub Pages deployment")
+        return True
+        
+    except Exception as e:
+        print(f"GitHub deploy preparation failed: {str(e)}")
+        return False
+
 class BettingAI:
     def __init__(self, discord_webhook=None):
         print("Initializing Betting AI Scanner...")
         
-        # Initialize existing components
+        # Initialize scanners
         self.bovada = BovadaScanner()
         self.prizepicks = PrizePicksScanner()
         self.discord = DiscordAlert(discord_webhook)
         self.analyzer = BettingAIAnalyzer()
-        self.deployer = GitHubDeployer()  # NEW: GitHub deployer
         
         # Configuration
         self.send_discord_alerts = True
         self.save_data = True
         self.use_ai_analysis = True
-        self.deploy_to_github = True  # NEW: Auto-deploy option
+        self.deploy_to_github = True
         self.min_games_threshold = 1
         self.min_projections_threshold = 1
         
@@ -26,19 +72,26 @@ class BettingAI:
         self.data_dir = "data"
         if not os.path.exists(self.data_dir):
             os.makedirs(self.data_dir)
+            print(f"Created data directory: {self.data_dir}")
 
     def run_full_scan(self):
-        """Run complete scan with GitHub deployment"""
+        """Run complete scan of both Bovada and PrizePicks"""
         print("\n" + "="*60)
-        print("STARTING FULL BETTING SCAN WITH AUTO-DEPLOY")
+        print("STARTING FULL BETTING SCAN")
         print("="*60)
         
         start_time = time.time()
         
         try:
-            # Existing scan logic...
+            # Scan Bovada
+            print("\nSCANNING BOVADA...")
             bovada_games = self.scan_bovada()
+            
+            # Small delay between scans
             time.sleep(2)
+            
+            # Scan PrizePicks
+            print("\nSCANNING PRIZEPICKS...")
             prizepicks_projections = self.scan_prizepicks()
             
             # AI Analysis
@@ -46,138 +99,106 @@ class BettingAI:
             prizepicks_analysis = []
             
             if self.use_ai_analysis:
-                print("\nRunning AI Analysis...")
+                print("\nRUNNING AI ANALYSIS...")
                 
+                # Analyze Bovada games
                 if bovada_games:
                     print(f"Analyzing {len(bovada_games)} Bovada games...")
                     bovada_analysis = self.analyzer.analyze_bovada_games(bovada_games)
                     print(f"Found {len(bovada_analysis)} high-value Bovada plays")
                 
+                # Analyze PrizePicks projections
                 if prizepicks_projections:
                     print(f"Analyzing {len(prizepicks_projections)} PrizePicks projections...")
                     prizepicks_analysis = self.analyzer.analyze_prizepicks_projections(prizepicks_projections)
                     print(f"Found {len(prizepicks_analysis)} high-confidence props")
                 
+                # Save analysis results
                 if self.save_data:
                     self.save_analysis_data(bovada_analysis, prizepicks_analysis)
             
-            # NEW: Deploy to GitHub
+            # Deploy to GitHub Pages
             if self.deploy_to_github:
-                print("\nDeploying to GitHub...")
-                self.create_dashboard_file()
-                if self.deployer.deploy_dashboard():
-                    dashboard_url = "https://whatabarber.github.io/prizepicks/"
-                    print(f"Dashboard live at: {dashboard_url}")
-                else:
-                    print("GitHub deployment failed")
+                print("\nPREPARING GITHUB PAGES DEPLOYMENT...")
+                deploy_to_github()
             
+            # Calculate scan time
             scan_time = time.time() - start_time
             
-            # Send Discord alerts with dashboard link
+            # Send alerts if enabled
             if self.send_discord_alerts:
-                print("\nSending Discord alerts...")
+                print("\nSENDING DISCORD ALERTS...")
                 if self.use_ai_analysis:
                     self.send_enhanced_ai_alerts(bovada_analysis, prizepicks_analysis, scan_time)
                 else:
                     self.send_alerts(bovada_games, prizepicks_projections, scan_time)
             
-            self.print_final_summary(bovada_games, prizepicks_projections, bovada_analysis, prizepicks_analysis, scan_time)
+            # Print summary
+            if self.use_ai_analysis:
+                self.print_ai_summary(bovada_games, prizepicks_projections, bovada_analysis, prizepicks_analysis, scan_time)
+            else:
+                self.print_summary(bovada_games, prizepicks_projections, scan_time)
             
             return {
                 'bovada_games': bovada_games,
                 'prizepicks_projections': prizepicks_projections,
-                'bovada_analysis': bovada_analysis,
-                'prizepicks_analysis': prizepicks_analysis,
+                'bovada_analysis': bovada_analysis if self.use_ai_analysis else [],
+                'prizepicks_analysis': prizepicks_analysis if self.use_ai_analysis else [],
                 'scan_time': scan_time,
-                'dashboard_url': 'https://whatabarber.github.io/prizepicks/' if self.deploy_to_github else None,
                 'success': True
             }
             
         except Exception as e:
             error_msg = f"Critical error during scan: {str(e)}"
             print(f"Error: {error_msg}")
+            print(f"Traceback: {traceback.format_exc()}")
             
+            # Send error alert
             if self.send_discord_alerts:
                 self.discord.send_error_alert(error_msg)
             
-            return {'error': error_msg, 'success': False}
-
-    def create_dashboard_file(self):
-        """Create the dashboard HTML file with current data"""
-        dashboard_html = """<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PrizePicks AI Dashboard</title>
-    <!-- Include the CSS and HTML from the dashboard artifact above -->
-</head>
-<body>
-    <!-- Include the HTML body from the dashboard artifact above -->
-    
-    <script>
-        // Modified script to load from GitHub Pages
-        async function loadPicks() {
-            try {
-                // Load from the deployed data files
-                const analysisResponse = await fetch('./data/prizepicks_analysis.json');
-                const bovadaResponse = await fetch('./data/bovada_analysis.json');
-                
-                let allPicks = [];
-                
-                if (analysisResponse.ok) {
-                    const prizepicksData = await analysisResponse.json();
-                    allPicks = allPicks.concat(prizepicksData || []);
-                }
-                
-                if (bovadaResponse.ok) {
-                    const bovadaData = await bovadaResponse.json();
-                    // Convert Bovada format to display format if needed
-                    allPicks = allPicks.concat(bovadaData || []);
-                }
-                
-                if (allPicks.length === 0) {
-                    loadDemoData();
-                    return;
-                }
-                
-                // Filter to only NFL and CFB
-                allPicks = allPicks.filter(pick => {
-                    const sport = pick.sport || pick.league;
-                    return sport && (
-                        sport.includes('NFL') || 
-                        sport.includes('CFB') || 
-                        sport.includes('NCAAF')
-                    );
-                });
-                
-                updateStats();
-                displayPicks(allPicks);
-                updateLastUpdateTime();
-                
-            } catch (error) {
-                console.error('Error loading picks:', error);
-                loadDemoData();
+            return {
+                'error': error_msg,
+                'success': False
             }
-        }
-        
-        // Rest of the JavaScript from the dashboard
-        // ... (include all the dashboard JavaScript here)
-    </script>
-</body>
-</html>"""
-        
-        # Save to docs folder for GitHub Pages
-        os.makedirs("docs", exist_ok=True)
-        with open("docs/index.html", "w") as f:
-            f.write(dashboard_html)
+
+    def scan_bovada(self):
+        """Scan Bovada for live odds"""
+        try:
+            games = self.bovada.scan_all_sports()
+            
+            if self.save_data:
+                self.save_bovada_data(games)
+            
+            print(f"Bovada scan complete: {len(games)} games found")
+            return games
+            
+        except Exception as e:
+            error_msg = f"Bovada scan failed: {str(e)}"
+            print(f"Error: {error_msg}")
+            return []
+
+    def scan_prizepicks(self):
+        """Scan PrizePicks for live projections"""
+        try:
+            projections = self.prizepicks.scan_all_projections()
+            
+            if self.save_data:
+                self.save_prizepicks_data(projections)
+            
+            print(f"PrizePicks scan complete: {len(projections)} projections found")
+            return projections
+            
+        except Exception as e:
+            error_msg = f"PrizePicks scan failed: {str(e)}"
+            print(f"Error: {error_msg}")
+            return []
 
     def send_enhanced_ai_alerts(self, bovada_analysis, prizepicks_analysis, scan_time):
-        """Send enhanced Discord alerts with dashboard link"""
+        """Send enhanced Discord alerts with dashboard link and variety"""
         try:
-            dashboard_url = "https://whatabarber.github.io/prizepicks/"
+            dashboard_url = "https://prizepicks-one.vercel.app/"
             
-            # Create enhanced message
             message = f"AI BETTING ANALYSIS UPDATE\n\n"
             message += f"Full Dashboard: {dashboard_url}\n\n"
             
@@ -195,7 +216,7 @@ class BettingAI:
             
             # PrizePicks summary with variety
             if prizepicks_analysis:
-                # Group by player to show variety
+                # Show diverse players instead of repetitive picks
                 players_shown = set()
                 unique_picks = []
                 
@@ -204,13 +225,13 @@ class BettingAI:
                     if player not in players_shown or len(unique_picks) < 5:
                         unique_picks.append(pick)
                         players_shown.add(player)
-                        if len(unique_picks) >= 8:  # Limit to 8 diverse picks
+                        if len(unique_picks) >= 8:
                             break
                 
                 message += f"PRIZEPICKS TOP PROPS ({len(prizepicks_analysis)} total, showing diverse picks):\n"
                 for i, pick in enumerate(unique_picks[:5], 1):
                     rec_parts = pick['recommendation'].split()
-                    stat_line = ' '.join(rec_parts[-3:])  # Get "Over/Under X.X StatType"
+                    stat_line = ' '.join(rec_parts[-3:])
                     message += f"{i}. {pick['player_name']}: {stat_line} ({pick['confidence_score']:.1f}/10)\n"
                 
                 remaining = len(prizepicks_analysis) - len(unique_picks)
@@ -218,7 +239,7 @@ class BettingAI:
                     message += f"... +{remaining} more players on dashboard\n"
             
             message += f"\nScan Time: {scan_time:.1f}s"
-            message += f"\nAuto-updated every scan | View all picks: {dashboard_url}"
+            message += f"\nView all picks: {dashboard_url}"
             
             # Send via Discord
             self.discord.send_message(message, username="AI Betting Dashboard")
@@ -227,43 +248,195 @@ class BettingAI:
         except Exception as e:
             print(f"Failed to send enhanced Discord alerts: {str(e)}")
 
-    def print_final_summary(self, bovada_games, prizepicks_projections, bovada_analysis, prizepicks_analysis, scan_time):
-        """Print comprehensive summary"""
-        print("\n" + "="*70)
-        print("BETTING AI SCAN COMPLETE")
-        print("="*70)
-        print(f"Raw Data:")
-        print(f"  • Bovada Games: {len(bovada_games)}")
-        print(f"  • PrizePicks Projections: {len(prizepicks_projections)}")
-        
-        if self.use_ai_analysis:
-            print(f"\nAI-Filtered Results:")
-            print(f"  • High-Value Bovada Plays: {len(bovada_analysis)}")
-            print(f"  • High-Confidence Props: {len(prizepicks_analysis)}")
+    def send_alerts(self, bovada_games, prizepicks_projections, scan_time):
+        """Send Discord alerts with scan results"""
+        try:
+            send_bovada = len(bovada_games) >= self.min_games_threshold
+            send_prizepicks = len(prizepicks_projections) >= self.min_projections_threshold
             
-            # Show variety stats
-            if prizepicks_analysis:
-                unique_players = len(set(p['player_name'] for p in prizepicks_analysis))
-                print(f"  • Unique Players: {unique_players}")
+            if not send_bovada and not send_prizepicks:
+                print("Not enough data to send alerts")
+                return
+            
+            if send_bovada:
+                bovada_message = self.bovada.format_for_discord(bovada_games)
+                self.discord.send_bovada_alert(bovada_message)
+                time.sleep(1)
+            
+            if send_prizepicks:
+                prizepicks_message = self.prizepicks.format_for_discord(prizepicks_projections)
+                self.discord.send_prizepicks_alert(prizepicks_message)
+                time.sleep(1)
+            
+            self.discord.send_summary_alert(len(bovada_games), len(prizepicks_projections), scan_time)
+            
+            print("Discord alerts sent successfully")
+            
+        except Exception as e:
+            print(f"Failed to send Discord alerts: {str(e)}")
+
+    def save_analysis_data(self, bovada_analysis, prizepicks_analysis):
+        """Save AI analysis results"""
+        try:
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            
+            if bovada_analysis:
+                bovada_file = os.path.join(self.data_dir, 'bovada_analysis.json')
+                with open(bovada_file, 'w') as f:
+                    json.dump(bovada_analysis, f, indent=2)
                 
-                stat_types = set(p.get('stat_type', '') for p in prizepicks_analysis)
-                print(f"  • Stat Types: {', '.join(list(stat_types)[:5])}")
-        
-        print(f"\nSystem Status:")
-        print(f"  • Scan Time: {scan_time:.2f} seconds")
-        print(f"  • Discord Alerts: {'Sent' if self.send_discord_alerts else 'Disabled'}")
-        print(f"  • GitHub Deploy: {'Success' if self.deploy_to_github else 'Disabled'}")
-        
-        if self.deploy_to_github:
-            print(f"  • Dashboard: https://whatabarber.github.io/prizepicks/")
-        
-        print("="*70)
+                backup_file = os.path.join(self.data_dir, f'bovada_analysis_{timestamp}.json')
+                with open(backup_file, 'w') as f:
+                    json.dump(bovada_analysis, f, indent=2)
+            
+            if prizepicks_analysis:
+                prizepicks_file = os.path.join(self.data_dir, 'prizepicks_analysis.json')
+                with open(prizepicks_file, 'w') as f:
+                    json.dump(prizepicks_analysis, f, indent=2)
+                
+                backup_file = os.path.join(self.data_dir, f'prizepicks_analysis_{timestamp}.json')
+                with open(backup_file, 'w') as f:
+                    json.dump(prizepicks_analysis, f, indent=2)
+            
+            print("AI analysis data saved")
+            
+        except Exception as e:
+            print(f"Failed to save analysis data: {str(e)}")
 
+    def save_bovada_data(self, games):
+        """Save Bovada data to files"""
+        try:
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            
+            current_file = os.path.join(self.data_dir, 'bovada_current.json')
+            with open(current_file, 'w') as f:
+                json.dump(games, f, indent=2)
+            
+            backup_file = os.path.join(self.data_dir, f'bovada_{timestamp}.json')
+            with open(backup_file, 'w') as f:
+                json.dump(games, f, indent=2)
+            
+            print(f"Bovada data saved to {current_file}")
+            
+        except Exception as e:
+            print(f"Failed to save Bovada data: {str(e)}")
 
-# Update main function to support new features
+    def save_prizepicks_data(self, projections):
+        """Save PrizePicks data to files"""
+        try:
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            
+            current_file = os.path.join(self.data_dir, 'prizepicks_current.json')
+            with open(current_file, 'w') as f:
+                json.dump(projections, f, indent=2)
+            
+            backup_file = os.path.join(self.data_dir, f'prizepicks_{timestamp}.json')
+            with open(backup_file, 'w') as f:
+                json.dump(projections, f, indent=2)
+            
+            print(f"PrizePicks data saved to {current_file}")
+            
+        except Exception as e:
+            print(f"Failed to save PrizePicks data: {str(e)}")
+
+    def print_ai_summary(self, bovada_games, prizepicks_projections, bovada_analysis, prizepicks_analysis, scan_time):
+        """Print AI analysis summary"""
+        print("\n" + "="*60)
+        print("AI BETTING ANALYSIS SUMMARY")
+        print("="*60)
+        print(f"Raw Data Collected:")
+        print(f"   Bovada Games: {len(bovada_games)}")
+        print(f"   PrizePicks Projections: {len(prizepicks_projections)}")
+        print(f"")
+        print(f"AI-Filtered Recommendations:")
+        print(f"   High-Value Bovada Plays: {len(bovada_analysis)}")
+        print(f"   High-Confidence Props: {len(prizepicks_analysis)}")
+        print(f"")
+        
+        if bovada_analysis:
+            print("TOP BOVADA RECOMMENDATIONS:")
+            for i, analysis in enumerate(bovada_analysis[:3], 1):
+                print(f"   {i}. {analysis['matchup']} - Confidence: {analysis['confidence_score']:.1f}/10")
+                for rec in analysis['recommendations']:
+                    print(f"      • {rec['bet_type']}: {rec['recommendation']} ({rec['odds']})")
+        
+        if prizepicks_analysis:
+            print("TOP PRIZEPICKS RECOMMENDATIONS:")
+            # Show variety of players
+            shown_players = set()
+            count = 1
+            for prop in prizepicks_analysis:
+                if prop['player_name'] not in shown_players and count <= 5:
+                    print(f"   {count}. {prop['recommendation']} - Confidence: {prop['confidence_score']:.1f}/10")
+                    shown_players.add(prop['player_name'])
+                    count += 1
+        
+        print(f"")
+        print(f"Total Scan Time: {scan_time:.2f} seconds")
+        print(f"Dashboard: https://whatabarber.github.io/prizepicks/")
+        print(f"Completed At: {datetime.now().strftime('%m/%d/%Y %I:%M:%S %p')}")
+        print("="*60)
+
+    def print_summary(self, bovada_games, prizepicks_projections, scan_time):
+        """Print scan summary"""
+        print("\n" + "="*60)
+        print("SCAN SUMMARY")
+        print("="*60)
+        print(f"Bovada Games Found: {len(bovada_games)}")
+        print(f"PrizePicks Projections Found: {len(prizepicks_projections)}")
+        print(f"Total Scan Time: {scan_time:.2f} seconds")
+        print(f"Discord Alerts: {'Enabled' if self.send_discord_alerts else 'Disabled'}")
+        print(f"Data Saving: {'Enabled' if self.save_data else 'Disabled'}")
+        print(f"Completed At: {datetime.now().strftime('%m/%d/%Y %I:%M:%S %p')}")
+        print("="*60)
+
+    def run_continuous(self, interval_minutes=15):
+        """Run scanner continuously at specified interval"""
+        print(f"Starting continuous mode (every {interval_minutes} minutes)")
+        print("Press Ctrl+C to stop")
+        
+        try:
+            while True:
+                self.run_full_scan()
+                print(f"\nWaiting {interval_minutes} minutes until next scan...")
+                time.sleep(interval_minutes * 60)
+                
+        except KeyboardInterrupt:
+            print("\nContinuous mode stopped by user")
+        except Exception as e:
+            print(f"\nContinuous mode error: {str(e)}")
+
+    def test_connections(self):
+        """Test all connections"""
+        print("Testing connections...")
+        
+        if self.discord.webhook_url != "YOUR_DISCORD_WEBHOOK_URL_HERE":
+            print("Testing Discord webhook...")
+            discord_success = self.discord.test_webhook()
+            print(f"Discord: {'Success' if discord_success else 'Failed'}")
+        else:
+            print("Discord webhook not configured")
+        
+        print("Testing Bovada connection...")
+        try:
+            test_games = self.bovada.fetch_sport_data('NFL', 'football')
+            bovada_success = isinstance(test_games, list)
+            print(f"Bovada: {'Success' if bovada_success else 'Failed'}")
+        except:
+            print("Bovada: Failed")
+        
+        print("Testing PrizePicks connection...")
+        try:
+            test_leagues = self.prizepicks.get_active_leagues()
+            prizepicks_success = isinstance(test_leagues, list)
+            print(f"PrizePicks: {'Success' if prizepicks_success else 'Failed'}")
+        except:
+            print("PrizePicks: Failed")
+
 def main():
-    print("BETTING AI: REAL-TIME SCANNER WITH AUTO-DEPLOY")
-    print("=" * 55)
+    """Main function"""
+    print("BETTING AI: REAL-TIME SCANNER")
+    print("=" * 50)
     
     webhook_url = os.getenv('DISCORD_WEBHOOK_URL')
     ai = BettingAI(webhook_url)
@@ -271,27 +444,50 @@ def main():
     if len(sys.argv) > 1:
         command = sys.argv[1].lower()
         
-        if command == 'no-deploy':
+        if command == 'test':
+            ai.test_connections()
+        elif command == 'continuous':
+            interval = int(sys.argv[2]) if len(sys.argv) > 2 else 15
+            ai.run_continuous(interval)
+        elif command == 'bovada':
+            ai.scan_bovada()
+        elif command == 'prizepicks':
+            ai.scan_prizepicks()
+        elif command == 'no-discord':
+            ai.send_discord_alerts = False
+            ai.run_full_scan()
+        elif command == 'no-ai':
+            ai.use_ai_analysis = False
+            ai.run_full_scan()
+        elif command == 'raw':
+            ai.use_ai_analysis = False
+            ai.send_discord_alerts = False
+            ai.run_full_scan()
+        elif command == 'no-deploy':
             ai.deploy_to_github = False
             ai.run_full_scan()
-        elif command == 'deploy-only':
-            ai.create_dashboard_file()
-            ai.deployer.deploy_dashboard()
-        elif command == 'football-only':
-            # This is now default behavior
-            ai.run_full_scan()
-        # ... other existing commands
+        else:
+            print(f"Unknown command: {command}")
+            print("Available commands: test, continuous, bovada, prizepicks, no-discord, no-ai, raw, no-deploy")
     else:
         result = ai.run_full_scan()
         
         if result['success']:
-            if result.get('dashboard_url'):
-                print(f"\nDashboard available at: {result['dashboard_url']}")
-            print("\nTips:")
-            print("  • Dashboard auto-refreshes every 5 minutes")
+            if ai.use_ai_analysis:
+                bovada_count = len(result.get('bovada_analysis', []))
+                props_count = len(result.get('prizepicks_analysis', []))
+                print(f"\nAI Analysis complete! Found {bovada_count} high-value plays and {props_count} top props!")
+            else:
+                bovada_count = len(result.get('bovada_games', []))
+                props_count = len(result.get('prizepicks_projections', []))
+                print(f"\nRaw scan complete! Found {bovada_count} games and {props_count} projections!")
+            
+            print("Tips:")
             print("  • Run 'python update_all.py continuous' for auto-updates")
-            print("  • Run 'python update_all.py no-deploy' to skip GitHub upload")
-
+            print("  • Run 'python update_all.py no-ai' for raw data without filtering")
+            print("  • Dashboard: https://whatabarber.github.io/prizepicks/")
+        else:
+            print("\nScan completed with errors")
 
 if __name__ == "__main__":
     main()
