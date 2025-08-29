@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrizePicks AI Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e1e2e 0%, #2d2d42 100%);
+            color: #ffffff;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .header h1 {
+            font-size: 3em;
+            font-weight: 700;
+            background: linear-gradient(45deg, #ff6b00, #ffd700, #00ff88);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #aaa;
+            margin-bottom: 20px;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .stat-value {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #00ff88;
+        }
+
+        .stat-label {
+            color: #ccc;
+            margin-top: 5px;
+        }
+
+        .filters {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .filter-btn {
+            padding: 12px 24px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 25px;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+        }
+
+        .filter-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .filter-btn.active {
+            background: linear-gradient(45deg, #ff6b00, #ffd700);
+            border-color: transparent;
+            box-shadow: 0 5px 15px rgba(255, 107, 0, 0.4);
+        }
+
+        .picks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .pick-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pick-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #ff6b00, #ffd700, #00ff88);
+        }
+
+        .pick-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .player-name {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+
+        .pick-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .stat-info {
+            flex: 1;
+        }
+
+        .stat-type {
+            color: #ffd700;
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+
+        .line-score {
+            color: #00ff88;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        .confidence {
+            background: linear-gradient(45deg, #ff6b00, #ffd700);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        .pick-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .league-tag {
+            background: rgba(0, 255, 136, 0.2);
+            color: #00ff88;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+
+        .team-info {
+            color: #aaa;
+            font-size: 0.9em;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 50px;
+            font-size: 1.2em;
+            color: #aaa;
+        }
+
+        .error {
+            text-align: center;
+            padding: 50px;
+            color: #ff6b6b;
+            background: rgba(255, 107, 107, 0.1);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 107, 107, 0.3);
+        }
+
+        .refresh-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, #ff6b00, #ffd700);
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 1.5em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(255, 107, 0, 0.4);
+        }
+
+        .refresh-btn:hover {
+            transform: scale(1.1) rotate(180deg);
+            box-shadow: 0 8px 25px rgba(255, 107, 0, 0.6);
+        }
+
+        .no-picks {
+            text-align: center;
+            padding: 50px;
+            color: #aaa;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .github-link {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 15px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+        }
+
+        .github-link:hover {
+            background: rgba(0, 0, 0, 0.9);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .picks-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .filters {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .filter-btn {
+                width: 200px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="https://prizepicks-one.vercel.app" target="_blank" class="github-link">
+        🚀 Live Dashboard
+    </a>
+
+    <div class="container">
+        <div class="header">
+            <h1>🎯 PrizePicks AI Dashboard</h1>
+            <p>Real-time sports betting intelligence powered by AI analysis</p>
+            <div id="lastUpdate" class="last-update"></div>
+        </div>
+
+        <div class="stats" id="statsContainer">
+            <div class="stat-card">
+                <div class="stat-value" id="totalPicks">0</div>
+                <div class="stat-label">Total Picks</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="nflPicks">0</div>
+                <div class="stat-label">NFL</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="cfbPicks">0</div>
+                <div class="stat-label">CFB</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="avgConfidence">0</div>
+                <div class="stat-label">Avg Confidence</div>
+            </div>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" onclick="filterPicks('all')">All Picks</button>
+            <button class="filter-btn" onclick="filterPicks('nfl')">🏈 NFL</button>
+            <button class="filter-btn" onclick="filterPicks('cfb')">🏟️ CFB</button>
+            <button class="filter-btn" onclick="filterPicks('high-confidence')">⭐ High Confidence (7+)</button>
+            <button class="filter-btn" onclick="filterPicks('passing')">📈 Passing Stats</button>
+            <button class="filter-btn" onclick="filterPicks('rushing')">🏃 Rushing Stats</button>
+        </div>
+
+        <div id="picksContainer">
+            <div class="loading">Loading PrizePicks data...</div>
+        </div>
+    </div>
+
+    <button class="refresh-btn" onclick="refreshData()" title="Refresh Data">
+        🔄
+    </button>
+
+    <script>
+        let allPicks = [];
+        let currentFilter = 'all';
+
+        async function loadPicks() {
+            try {
+                // Try to load from GitHub Pages or your deployed site
+                const response = await fetch('/data/prizepicks_analysis.json');
+                
+                if (!response.ok) {
+                    throw new Error('Data not found');
+                }
+                
+                const data = await response.json();
+                allPicks = data;
+                
+                updateStats();
+                displayPicks(allPicks);
+                updateLastUpdateTime();
+                
+            } catch (error) {
+                console.error('Error loading picks:', error);
+                // Fallback to demo data if no real data available
+                loadDemoData();
+            }
+        }
+
+        function loadDemoData() {
+            // Demo data for testing - you can remove this once real data is flowing
+            allPicks = [
+                {
+                    player_name: "Patrick Mahomes",
+                    league: "NFL",
+                    stat_type: "Pass Yards",
+                    line_score: 289.5,
+                    recommendation: "Patrick Mahomes Over 289.5 Pass Yards",
+                    confidence_score: 8.5,
+                    reasoning: "Strong analytical edge identified. Mahomes has shown ability to exceed 289.5 Pass Yards consistently.",
+                    team: "Kansas City Chiefs",
+                    sport: "NFL"
+                },
+                {
+                    player_name: "Josh Allen",
+                    league: "NFL", 
+                    stat_type: "Rush Yards",
+                    line_score: 29.5,
+                    recommendation: "Josh Allen Over 29.5 Rush Yards",
+                    confidence_score: 7.5,
+                    reasoning: "Good value spotted in market pricing. Allen has mobility advantage.",
+                    team: "Buffalo Bills",
+                    sport: "NFL"
+                }
+            ];
+            
+            updateStats();
+            displayPicks(allPicks);
+            updateLastUpdateTime();
+        }
+
+        function updateStats() {
+            const nflPicks = allPicks.filter(pick => pick.sport === 'NFL' || pick.league?.includes('NFL')).length;
+            const cfbPicks = allPicks.filter(pick => pick.sport === 'CFB' || pick.league?.includes('NCAAF')).length;
+            const avgConf = allPicks.length > 0 ? 
+                (allPicks.reduce((sum, pick) => sum + (pick.confidence_score || 5), 0) / allPicks.length).toFixed(1) : 
+                0;
+
+            document.getElementById('totalPicks').textContent = allPicks.length;
+            document.getElementById('nflPicks').textContent = nflPicks;
+            document.getElementById('cfbPicks').textContent = cfbPicks;
+            document.getElementById('avgConfidence').textContent = avgConf;
+        }
+
+        function displayPicks(picks) {
+            const container = document.getElementById('picksContainer');
+            
+            if (picks.length === 0) {
+                container.innerHTML = `
+                    <div class="no-picks">
+                        <h3>No picks found for the selected filter</h3>
+                        <p>Try selecting a different category or refresh the data</p>
+                    </div>
+                `;
+                return;
+            }
+
+            // Group picks by player to show variety
+            const playerGroups = {};
+            picks.forEach(pick => {
+                const player = pick.player_name;
+                if (!playerGroups[player]) {
+                    playerGroups[player] = [];
+                }
+                playerGroups[player].push(pick);
+            });
+
+            // Limit picks per player to increase variety
+            const diversePicks = [];
+            const maxPicksPerPlayer = 3;
+
+            Object.entries(playerGroups).forEach(([player, playerPicks]) => {
+                // Sort by confidence and take top picks for each player
+                const topPicks = playerPicks
+                    .sort((a, b) => (b.confidence_score || 5) - (a.confidence_score || 5))
+                    .slice(0, maxPicksPerPlayer);
+                
+                diversePicks.push(...topPicks);
+            });
+
+            // Sort all diverse picks by confidence
+            diversePicks.sort((a, b) => (b.confidence_score || 5) - (a.confidence_score || 5));
+
+            const html = diversePicks.map(pick => createPickCard(pick)).join('');
+            container.innerHTML = `<div class="picks-grid">${html}</div>`;
+        }
+
+        function createPickCard(pick) {
+            const sport = pick.sport || (pick.league?.includes('NFL') ? 'NFL' : 'CFB');
+            const confidence = pick.confidence_score || 5;
+            const team = pick.team || '';
+            
+            return `
+                <div class="pick-card" data-sport="${sport.toLowerCase()}">
+                    <div class="player-name">${pick.player_name}</div>
+                    
+                    <div class="pick-details">
+                        <div class="stat-info">
+                            <div class="stat-type">${pick.stat_type}</div>
+                            <div class="line-score">${pick.recommendation?.split(' ').slice(-2).join(' ') || pick.line_score}</div>
+                        </div>
+                        <div class="confidence">${confidence}/10</div>
+                    </div>
+
+                    <div class="pick-meta">
+                        <div class="league-tag">${sport}</div>
+                        ${team ? `<div class="team-info">${team}</div>` : ''}
+                    </div>
+
+                    ${pick.reasoning ? `
+                        <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(255,255,255,0.2); font-size: 0.9em; color: #ccc;">
+                            💡 ${pick.reasoning}
+                        </div>
+                    ` : ''}
+                </div>
+            `;
+        }
+
+        function filterPicks(filter) {
+            currentFilter = filter;
+            
+            // Update active button
+            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            let filteredPicks = [...allPicks];
+
+            switch(filter) {
+                case 'nfl':
+                    filteredPicks = allPicks.filter(pick => 
+                        pick.sport === 'NFL' || pick.league?.includes('NFL')
+                    );
+                    break;
+                case 'cfb':
+                    filteredPicks = allPicks.filter(pick => 
+                        pick.sport === 'CFB' || pick.league?.includes('NCAAF')
+                    );
+                    break;
+                case 'high-confidence':
+                    filteredPicks = allPicks.filter(pick => 
+                        (pick.confidence_score || 5) >= 7
+                    );
+                    break;
+                case 'passing':
+                    filteredPicks = allPicks.filter(pick => 
+                        pick.stat_type?.toLowerCase().includes('pass') || 
+                        pick.stat_type?.toLowerCase().includes('yard')
+                    );
+                    break;
+                case 'rushing':
+                    filteredPicks = allPicks.filter(pick => 
+                        pick.stat_type?.toLowerCase().includes('rush') ||
+                        pick.stat_type?.toLowerCase().includes('carry')
+                    );
+                    break;
+                default:
+                    filteredPicks = allPicks;
+            }
+
+            displayPicks(filteredPicks);
+        }
+
+        function refreshData() {
+            document.getElementById('picksContainer').innerHTML = '<div class="loading">Refreshing data...</div>';
+            loadPicks();
+        }
+
+        function updateLastUpdateTime() {
+            const now = new Date();
+            document.getElementById('lastUpdate').innerHTML = `
+                <small style="color: #aaa;">Last updated: ${now.toLocaleString()}</small>
+            `;
+        }
+
+        // Auto refresh every 5 minutes
+        setInterval(refreshData, 300000);
+
+        // Load picks when page loads
+        document.addEventListener('DOMContentLoaded', loadPicks);
+    </script>
+</body>
+</html>
