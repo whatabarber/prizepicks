@@ -29,8 +29,8 @@
     "league": "NFL",
     "sport": "NFL",
     "stat_type": "Pass Yards",
-    "line_score": 239.5,
-    "recommendation": "Patrick Mahomes standard 239.5 Pass Yards",
+    "line_score": 246.5,
+    "recommendation": "Patrick Mahomes standard 246.5 Pass Yards",
     "confidence_score": 7.5,
     "reasoning": "Good value spotted in market pricing. Market appears to be overvaluing Patrick Mahomes's Pass Yards potential. Solid medium confidence bet.",
     "source": "PrizePicks"
@@ -65,8 +65,8 @@
     "league": "NFL",
     "sport": "NFL",
     "stat_type": "Receiving Yards",
-    "line_score": 16.5,
-    "recommendation": "Aaron Jones standard 16.5 Receiving Yards",
+    "line_score": 17.5,
+    "recommendation": "Aaron Jones standard 17.5 Receiving Yards",
     "confidence_score": 7.5,
     "reasoning": "Good value spotted in market pricing. Market appears to be overvaluing Aaron Jones's Receiving Yards potential. Solid medium confidence bet.",
     "source": "PrizePicks"
@@ -120,6 +120,18 @@
     "source": "PrizePicks"
   },
   {
+    "id": "6055825",
+    "player_name": "Tua Tagovailoa",
+    "league": "NFL",
+    "sport": "NFL",
+    "stat_type": "Rush Yards",
+    "line_score": 2.5,
+    "recommendation": "Tua Tagovailoa standard 2.5 Rush Yards",
+    "confidence_score": 7.0,
+    "reasoning": "Decent edge with manageable risk. Market appears to be overvaluing Tua Tagovailoa's Rush Yards potential. Solid medium confidence bet.",
+    "source": "PrizePicks"
+  },
+  {
     "id": "6068339",
     "player_name": "Juwan Johnson",
     "league": "NFL",
@@ -132,51 +144,39 @@
     "source": "PrizePicks"
   },
   {
-    "id": "6319010",
-    "player_name": "Braelon Allen",
+    "id": "6319044",
+    "player_name": "Trey Benson",
     "league": "NFL",
     "sport": "NFL",
     "stat_type": "Rush Yards",
     "line_score": 25.5,
-    "recommendation": "Braelon Allen standard 25.5 Rush Yards",
+    "recommendation": "Trey Benson standard 25.5 Rush Yards",
     "confidence_score": 7.0,
-    "reasoning": "Decent edge with manageable risk. Market appears to be overvaluing Braelon Allen's Rush Yards potential. Solid medium confidence bet.",
+    "reasoning": "Decent edge with manageable risk. Market appears to be overvaluing Trey Benson's Rush Yards potential. Solid medium confidence bet.",
     "source": "PrizePicks"
   },
   {
-    "id": "6319028",
-    "player_name": "Josh Reynolds",
+    "id": "6213807",
+    "player_name": "Austin Ekeler",
     "league": "NFL",
     "sport": "NFL",
     "stat_type": "Receiving Yards",
     "line_score": 20.5,
-    "recommendation": "Josh Reynolds standard 20.5 Receiving Yards",
+    "recommendation": "Austin Ekeler standard 20.5 Receiving Yards",
     "confidence_score": 7.0,
-    "reasoning": "Decent edge with manageable risk. Market appears to be overvaluing Josh Reynolds's Receiving Yards potential. Solid medium confidence bet.",
+    "reasoning": "Decent edge with manageable risk. Market appears to be overvaluing Austin Ekeler's Receiving Yards potential. Solid medium confidence bet.",
     "source": "PrizePicks"
   },
   {
-    "id": "3859537",
-    "player_name": "Jack Fox",
-    "league": "NFLSZN",
-    "sport": "NFL",
-    "stat_type": "Pass Yards",
-    "line_score": 0.5,
-    "recommendation": "Jack Fox standard 0.5 Pass Yards",
-    "confidence_score": 7.0,
-    "reasoning": "Decent edge with manageable risk. Market appears to be overvaluing Jack Fox's Pass Yards potential. Solid medium confidence bet.",
-    "source": "PrizePicks"
-  },
-  {
-    "id": "5912910",
-    "player_name": "Tyreek Hill",
+    "id": "6318929",
+    "player_name": "Jonnu Smith",
     "league": "NFL",
     "sport": "NFL",
-    "stat_type": "Rush Yards",
-    "line_score": 0.5,
-    "recommendation": "Tyreek Hill standard 0.5 Rush Yards",
+    "stat_type": "Receiving Yards",
+    "line_score": 25.5,
+    "recommendation": "Jonnu Smith standard 25.5 Receiving Yards",
     "confidence_score": 7.0,
-    "reasoning": "Decent edge with manageable risk. Market appears to be overvaluing Tyreek Hill's Rush Yards potential. Solid medium confidence bet.",
+    "reasoning": "Decent edge with manageable risk. Market appears to be overvaluing Jonnu Smith's Receiving Yards potential. Solid medium confidence bet.",
     "source": "PrizePicks"
   }
 ]

@@ -20,7 +20,7 @@
       "over_odds": "N/A",
       "under_odds": "N/A"
     },
-    "timestamp": "2025-08-29T01:51:06.812754",
+    "timestamp": "2025-08-29T18:16:03.081896",
     "source": "Bovada"
   },
   {
@@ -44,7 +44,7 @@
       "over_odds": "N/A",
       "under_odds": "N/A"
     },
-    "timestamp": "2025-08-29T01:51:06.812787",
+    "timestamp": "2025-08-29T18:16:03.081951",
     "source": "Bovada"
   },
   {
@@ -68,7 +68,7 @@
       "over_odds": "N/A",
       "under_odds": "N/A"
     },
-    "timestamp": "2025-08-29T01:51:06.812795",
+    "timestamp": "2025-08-29T18:16:03.081971",
     "source": "Bovada"
   },
   {
@@ -92,7 +92,7 @@
       "over_odds": "N/A",
       "under_odds": "N/A"
     },
-    "timestamp": "2025-08-29T01:51:06.812801",
+    "timestamp": "2025-08-29T18:16:03.081987",
     "source": "Bovada"
   },
   {
@@ -116,7 +116,7 @@
       "over_odds": "N/A",
       "under_odds": "N/A"
     },
-    "timestamp": "2025-08-29T01:51:06.812808",
+    "timestamp": "2025-08-29T18:16:03.082003",
     "source": "Bovada"
   },
   {
@@ -140,7 +140,7 @@
       "over_odds": "N/A",
       "under_odds": "N/A"
     },
-    "timestamp": "2025-08-29T01:51:06.812818",
+    "timestamp": "2025-08-29T18:16:03.082018",
     "source": "Bovada"
   },
   {
@@ -164,7 +164,7 @@
       "over_odds": "N/A",
       "under_odds": "N/A"
     },
-    "timestamp": "2025-08-29T01:51:06.812824",
+    "timestamp": "2025-08-29T18:16:03.082030",
     "source": "Bovada"
   },
   {
@@ -188,7 +188,7 @@
       "over_odds": "N/A",
       "under_odds": "N/A"
     },
-    "timestamp": "2025-08-29T01:51:06.812830",
+    "timestamp": "2025-08-29T18:16:03.082051",
     "source": "Bovada"
   },
   {
@@ -212,7 +212,7 @@
       "over_odds": "N/A",
       "under_odds": "N/A"
     },
-    "timestamp": "2025-08-29T01:51:06.812836",
+    "timestamp": "2025-08-29T18:16:03.082070",
     "source": "Bovada"
   },
   {
@@ -236,7 +236,7 @@
       "over_odds": "N/A",
       "under_odds": "N/A"
     },
-    "timestamp": "2025-08-29T01:51:06.812841",
+    "timestamp": "2025-08-29T18:16:03.082090",
     "source": "Bovada"
   },
   {
@@ -260,7 +260,7 @@
       "over_odds": "N/A",
       "under_odds": "N/A"
     },
-    "timestamp": "2025-08-29T01:51:06.812847",
+    "timestamp": "2025-08-29T18:16:03.082123",
     "source": "Bovada"
   },
   {
@@ -284,7 +284,7 @@
       "over_odds": "N/A",
       "under_odds": "N/A"
     },
-    "timestamp": "2025-08-29T01:51:06.812854",
+    "timestamp": "2025-08-29T18:16:03.082143",
     "source": "Bovada"
   },
   {
@@ -308,7 +308,7 @@
       "over_odds": "N/A",
       "under_odds": "N/A"
     },
-    "timestamp": "2025-08-29T01:51:06.812859",
+    "timestamp": "2025-08-29T18:16:03.082167",
     "source": "Bovada"
   },
   {
@@ -332,7 +332,7 @@
       "over_odds": "N/A",
       "under_odds": "N/A"
     },
-    "timestamp": "2025-08-29T01:51:06.812865",
+    "timestamp": "2025-08-29T18:16:03.082187",
     "source": "Bovada"
   },
   {
@@ -356,7 +356,247 @@
       "over_odds": "N/A",
       "under_odds": "N/A"
     },
-    "timestamp": "2025-08-29T01:51:06.812870",
+    "timestamp": "2025-08-29T18:16:03.082206",
+    "source": "Bovada"
+  },
+  {
+    "id": "15616287",
+    "sport": "MLB",
+    "team1": "Toronto Blue Jays",
+    "team2": "Milwaukee Brewers",
+    "game_time": 1756580820000,
+    "moneyline": {
+      "team1_odds": "N/A",
+      "team2_odds": "N/A"
+    },
+    "spread": {
+      "team1_spread": "N/A",
+      "team1_odds": "N/A",
+      "team2_spread": "N/A",
+      "team2_odds": "N/A"
+    },
+    "totals": {
+      "total_points": "N/A",
+      "over_odds": "N/A",
+      "under_odds": "N/A"
+    },
+    "timestamp": "2025-08-29T18:16:03.082219",
+    "source": "Bovada"
+  },
+  {
+    "id": "15616294",
+    "sport": "MLB",
+    "team1": "Washington Nationals",
+    "team2": "Tampa Bay Rays",
+    "game_time": 1756584300000,
+    "moneyline": {
+      "team1_odds": "N/A",
+      "team2_odds": "N/A"
+    },
+    "spread": {
+      "team1_spread": "N/A",
+      "team1_odds": "N/A",
+      "team2_spread": "N/A",
+      "team2_odds": "N/A"
+    },
+    "totals": {
+      "total_points": "N/A",
+      "over_odds": "N/A",
+      "under_odds": "N/A"
+    },
+    "timestamp": "2025-08-29T18:16:03.082231",
+    "source": "Bovada"
+  },
+  {
+    "id": "15616272",
+    "sport": "MLB",
+    "team1": "New York Mets",
+    "team2": "Miami Marlins",
+    "game_time": 1756584600000,
+    "moneyline": {
+      "team1_odds": "N/A",
+      "team2_odds": "N/A"
+    },
+    "spread": {
+      "team1_spread": "N/A",
+      "team1_odds": "N/A",
+      "team2_spread": "N/A",
+      "team2_odds": "N/A"
+    },
+    "totals": {
+      "total_points": "N/A",
+      "over_odds": "N/A",
+      "under_odds": "N/A"
+    },
+    "timestamp": "2025-08-29T18:16:03.082243",
+    "source": "Bovada"
+  },
+  {
+    "id": "15616274",
+    "sport": "MLB",
+    "team1": "Boston Red Sox",
+    "team2": "Pittsburgh Pirates",
+    "game_time": 1756584600000,
+    "moneyline": {
+      "team1_odds": "N/A",
+      "team2_odds": "N/A"
+    },
+    "spread": {
+      "team1_spread": "N/A",
+      "team1_odds": "N/A",
+      "team2_spread": "N/A",
+      "team2_odds": "N/A"
+    },
+    "totals": {
+      "total_points": "N/A",
+      "over_odds": "N/A",
+      "under_odds": "N/A"
+    },
+    "timestamp": "2025-08-29T18:16:03.082255",
+    "source": "Bovada"
+  },
+  {
+    "id": "15616279",
+    "sport": "MLB",
+    "team1": "Cincinnati Reds",
+    "team2": "St. Louis Cardinals",
+    "game_time": 1756593600000,
+    "moneyline": {
+      "team1_odds": "N/A",
+      "team2_odds": "N/A"
+    },
+    "spread": {
+      "team1_spread": "N/A",
+      "team1_odds": "N/A",
+      "team2_spread": "N/A",
+      "team2_odds": "N/A"
+    },
+    "totals": {
+      "total_points": "N/A",
+      "over_odds": "N/A",
+      "under_odds": "N/A"
+    },
+    "timestamp": "2025-08-29T18:16:03.082267",
+    "source": "Bovada"
+  },
+  {
+    "id": "15616269",
+    "sport": "MLB",
+    "team1": "Houston Astros",
+    "team2": "Los Angeles Angels",
+    "game_time": 1756595400000,
+    "moneyline": {
+      "team1_odds": "N/A",
+      "team2_odds": "N/A"
+    },
+    "spread": {
+      "team1_spread": "N/A",
+      "team1_odds": "N/A",
+      "team2_spread": "N/A",
+      "team2_odds": "N/A"
+    },
+    "totals": {
+      "total_points": "N/A",
+      "over_odds": "N/A",
+      "under_odds": "N/A"
+    },
+    "timestamp": "2025-08-29T18:16:03.082279",
+    "source": "Bovada"
+  },
+  {
+    "id": "15616281",
+    "sport": "MLB",
+    "team1": "Chicago White Sox",
+    "team2": "New York Yankees",
+    "game_time": 1756595400000,
+    "moneyline": {
+      "team1_odds": "N/A",
+      "team2_odds": "N/A"
+    },
+    "spread": {
+      "team1_spread": "N/A",
+      "team1_odds": "N/A",
+      "team2_spread": "N/A",
+      "team2_odds": "N/A"
+    },
+    "totals": {
+      "total_points": "N/A",
+      "over_odds": "N/A",
+      "under_odds": "N/A"
+    },
+    "timestamp": "2025-08-29T18:16:03.082296",
+    "source": "Bovada"
+  },
+  {
+    "id": "15616278",
+    "sport": "MLB",
+    "team1": "Cleveland Guardians",
+    "team2": "Seattle Mariners",
+    "game_time": 1756595700000,
+    "moneyline": {
+      "team1_odds": "N/A",
+      "team2_odds": "N/A"
+    },
+    "spread": {
+      "team1_spread": "N/A",
+      "team1_odds": "N/A",
+      "team2_spread": "N/A",
+      "team2_odds": "N/A"
+    },
+    "totals": {
+      "total_points": "N/A",
+      "over_odds": "N/A",
+      "under_odds": "N/A"
+    },
+    "timestamp": "2025-08-29T18:16:03.082307",
+    "source": "Bovada"
+  },
+  {
+    "id": "15616277",
+    "sport": "MLB",
+    "team1": "Colorado Rockies",
+    "team2": "Chicago Cubs",
+    "game_time": 1756599000000,
+    "moneyline": {
+      "team1_odds": "N/A",
+      "team2_odds": "N/A"
+    },
+    "spread": {
+      "team1_spread": "N/A",
+      "team1_odds": "N/A",
+      "team2_spread": "N/A",
+      "team2_odds": "N/A"
+    },
+    "totals": {
+      "total_points": "N/A",
+      "over_odds": "N/A",
+      "under_odds": "N/A"
+    },
+    "timestamp": "2025-08-29T18:16:03.082319",
+    "source": "Bovada"
+  },
+  {
+    "id": "15616286",
+    "sport": "MLB",
+    "team1": "Los Angeles Dodgers",
+    "team2": "Arizona Diamondbacks",
+    "game_time": 1756602600000,
+    "moneyline": {
+      "team1_odds": "N/A",
+      "team2_odds": "N/A"
+    },
+    "spread": {
+      "team1_spread": "N/A",
+      "team1_odds": "N/A",
+      "team2_spread": "N/A",
+      "team2_odds": "N/A"
+    },
+    "totals": {
+      "total_points": "N/A",
+      "over_odds": "N/A",
+      "under_odds": "N/A"
+    },
+    "timestamp": "2025-08-29T18:16:03.082331",
     "source": "Bovada"
   }
 ]
