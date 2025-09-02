@@ -1,10 +1,58 @@
 [
   {
-    "id": "15611444",
+    "id": "15632674",
+    "sport": "MLB",
+    "team1": "Pittsburgh Pirates",
+    "team2": "Los Angeles Dodgers",
+    "game_time": 1756852800000,
+    "moneyline": {
+      "team1_odds": "N/A",
+      "team2_odds": "N/A"
+    },
+    "spread": {
+      "team1_spread": "N/A",
+      "team1_odds": "N/A",
+      "team2_spread": "N/A",
+      "team2_odds": "N/A"
+    },
+    "totals": {
+      "total_points": "N/A",
+      "over_odds": "N/A",
+      "under_odds": "N/A"
+    },
+    "timestamp": "2025-09-02T08:19:52.373046",
+    "source": "Bovada"
+  },
+  {
+    "id": "15632683",
+    "sport": "MLB",
+    "team1": "Detroit Tigers",
+    "team2": "New York Mets",
+    "game_time": 1756852800000,
+    "moneyline": {
+      "team1_odds": "N/A",
+      "team2_odds": "N/A"
+    },
+    "spread": {
+      "team1_spread": "N/A",
+      "team1_odds": "N/A",
+      "team2_spread": "N/A",
+      "team2_odds": "N/A"
+    },
+    "totals": {
+      "total_points": "N/A",
+      "over_odds": "N/A",
+      "under_odds": "N/A"
+    },
+    "timestamp": "2025-09-02T08:19:52.373133",
+    "source": "Bovada"
+  },
+  {
+    "id": "15632675",
     "sport": "MLB",
     "team1": "Cincinnati Reds",
-    "team2": "St. Louis Cardinals",
-    "game_time": 1756507200000,
+    "team2": "Toronto Blue Jays",
+    "game_time": 1756852800000,
     "moneyline": {
       "team1_odds": "N/A",
       "team2_odds": "N/A"
@@ -20,111 +68,15 @@
       "over_odds": "N/A",
       "under_odds": "N/A"
     },
-    "timestamp": "2025-08-29T18:16:03.081896",
+    "timestamp": "2025-09-02T08:19:52.373164",
     "source": "Bovada"
   },
   {
-    "id": "15611428",
-    "sport": "MLB",
-    "team1": "Philadelphia Phillies",
-    "team2": "Atlanta Braves",
-    "game_time": 1756507500000,
-    "moneyline": {
-      "team1_odds": "N/A",
-      "team2_odds": "N/A"
-    },
-    "spread": {
-      "team1_spread": "N/A",
-      "team1_odds": "N/A",
-      "team2_spread": "N/A",
-      "team2_odds": "N/A"
-    },
-    "totals": {
-      "total_points": "N/A",
-      "over_odds": "N/A",
-      "under_odds": "N/A"
-    },
-    "timestamp": "2025-08-29T18:16:03.081951",
-    "source": "Bovada"
-  },
-  {
-    "id": "15611427",
-    "sport": "MLB",
-    "team1": "Washington Nationals",
-    "team2": "Tampa Bay Rays",
-    "game_time": 1756507500000,
-    "moneyline": {
-      "team1_odds": "N/A",
-      "team2_odds": "N/A"
-    },
-    "spread": {
-      "team1_spread": "N/A",
-      "team1_odds": "N/A",
-      "team2_spread": "N/A",
-      "team2_odds": "N/A"
-    },
-    "totals": {
-      "total_points": "N/A",
-      "over_odds": "N/A",
-      "under_odds": "N/A"
-    },
-    "timestamp": "2025-08-29T18:16:03.081971",
-    "source": "Bovada"
-  },
-  {
-    "id": "15611445",
-    "sport": "MLB",
-    "team1": "Toronto Blue Jays",
-    "team2": "Milwaukee Brewers",
-    "game_time": 1756508820000,
-    "moneyline": {
-      "team1_odds": "N/A",
-      "team2_odds": "N/A"
-    },
-    "spread": {
-      "team1_spread": "N/A",
-      "team1_odds": "N/A",
-      "team2_spread": "N/A",
-      "team2_odds": "N/A"
-    },
-    "totals": {
-      "total_points": "N/A",
-      "over_odds": "N/A",
-      "under_odds": "N/A"
-    },
-    "timestamp": "2025-08-29T18:16:03.081987",
-    "source": "Bovada"
-  },
-  {
-    "id": "15611435",
-    "sport": "MLB",
-    "team1": "New York Mets",
-    "team2": "Miami Marlins",
-    "game_time": 1756509000000,
-    "moneyline": {
-      "team1_odds": "N/A",
-      "team2_odds": "N/A"
-    },
-    "spread": {
-      "team1_spread": "N/A",
-      "team1_odds": "N/A",
-      "team2_spread": "N/A",
-      "team2_odds": "N/A"
-    },
-    "totals": {
-      "total_points": "N/A",
-      "over_odds": "N/A",
-      "under_odds": "N/A"
-    },
-    "timestamp": "2025-08-29T18:16:03.082003",
-    "source": "Bovada"
-  },
-  {
-    "id": "15611426",
+    "id": "15632687",
     "sport": "MLB",
     "team1": "Boston Red Sox",
-    "team2": "Pittsburgh Pirates",
-    "game_time": 1756509000000,
+    "team2": "Cleveland Guardians",
+    "game_time": 1756853100000,
     "moneyline": {
       "team1_odds": "N/A",
       "team2_odds": "N/A"
@@ -140,15 +92,39 @@
       "over_odds": "N/A",
       "under_odds": "N/A"
     },
-    "timestamp": "2025-08-29T18:16:03.082018",
+    "timestamp": "2025-09-02T08:19:52.373189",
     "source": "Bovada"
   },
   {
-    "id": "15611437",
+    "id": "15632671",
     "sport": "MLB",
-    "team1": "Cleveland Guardians",
+    "team1": "Washington Nationals",
+    "team2": "Miami Marlins",
+    "game_time": 1756853100000,
+    "moneyline": {
+      "team1_odds": "N/A",
+      "team2_odds": "N/A"
+    },
+    "spread": {
+      "team1_spread": "N/A",
+      "team1_odds": "N/A",
+      "team2_spread": "N/A",
+      "team2_odds": "N/A"
+    },
+    "totals": {
+      "total_points": "N/A",
+      "over_odds": "N/A",
+      "under_odds": "N/A"
+    },
+    "timestamp": "2025-09-02T08:19:52.373210",
+    "source": "Bovada"
+  },
+  {
+    "id": "15632677",
+    "sport": "MLB",
+    "team1": "Tampa Bay Rays",
     "team2": "Seattle Mariners",
-    "game_time": 1756509000000,
+    "game_time": 1756856100000,
     "moneyline": {
       "team1_odds": "N/A",
       "team2_odds": "N/A"
@@ -164,15 +140,15 @@
       "over_odds": "N/A",
       "under_odds": "N/A"
     },
-    "timestamp": "2025-08-29T18:16:03.082030",
+    "timestamp": "2025-09-02T08:19:52.373231",
     "source": "Bovada"
   },
   {
-    "id": "15611429",
+    "id": "15632684",
     "sport": "MLB",
-    "team1": "Chicago White Sox",
-    "team2": "New York Yankees",
-    "game_time": 1756510800000,
+    "team1": "Chicago Cubs",
+    "team2": "Atlanta Braves",
+    "game_time": 1756856400000,
     "moneyline": {
       "team1_odds": "N/A",
       "team2_odds": "N/A"
@@ -188,63 +164,15 @@
       "over_odds": "N/A",
       "under_odds": "N/A"
     },
-    "timestamp": "2025-08-29T18:16:03.082051",
+    "timestamp": "2025-09-02T08:19:52.373251",
     "source": "Bovada"
   },
   {
-    "id": "15611447",
-    "sport": "MLB",
-    "team1": "Kansas City Royals",
-    "team2": "Detroit Tigers",
-    "game_time": 1756512600000,
-    "moneyline": {
-      "team1_odds": "N/A",
-      "team2_odds": "N/A"
-    },
-    "spread": {
-      "team1_spread": "N/A",
-      "team1_odds": "N/A",
-      "team2_spread": "N/A",
-      "team2_odds": "N/A"
-    },
-    "totals": {
-      "total_points": "N/A",
-      "over_odds": "N/A",
-      "under_odds": "N/A"
-    },
-    "timestamp": "2025-08-29T18:16:03.082070",
-    "source": "Bovada"
-  },
-  {
-    "id": "15611430",
-    "sport": "MLB",
-    "team1": "Houston Astros",
-    "team2": "Los Angeles Angels",
-    "game_time": 1756512600000,
-    "moneyline": {
-      "team1_odds": "N/A",
-      "team2_odds": "N/A"
-    },
-    "spread": {
-      "team1_spread": "N/A",
-      "team1_odds": "N/A",
-      "team2_spread": "N/A",
-      "team2_odds": "N/A"
-    },
-    "totals": {
-      "total_points": "N/A",
-      "over_odds": "N/A",
-      "under_odds": "N/A"
-    },
-    "timestamp": "2025-08-29T18:16:03.082090",
-    "source": "Bovada"
-  },
-  {
-    "id": "15611433",
+    "id": "15632669",
     "sport": "MLB",
     "team1": "Minnesota Twins",
-    "team2": "San Diego Padres",
-    "game_time": 1756512600000,
+    "team2": "Chicago White Sox",
+    "game_time": 1756856400000,
     "moneyline": {
       "team1_odds": "N/A",
       "team2_odds": "N/A"
@@ -260,15 +188,15 @@
       "over_odds": "N/A",
       "under_odds": "N/A"
     },
-    "timestamp": "2025-08-29T18:16:03.082123",
+    "timestamp": "2025-09-02T08:19:52.373278",
     "source": "Bovada"
   },
   {
-    "id": "15611432",
+    "id": "15632679",
     "sport": "MLB",
-    "team1": "Colorado Rockies",
-    "team2": "Chicago Cubs",
-    "game_time": 1756514400000,
+    "team1": "Kansas City Royals",
+    "team2": "Los Angeles Angels",
+    "game_time": 1756856400000,
     "moneyline": {
       "team1_odds": "N/A",
       "team2_odds": "N/A"
@@ -284,15 +212,15 @@
       "over_odds": "N/A",
       "under_odds": "N/A"
     },
-    "timestamp": "2025-08-29T18:16:03.082143",
+    "timestamp": "2025-09-02T08:19:52.373303",
     "source": "Bovada"
   },
   {
-    "id": "15611439",
+    "id": "15632685",
     "sport": "MLB",
-    "team1": "Athletics",
-    "team2": "Texas Rangers",
-    "game_time": 1756519500000,
+    "team1": "St. Louis Cardinals",
+    "team2": "Athletics",
+    "game_time": 1756856700000,
     "moneyline": {
       "team1_odds": "N/A",
       "team2_odds": "N/A"
@@ -308,207 +236,15 @@
       "over_odds": "N/A",
       "under_odds": "N/A"
     },
-    "timestamp": "2025-08-29T18:16:03.082167",
+    "timestamp": "2025-09-02T08:19:52.373324",
     "source": "Bovada"
   },
   {
-    "id": "15611440",
-    "sport": "MLB",
-    "team1": "Los Angeles Dodgers",
-    "team2": "Arizona Diamondbacks",
-    "game_time": 1756519800000,
-    "moneyline": {
-      "team1_odds": "N/A",
-      "team2_odds": "N/A"
-    },
-    "spread": {
-      "team1_spread": "N/A",
-      "team1_odds": "N/A",
-      "team2_spread": "N/A",
-      "team2_odds": "N/A"
-    },
-    "totals": {
-      "total_points": "N/A",
-      "over_odds": "N/A",
-      "under_odds": "N/A"
-    },
-    "timestamp": "2025-08-29T18:16:03.082187",
-    "source": "Bovada"
-  },
-  {
-    "id": "15611443",
-    "sport": "MLB",
-    "team1": "San Francisco Giants",
-    "team2": "Baltimore Orioles",
-    "game_time": 1756520100000,
-    "moneyline": {
-      "team1_odds": "N/A",
-      "team2_odds": "N/A"
-    },
-    "spread": {
-      "team1_spread": "N/A",
-      "team1_odds": "N/A",
-      "team2_spread": "N/A",
-      "team2_odds": "N/A"
-    },
-    "totals": {
-      "total_points": "N/A",
-      "over_odds": "N/A",
-      "under_odds": "N/A"
-    },
-    "timestamp": "2025-08-29T18:16:03.082206",
-    "source": "Bovada"
-  },
-  {
-    "id": "15616287",
-    "sport": "MLB",
-    "team1": "Toronto Blue Jays",
-    "team2": "Milwaukee Brewers",
-    "game_time": 1756580820000,
-    "moneyline": {
-      "team1_odds": "N/A",
-      "team2_odds": "N/A"
-    },
-    "spread": {
-      "team1_spread": "N/A",
-      "team1_odds": "N/A",
-      "team2_spread": "N/A",
-      "team2_odds": "N/A"
-    },
-    "totals": {
-      "total_points": "N/A",
-      "over_odds": "N/A",
-      "under_odds": "N/A"
-    },
-    "timestamp": "2025-08-29T18:16:03.082219",
-    "source": "Bovada"
-  },
-  {
-    "id": "15616294",
-    "sport": "MLB",
-    "team1": "Washington Nationals",
-    "team2": "Tampa Bay Rays",
-    "game_time": 1756584300000,
-    "moneyline": {
-      "team1_odds": "N/A",
-      "team2_odds": "N/A"
-    },
-    "spread": {
-      "team1_spread": "N/A",
-      "team1_odds": "N/A",
-      "team2_spread": "N/A",
-      "team2_odds": "N/A"
-    },
-    "totals": {
-      "total_points": "N/A",
-      "over_odds": "N/A",
-      "under_odds": "N/A"
-    },
-    "timestamp": "2025-08-29T18:16:03.082231",
-    "source": "Bovada"
-  },
-  {
-    "id": "15616272",
-    "sport": "MLB",
-    "team1": "New York Mets",
-    "team2": "Miami Marlins",
-    "game_time": 1756584600000,
-    "moneyline": {
-      "team1_odds": "N/A",
-      "team2_odds": "N/A"
-    },
-    "spread": {
-      "team1_spread": "N/A",
-      "team1_odds": "N/A",
-      "team2_spread": "N/A",
-      "team2_odds": "N/A"
-    },
-    "totals": {
-      "total_points": "N/A",
-      "over_odds": "N/A",
-      "under_odds": "N/A"
-    },
-    "timestamp": "2025-08-29T18:16:03.082243",
-    "source": "Bovada"
-  },
-  {
-    "id": "15616274",
-    "sport": "MLB",
-    "team1": "Boston Red Sox",
-    "team2": "Pittsburgh Pirates",
-    "game_time": 1756584600000,
-    "moneyline": {
-      "team1_odds": "N/A",
-      "team2_odds": "N/A"
-    },
-    "spread": {
-      "team1_spread": "N/A",
-      "team1_odds": "N/A",
-      "team2_spread": "N/A",
-      "team2_odds": "N/A"
-    },
-    "totals": {
-      "total_points": "N/A",
-      "over_odds": "N/A",
-      "under_odds": "N/A"
-    },
-    "timestamp": "2025-08-29T18:16:03.082255",
-    "source": "Bovada"
-  },
-  {
-    "id": "15616279",
-    "sport": "MLB",
-    "team1": "Cincinnati Reds",
-    "team2": "St. Louis Cardinals",
-    "game_time": 1756593600000,
-    "moneyline": {
-      "team1_odds": "N/A",
-      "team2_odds": "N/A"
-    },
-    "spread": {
-      "team1_spread": "N/A",
-      "team1_odds": "N/A",
-      "team2_spread": "N/A",
-      "team2_odds": "N/A"
-    },
-    "totals": {
-      "total_points": "N/A",
-      "over_odds": "N/A",
-      "under_odds": "N/A"
-    },
-    "timestamp": "2025-08-29T18:16:03.082267",
-    "source": "Bovada"
-  },
-  {
-    "id": "15616269",
+    "id": "15632682",
     "sport": "MLB",
     "team1": "Houston Astros",
-    "team2": "Los Angeles Angels",
-    "game_time": 1756595400000,
-    "moneyline": {
-      "team1_odds": "N/A",
-      "team2_odds": "N/A"
-    },
-    "spread": {
-      "team1_spread": "N/A",
-      "team1_odds": "N/A",
-      "team2_spread": "N/A",
-      "team2_odds": "N/A"
-    },
-    "totals": {
-      "total_points": "N/A",
-      "over_odds": "N/A",
-      "under_odds": "N/A"
-    },
-    "timestamp": "2025-08-29T18:16:03.082279",
-    "source": "Bovada"
-  },
-  {
-    "id": "15616281",
-    "sport": "MLB",
-    "team1": "Chicago White Sox",
     "team2": "New York Yankees",
-    "game_time": 1756595400000,
+    "game_time": 1756858200000,
     "moneyline": {
       "team1_odds": "N/A",
       "team2_odds": "N/A"
@@ -524,39 +260,15 @@
       "over_odds": "N/A",
       "under_odds": "N/A"
     },
-    "timestamp": "2025-08-29T18:16:03.082296",
+    "timestamp": "2025-09-02T08:19:52.373343",
     "source": "Bovada"
   },
   {
-    "id": "15616278",
-    "sport": "MLB",
-    "team1": "Cleveland Guardians",
-    "team2": "Seattle Mariners",
-    "game_time": 1756595700000,
-    "moneyline": {
-      "team1_odds": "N/A",
-      "team2_odds": "N/A"
-    },
-    "spread": {
-      "team1_spread": "N/A",
-      "team1_odds": "N/A",
-      "team2_spread": "N/A",
-      "team2_odds": "N/A"
-    },
-    "totals": {
-      "total_points": "N/A",
-      "over_odds": "N/A",
-      "under_odds": "N/A"
-    },
-    "timestamp": "2025-08-29T18:16:03.082307",
-    "source": "Bovada"
-  },
-  {
-    "id": "15616277",
+    "id": "15632678",
     "sport": "MLB",
     "team1": "Colorado Rockies",
-    "team2": "Chicago Cubs",
-    "game_time": 1756599000000,
+    "team2": "San Francisco Giants",
+    "game_time": 1756860000000,
     "moneyline": {
       "team1_odds": "N/A",
       "team2_odds": "N/A"
@@ -572,15 +284,15 @@
       "over_odds": "N/A",
       "under_odds": "N/A"
     },
-    "timestamp": "2025-08-29T18:16:03.082319",
+    "timestamp": "2025-09-02T08:19:52.373367",
     "source": "Bovada"
   },
   {
-    "id": "15616286",
+    "id": "15632672",
     "sport": "MLB",
-    "team1": "Los Angeles Dodgers",
-    "team2": "Arizona Diamondbacks",
-    "game_time": 1756602600000,
+    "team1": "San Diego Padres",
+    "team2": "Baltimore Orioles",
+    "game_time": 1756863600000,
     "moneyline": {
       "team1_odds": "N/A",
       "team2_odds": "N/A"
@@ -596,7 +308,31 @@
       "over_odds": "N/A",
       "under_odds": "N/A"
     },
-    "timestamp": "2025-08-29T18:16:03.082331",
+    "timestamp": "2025-09-02T08:19:52.373386",
+    "source": "Bovada"
+  },
+  {
+    "id": "15632688",
+    "sport": "MLB",
+    "team1": "Arizona Diamondbacks",
+    "team2": "Texas Rangers",
+    "game_time": 1756863600000,
+    "moneyline": {
+      "team1_odds": "N/A",
+      "team2_odds": "N/A"
+    },
+    "spread": {
+      "team1_spread": "N/A",
+      "team1_odds": "N/A",
+      "team2_spread": "N/A",
+      "team2_odds": "N/A"
+    },
+    "totals": {
+      "total_points": "N/A",
+      "over_odds": "N/A",
+      "under_odds": "N/A"
+    },
+    "timestamp": "2025-09-02T08:19:52.373405",
     "source": "Bovada"
   }
 ]

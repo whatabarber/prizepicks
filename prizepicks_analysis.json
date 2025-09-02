@@ -12,25 +12,13 @@
     "source": "PrizePicks"
   },
   {
-    "id": "6055823",
-    "player_name": "Aaron Rodgers",
-    "league": "NFL",
-    "sport": "NFL",
-    "stat_type": "Rush Yards",
-    "line_score": 0.5,
-    "recommendation": "Aaron Rodgers standard 0.5 Rush Yards",
-    "confidence_score": 8.0,
-    "reasoning": "Good value spotted in market pricing. Market appears to be overvaluing Aaron Rodgers's Rush Yards potential. High confidence play.",
-    "source": "PrizePicks"
-  },
-  {
     "id": "6051148",
     "player_name": "Patrick Mahomes",
     "league": "NFL",
     "sport": "NFL",
     "stat_type": "Pass Yards",
-    "line_score": 246.5,
-    "recommendation": "Patrick Mahomes standard 246.5 Pass Yards",
+    "line_score": 248.5,
+    "recommendation": "Patrick Mahomes standard 248.5 Pass Yards",
     "confidence_score": 7.5,
     "reasoning": "Good value spotted in market pricing. Market appears to be overvaluing Patrick Mahomes's Pass Yards potential. Solid medium confidence bet.",
     "source": "PrizePicks"
@@ -41,22 +29,22 @@
     "league": "NFL",
     "sport": "NFL",
     "stat_type": "Pass Yards",
-    "line_score": 206.5,
-    "recommendation": "Aaron Rodgers standard 206.5 Pass Yards",
+    "line_score": 202.5,
+    "recommendation": "Aaron Rodgers standard 202.5 Pass Yards",
     "confidence_score": 7.5,
     "reasoning": "Good value spotted in market pricing. Market appears to be overvaluing Aaron Rodgers's Pass Yards potential. Solid medium confidence bet.",
     "source": "PrizePicks"
   },
   {
-    "id": "5204621",
-    "player_name": "Aaron Jones",
-    "league": "NFLSZN",
+    "id": "6343213",
+    "player_name": "Aaron Rodgers",
+    "league": "NFL",
     "sport": "NFL",
     "stat_type": "Rush Yards",
-    "line_score": 725.5,
-    "recommendation": "Aaron Jones standard 725.5 Rush Yards",
+    "line_score": 19.5,
+    "recommendation": "Aaron Rodgers demon 19.5 Rush Yards",
     "confidence_score": 7.5,
-    "reasoning": "Good value spotted in market pricing. Market appears to be overvaluing Aaron Jones's Rush Yards potential. Solid medium confidence bet.",
+    "reasoning": "Good value spotted in market pricing. Market appears to be overvaluing Aaron Rodgers's Rush Yards potential. Solid medium confidence bet.",
     "source": "PrizePicks"
   },
   {
@@ -69,6 +57,18 @@
     "recommendation": "Aaron Jones standard 17.5 Receiving Yards",
     "confidence_score": 7.5,
     "reasoning": "Good value spotted in market pricing. Market appears to be overvaluing Aaron Jones's Receiving Yards potential. Solid medium confidence bet.",
+    "source": "PrizePicks"
+  },
+  {
+    "id": "6068154",
+    "player_name": "Aaron Jones",
+    "league": "NFL",
+    "sport": "NFL",
+    "stat_type": "Rush Yards",
+    "line_score": 52.5,
+    "recommendation": "Aaron Jones standard 52.5 Rush Yards",
+    "confidence_score": 7.5,
+    "reasoning": "Good value spotted in market pricing. Market appears to be overvaluing Aaron Jones's Rush Yards potential. Solid medium confidence bet.",
     "source": "PrizePicks"
   },
   {
@@ -96,6 +96,18 @@
     "source": "PrizePicks"
   },
   {
+    "id": "6271885",
+    "player_name": "Jake Ferguson",
+    "league": "NFL1Q",
+    "sport": "NFL",
+    "stat_type": "Receiving Yards",
+    "line_score": 2.5,
+    "recommendation": "Jake Ferguson standard 2.5 Receiving Yards",
+    "confidence_score": 7.0,
+    "reasoning": "Decent edge with manageable risk. Market appears to be overvaluing Jake Ferguson's Receiving Yards potential. Solid medium confidence bet.",
+    "source": "PrizePicks"
+  },
+  {
     "id": "6269592",
     "player_name": "Kareem Hunt",
     "league": "NFL",
@@ -105,6 +117,18 @@
     "recommendation": "Kareem Hunt standard 20.5 Rush Yards",
     "confidence_score": 7.0,
     "reasoning": "Decent edge with manageable risk. Market appears to be overvaluing Kareem Hunt's Rush Yards potential. Solid medium confidence bet.",
+    "source": "PrizePicks"
+  },
+  {
+    "id": "6394402",
+    "player_name": "Kareem Hunt",
+    "league": "NFL",
+    "sport": "NFL",
+    "stat_type": "Receiving Yards",
+    "line_score": 1.5,
+    "recommendation": "Kareem Hunt standard 1.5 Receiving Yards",
+    "confidence_score": 7.0,
+    "reasoning": "Decent edge with manageable risk. Market appears to be overvaluing Kareem Hunt's Receiving Yards potential. Solid medium confidence bet.",
     "source": "PrizePicks"
   },
   {
@@ -120,18 +144,6 @@
     "source": "PrizePicks"
   },
   {
-    "id": "6055825",
-    "player_name": "Tua Tagovailoa",
-    "league": "NFL",
-    "sport": "NFL",
-    "stat_type": "Rush Yards",
-    "line_score": 2.5,
-    "recommendation": "Tua Tagovailoa standard 2.5 Rush Yards",
-    "confidence_score": 7.0,
-    "reasoning": "Decent edge with manageable risk. Market appears to be overvaluing Tua Tagovailoa's Rush Yards potential. Solid medium confidence bet.",
-    "source": "PrizePicks"
-  },
-  {
     "id": "6068339",
     "player_name": "Juwan Johnson",
     "league": "NFL",
@@ -144,39 +156,27 @@
     "source": "PrizePicks"
   },
   {
-    "id": "6319044",
-    "player_name": "Trey Benson",
+    "id": "6055692",
+    "player_name": "Kyler Murray",
     "league": "NFL",
     "sport": "NFL",
     "stat_type": "Rush Yards",
     "line_score": 25.5,
-    "recommendation": "Trey Benson standard 25.5 Rush Yards",
+    "recommendation": "Kyler Murray standard 25.5 Rush Yards",
     "confidence_score": 7.0,
-    "reasoning": "Decent edge with manageable risk. Market appears to be overvaluing Trey Benson's Rush Yards potential. Solid medium confidence bet.",
+    "reasoning": "Decent edge with manageable risk. Market appears to be overvaluing Kyler Murray's Rush Yards potential. Solid medium confidence bet.",
     "source": "PrizePicks"
   },
   {
-    "id": "6213807",
-    "player_name": "Austin Ekeler",
-    "league": "NFL",
-    "sport": "NFL",
-    "stat_type": "Receiving Yards",
-    "line_score": 20.5,
-    "recommendation": "Austin Ekeler standard 20.5 Receiving Yards",
-    "confidence_score": 7.0,
-    "reasoning": "Decent edge with manageable risk. Market appears to be overvaluing Austin Ekeler's Receiving Yards potential. Solid medium confidence bet.",
-    "source": "PrizePicks"
-  },
-  {
-    "id": "6318929",
-    "player_name": "Jonnu Smith",
+    "id": "6308782",
+    "player_name": "Michael Wilson",
     "league": "NFL",
     "sport": "NFL",
     "stat_type": "Receiving Yards",
     "line_score": 25.5,
-    "recommendation": "Jonnu Smith standard 25.5 Receiving Yards",
+    "recommendation": "Michael Wilson standard 25.5 Receiving Yards",
     "confidence_score": 7.0,
-    "reasoning": "Decent edge with manageable risk. Market appears to be overvaluing Jonnu Smith's Receiving Yards potential. Solid medium confidence bet.",
+    "reasoning": "Decent edge with manageable risk. Market appears to be overvaluing Michael Wilson's Receiving Yards potential. Solid medium confidence bet.",
     "source": "PrizePicks"
   }
 ]
