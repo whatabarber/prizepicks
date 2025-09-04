@@ -17,10 +17,22 @@
     "league": "NFL",
     "sport": "NFL",
     "stat_type": "Pass Yards",
-    "line_score": 248.5,
-    "recommendation": "Patrick Mahomes standard 248.5 Pass Yards",
+    "line_score": 244.5,
+    "recommendation": "Patrick Mahomes standard 244.5 Pass Yards",
     "confidence_score": 7.5,
     "reasoning": "Good value spotted in market pricing. Market appears to be overvaluing Patrick Mahomes's Pass Yards potential. Solid medium confidence bet.",
+    "source": "PrizePicks"
+  },
+  {
+    "id": "6398408",
+    "player_name": "Patrick Mahomes + Justin Herbert",
+    "league": "NFL",
+    "sport": "NFL",
+    "stat_type": "Pass Yards (Combo)",
+    "line_score": 475.5,
+    "recommendation": "Patrick Mahomes + Justin Herbert standard 475.5 Pass Yards (Combo)",
+    "confidence_score": 7.5,
+    "reasoning": "Good value spotted in market pricing. Market appears to be overvaluing Patrick Mahomes + Justin Herbert's Pass Yards (Combo) potential. Solid medium confidence bet.",
     "source": "PrizePicks"
   },
   {
@@ -65,22 +77,10 @@
     "league": "NFL",
     "sport": "NFL",
     "stat_type": "Rush Yards",
-    "line_score": 52.5,
-    "recommendation": "Aaron Jones standard 52.5 Rush Yards",
+    "line_score": 51.5,
+    "recommendation": "Aaron Jones standard 51.5 Rush Yards",
     "confidence_score": 7.5,
     "reasoning": "Good value spotted in market pricing. Market appears to be overvaluing Aaron Jones's Rush Yards potential. Solid medium confidence bet.",
-    "source": "PrizePicks"
-  },
-  {
-    "id": "5901824",
-    "player_name": "CeeDee Lamb",
-    "league": "NFL",
-    "sport": "NFL",
-    "stat_type": "Rush Yards",
-    "line_score": 0.5,
-    "recommendation": "CeeDee Lamb standard 0.5 Rush Yards",
-    "confidence_score": 7.0,
-    "reasoning": "Decent edge with manageable risk. Market appears to be overvaluing CeeDee Lamb's Rush Yards potential. Solid medium confidence bet.",
     "source": "PrizePicks"
   },
   {
@@ -96,15 +96,39 @@
     "source": "PrizePicks"
   },
   {
-    "id": "6271885",
-    "player_name": "Jake Ferguson",
-    "league": "NFL1Q",
+    "id": "6424161",
+    "player_name": "CeeDee Lamb",
+    "league": "NFL",
+    "sport": "NFL",
+    "stat_type": "Rush Yards",
+    "line_score": 0.5,
+    "recommendation": "CeeDee Lamb demon 0.5 Rush Yards",
+    "confidence_score": 7.0,
+    "reasoning": "Decent edge with manageable risk. Market appears to be overvaluing CeeDee Lamb's Rush Yards potential. Solid medium confidence bet.",
+    "source": "PrizePicks"
+  },
+  {
+    "id": "6423772",
+    "player_name": "Dak Prescott",
+    "league": "NFL1H",
+    "sport": "NFL",
+    "stat_type": "Rush Yards",
+    "line_score": 0.5,
+    "recommendation": "Dak Prescott standard 0.5 Rush Yards",
+    "confidence_score": 7.0,
+    "reasoning": "Decent edge with manageable risk. Market appears to be overvaluing Dak Prescott's Rush Yards potential. Solid medium confidence bet.",
+    "source": "PrizePicks"
+  },
+  {
+    "id": "6419677",
+    "player_name": "Grant Calcaterra",
+    "league": "NFL",
     "sport": "NFL",
     "stat_type": "Receiving Yards",
-    "line_score": 2.5,
-    "recommendation": "Jake Ferguson standard 2.5 Receiving Yards",
+    "line_score": 0.5,
+    "recommendation": "Grant Calcaterra standard 0.5 Receiving Yards",
     "confidence_score": 7.0,
-    "reasoning": "Decent edge with manageable risk. Market appears to be overvaluing Jake Ferguson's Receiving Yards potential. Solid medium confidence bet.",
+    "reasoning": "Decent edge with manageable risk. Market appears to be overvaluing Grant Calcaterra's Receiving Yards potential. Solid medium confidence bet.",
     "source": "PrizePicks"
   },
   {
@@ -125,10 +149,22 @@
     "league": "NFL",
     "sport": "NFL",
     "stat_type": "Receiving Yards",
-    "line_score": 1.5,
-    "recommendation": "Kareem Hunt standard 1.5 Receiving Yards",
+    "line_score": 2.5,
+    "recommendation": "Kareem Hunt standard 2.5 Receiving Yards",
     "confidence_score": 7.0,
     "reasoning": "Decent edge with manageable risk. Market appears to be overvaluing Kareem Hunt's Receiving Yards potential. Solid medium confidence bet.",
+    "source": "PrizePicks"
+  },
+  {
+    "id": "6423819",
+    "player_name": "Isiah Pacheco",
+    "league": "NFL1H",
+    "sport": "NFL",
+    "stat_type": "Receiving Yards",
+    "line_score": 2.5,
+    "recommendation": "Isiah Pacheco standard 2.5 Receiving Yards",
+    "confidence_score": 7.0,
+    "reasoning": "Decent edge with manageable risk. Market appears to be overvaluing Isiah Pacheco's Receiving Yards potential. Solid medium confidence bet.",
     "source": "PrizePicks"
   },
   {
@@ -141,42 +177,6 @@
     "recommendation": "Justin Herbert standard 0.5 Rush Yards",
     "confidence_score": 7.0,
     "reasoning": "Decent edge with manageable risk. Market appears to be overvaluing Justin Herbert's Rush Yards potential. Solid medium confidence bet.",
-    "source": "PrizePicks"
-  },
-  {
-    "id": "6068339",
-    "player_name": "Juwan Johnson",
-    "league": "NFL",
-    "sport": "NFL",
-    "stat_type": "Receiving Yards",
-    "line_score": 25.5,
-    "recommendation": "Juwan Johnson standard 25.5 Receiving Yards",
-    "confidence_score": 7.0,
-    "reasoning": "Decent edge with manageable risk. Market appears to be overvaluing Juwan Johnson's Receiving Yards potential. Solid medium confidence bet.",
-    "source": "PrizePicks"
-  },
-  {
-    "id": "6055692",
-    "player_name": "Kyler Murray",
-    "league": "NFL",
-    "sport": "NFL",
-    "stat_type": "Rush Yards",
-    "line_score": 25.5,
-    "recommendation": "Kyler Murray standard 25.5 Rush Yards",
-    "confidence_score": 7.0,
-    "reasoning": "Decent edge with manageable risk. Market appears to be overvaluing Kyler Murray's Rush Yards potential. Solid medium confidence bet.",
-    "source": "PrizePicks"
-  },
-  {
-    "id": "6308782",
-    "player_name": "Michael Wilson",
-    "league": "NFL",
-    "sport": "NFL",
-    "stat_type": "Receiving Yards",
-    "line_score": 25.5,
-    "recommendation": "Michael Wilson standard 25.5 Receiving Yards",
-    "confidence_score": 7.0,
-    "reasoning": "Decent edge with manageable risk. Market appears to be overvaluing Michael Wilson's Receiving Yards potential. Solid medium confidence bet.",
     "source": "PrizePicks"
   }
 ]
