@@ -16,13 +16,10 @@ class BovadaScanner:
             'Upgrade-Insecure-Requests': '1',
         }
         
-        # Sport mappings for Bovada
+        # ONLY FOOTBALL SPORTS
         self.sports = {
             'NFL': 'football',
-            'CFB': 'college-football', 
-            'NBA': 'basketball',
-            'CBB': 'college-basketball',
-            'MLB': 'baseball'
+            'CFB': 'college-football'
         }
         
         self.data_dir = "data"
@@ -30,9 +27,9 @@ class BovadaScanner:
             os.makedirs(self.data_dir)
 
     def fetch_sport_data(self, sport_name, sport_path):
-        """Fetch live odds data for a specific sport"""
+        """Fetch live odds data for football only"""
         try:
-            print(f"🔄 Fetching {sport_name} data from Bovada...")
+            print(f"Fetching {sport_name} data from Bovada...")
             
             url = f"{self.base_url}{sport_path}"
             response = requests.get(url, headers=self.headers, timeout=10)
@@ -42,11 +39,11 @@ class BovadaScanner:
                 games = self.parse_games(data, sport_name)
                 return games
             else:
-                print(f"❌ Failed to fetch {sport_name}: Status {response.status_code}")
+                print(f"Failed to fetch {sport_name}: Status {response.status_code}")
                 return []
                 
         except Exception as e:
-            print(f"❌ Error fetching {sport_name}: {str(e)}")
+            print(f"Error fetching {sport_name}: {str(e)}")
             return []
 
     def parse_games(self, data, sport_name):
@@ -67,16 +64,15 @@ class BovadaScanner:
                     if game_data:
                         games.append(game_data)
                 except Exception as e:
-                    print(f"⚠️ Error parsing game: {str(e)}")
                     continue
                     
         except Exception as e:
-            print(f"❌ Error parsing {sport_name} data: {str(e)}")
+            print(f"Error parsing {sport_name} data: {str(e)}")
             
         return games
 
     def extract_game_info(self, event, sport_name):
-        """Extract relevant game information"""
+        """Extract game information"""
         try:
             competitors = event.get('competitors', [])
             if len(competitors) < 2:
@@ -88,13 +84,9 @@ class BovadaScanner:
             game_time = event.get('startTime', '')
             event_id = event.get('id', '')
             
-            # Get moneyline odds
+            # Get all odds types
             moneyline_odds = self.extract_moneyline(event)
-            
-            # Get spread odds
             spread_odds = self.extract_spread(event)
-            
-            # Get totals (over/under)
             total_odds = self.extract_totals(event)
             
             game_info = {
@@ -113,7 +105,6 @@ class BovadaScanner:
             return game_info
             
         except Exception as e:
-            print(f"⚠️ Error extracting game info: {str(e)}")
             return None
 
     def extract_moneyline(self, event):
@@ -176,32 +167,32 @@ class BovadaScanner:
         return {'total_points': 'N/A', 'over_odds': 'N/A', 'under_odds': 'N/A'}
 
     def scan_all_sports(self):
-        """Scan all configured sports"""
+        """Scan ONLY football sports"""
         all_games = []
         
-        print("🚀 Starting Bovada scan...")
+        print("Starting Football-Only Bovada scan...")
         
         for sport_name, sport_path in self.sports.items():
             games = self.fetch_sport_data(sport_name, sport_path)
             all_games.extend(games)
-            print(f"✅ {sport_name}: Found {len(games)} games")
-            time.sleep(1)  # Rate limiting
+            print(f"{sport_name}: Found {len(games)} games")
+            time.sleep(1)
             
         # Save to JSON
         output_file = os.path.join(self.data_dir, 'bovada_games.json')
         with open(output_file, 'w') as f:
             json.dump(all_games, f, indent=2)
             
-        print(f"💾 Saved {len(all_games)} total games to {output_file}")
+        print(f"Saved {len(all_games)} total FOOTBALL games to {output_file}")
         return all_games
 
     def format_for_discord(self, games):
         """Format games data for Discord alerts"""
         if not games:
-            return "🚫 No live games found on Bovada"
+            return "No live football games found on Bovada"
             
-        message = f"🏈 **BOVADA LIVE ODDS UPDATE** 🏈\n"
-        message += f"⏰ {datetime.now().strftime('%m/%d/%Y %I:%M %p')}\n\n"
+        message = f"BOVADA FOOTBALL ODDS UPDATE\n"
+        message += f"{datetime.now().strftime('%m/%d/%Y %I:%M %p')}\n\n"
         
         # Group by sport
         sports_games = {}
@@ -214,35 +205,30 @@ class BovadaScanner:
         for sport, sport_games in sports_games.items():
             message += f"**{sport}** ({len(sport_games)} games)\n"
             
-            for game in sport_games[:5]:  # Limit to 5 games per sport
+            for game in sport_games:
                 team1 = game['team1']
                 team2 = game['team2']
                 
-                message += f"🆚 **{team1} vs {team2}**\n"
+                message += f"{team1} vs {team2}\n"
                 
-                # Moneyline
+                # Show available odds
                 ml = game['moneyline']
                 if ml['team1_odds'] != 'N/A':
-                    message += f"💰 ML: {team1} ({ml['team1_odds']}) | {team2} ({ml['team2_odds']})\n"
+                    message += f"ML: {team1} ({ml['team1_odds']}) | {team2} ({ml['team2_odds']})\n"
                 
-                # Spread
                 spread = game['spread']
                 if spread['team1_spread'] != 'N/A':
-                    message += f"📊 Spread: {team1} ({spread['team1_spread']}, {spread['team1_odds']}) | {team2} ({spread['team2_spread']}, {spread['team2_odds']})\n"
+                    message += f"Spread: {team1} ({spread['team1_spread']}) | {team2} ({spread['team2_spread']})\n"
                 
-                # Totals
                 totals = game['totals']
                 if totals['total_points'] != 'N/A':
-                    message += f"🎯 O/U: {totals['total_points']} - Over ({totals['over_odds']}) | Under ({totals['under_odds']})\n"
+                    message += f"O/U: {totals['total_points']}\n"
                 
                 message += "\n"
-            
-            if len(sport_games) > 5:
-                message += f"... and {len(sport_games) - 5} more {sport} games\n\n"
         
         return message
 
 if __name__ == "__main__":
     scanner = BovadaScanner()
     games = scanner.scan_all_sports()
-    print(f"\n🎉 Scan complete! Found {len(games)} total games")
+    print(f"Scan complete! Found {len(games)} football games")
