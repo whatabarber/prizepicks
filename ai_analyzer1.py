@@ -5,16 +5,15 @@ import math
 
 class BettingAIAnalyzer:
     def __init__(self):
-        # LOWERED thresholds for more picks
-        self.confidence_threshold = 3.5  # Was 5.0 - now much more inclusive
-        self.max_picks_per_sport = 25    # Increased from 15
+        self.confidence_threshold = 5.0
+        self.max_picks_per_sport = 15
         
-        # REDUCED value thresholds for more opportunities
+        # Value thresholds for different bet types
         self.value_thresholds = {
-            'moneyline': 0.04,  # Was 0.08 - cut in half
-            'spread': 0.03,     # Was 0.06 - cut in half  
-            'total': 0.02,      # Was 0.05 - much lower
-            'prop': 0.05        # Was 0.10 - cut in half
+            'moneyline': 0.08,
+            'spread': 0.06,
+            'total': 0.05,
+            'prop': 0.10
         }
 
     def analyze_bovada_games(self, games):
@@ -36,7 +35,7 @@ class BettingAIAnalyzer:
         # Sort by confidence and return top picks
         analyzed_games.sort(key=lambda x: x.get('confidence_score', 0), reverse=True)
         
-        # Group by sport and limit per sport (INCREASED LIMITS)
+        # Group by sport and limit per sport
         sport_picks = {}
         for analysis in analyzed_games:
             sport = analysis['sport']
@@ -92,10 +91,10 @@ class BettingAIAnalyzer:
             
             # Calculate overall confidence
             if analysis['recommendations']:
-                confidence_scores = [rec.get('confidence', 3.5) for rec in analysis['recommendations']]
+                confidence_scores = [rec.get('confidence', 5) for rec in analysis['recommendations']]
                 analysis['confidence_score'] = max(confidence_scores)
                 
-                # LOWERED threshold - was 5.0, now 3.5
+                # Only return if meets threshold
                 if analysis['confidence_score'] >= self.confidence_threshold:
                     return analysis
             
@@ -106,7 +105,7 @@ class BettingAIAnalyzer:
             return None
 
     def analyze_moneyline(self, game):
-        """Analyze moneyline odds for value - MORE AGGRESSIVE"""
+        """Analyze moneyline odds for value"""
         try:
             ml = game.get('moneyline', {})
             team1_odds = ml.get('team1_odds', 'N/A')
@@ -133,13 +132,11 @@ class BettingAIAnalyzer:
             
             best_value = max(team1_value, team2_value)
             
-            # MUCH LOWER threshold - was 0.08, now 0.04
             if best_value > self.value_thresholds['moneyline']:
                 recommended_team = game['team1'] if team1_value > team2_value else game['team2']
                 recommended_odds = team1_odds if team1_value > team2_value else team2_odds
                 
-                # BOOSTED confidence scoring
-                confidence = min(10, 4.0 + (best_value * 30))  # More generous scoring
+                confidence = min(10, 5 + (best_value * 20))
                 
                 return {
                     'bet_type': 'Moneyline',
@@ -156,7 +153,7 @@ class BettingAIAnalyzer:
             return None
 
     def analyze_spread(self, game):
-        """Analyze point spread for value - MORE GENEROUS"""
+        """Analyze point spread for value"""
         try:
             spread = game.get('spread', {})
             team1_spread = spread.get('team1_spread', 'N/A')
@@ -175,21 +172,19 @@ class BettingAIAnalyzer:
             except (ValueError, TypeError):
                 return None
             
-            # MUCH MORE GENEROUS confidence scoring
-            confidence = 4.0  # Start higher
+            confidence = 5.5
             recommendation = None
             
-            # RELAXED odds requirements - was -120, now -130
-            if odds1 >= -130:
-                confidence = 6.0  # Higher base confidence
+            if odds1 >= -120:
+                confidence = 6.5
                 recommendation = f"{game['team1']} {team1_spread}"
                 best_odds = team1_odds
-            elif odds2 >= -130:
-                confidence = 6.0
+            elif odds2 >= -120:
+                confidence = 6.5
                 recommendation = f"{game['team2']} {team2_spread}"
                 best_odds = team2_odds
-            elif abs(spread1) <= 14:  # Increased from 10 to 14
-                confidence = 5.5
+            elif abs(spread1) <= 10:
+                confidence = 6.0
                 if odds1 >= odds2:
                     recommendation = f"{game['team1']} {team1_spread}"
                     best_odds = team1_odds
@@ -197,15 +192,14 @@ class BettingAIAnalyzer:
                     recommendation = f"{game['team2']} {team2_spread}"
                     best_odds = team2_odds
             
-            # LOWERED threshold - was 5.0, now 3.5
             if recommendation and confidence >= self.confidence_threshold:
                 return {
                     'bet_type': 'Spread',
                     'recommendation': recommendation,
                     'odds': best_odds,
                     'confidence': confidence,
-                    'value_edge': "4-8%",  # More optimistic
-                    'reasoning': f"Solid spread bet with decent odds. {recommendation} offers good value in this matchup."
+                    'value_edge': "5-10%",
+                    'reasoning': f"Solid spread bet with decent odds. {recommendation} offers reasonable value in this matchup."
                 }
             
             return None
@@ -214,7 +208,7 @@ class BettingAIAnalyzer:
             return None
 
     def analyze_totals(self, game):
-        """Analyze over/under totals - MORE INCLUSIVE"""
+        """Analyze over/under totals"""
         try:
             totals = game.get('totals', {})
             total_points = totals.get('total_points', 'N/A')
@@ -231,58 +225,46 @@ class BettingAIAnalyzer:
             except (ValueError, TypeError):
                 return None
             
-            # MORE GENEROUS starting confidence
-            confidence = 4.5  # Higher starting point
+            confidence = 5.5
             recommendation = None
             sport = game.get('sport', '').upper()
             
-            # RELAXED odds requirements - was -115, now -125
             if sport == 'NFL':
-                if over >= -125:
-                    confidence = 6.5  # Boosted confidence
-                    recommendation = f"Over {total}"
-                    bet_odds = over
-                elif under >= -125:
-                    confidence = 6.5
-                    recommendation = f"Under {total}"
-                    bet_odds = under
-            elif sport == 'NBA':
-                if over >= -125:
+                if over >= -115:
                     confidence = 6.0
                     recommendation = f"Over {total}"
                     bet_odds = over
-                elif under >= -125:
+                elif under >= -115:
+                    confidence = 6.0
+                    recommendation = f"Under {total}"
+                    bet_odds = under
+            elif sport == 'NBA':
+                if over >= -115:
+                    confidence = 6.0
+                    recommendation = f"Over {total}"
+                    bet_odds = over
+                elif under >= -115:
                     confidence = 6.0
                     recommendation = f"Under {total}"
                     bet_odds = under
             elif sport == 'MLB':
-                if over >= -125:
+                if over >= -115:
                     confidence = 6.0
                     recommendation = f"Over {total}"
                     bet_odds = over
-                elif under >= -125:
-                    confidence = 6.0
-                    recommendation = f"Under {total}"
-                    bet_odds = under
-            elif sport == 'CFB':  # Added CFB support
-                if over >= -125:
-                    confidence = 6.0
-                    recommendation = f"Over {total}"
-                    bet_odds = over
-                elif under >= -125:
+                elif under >= -115:
                     confidence = 6.0
                     recommendation = f"Under {total}"
                     bet_odds = under
             
-            # LOWERED threshold
             if recommendation and confidence >= self.confidence_threshold:
                 return {
                     'bet_type': 'Total',
                     'recommendation': recommendation,
                     'odds': bet_odds,
                     'confidence': confidence,
-                    'value_edge': "4-7%",  # More optimistic
-                    'reasoning': f"Good total with solid odds. {recommendation} offers strong value for {sport}."
+                    'value_edge': "5-8%",
+                    'reasoning': f"Reasonable total with decent odds. {recommendation} offers decent value for {sport}."
                 }
             
             return None
@@ -291,7 +273,7 @@ class BettingAIAnalyzer:
             return None
 
     def analyze_prizepicks_projections(self, projections):
-        """Analyze PrizePicks projections - PRIORITIZE FOOTBALL FIRST"""
+        """Analyze PrizePicks projections for best props with improved variety"""
         if not projections:
             return []
         
@@ -306,100 +288,58 @@ class BettingAIAnalyzer:
                 print(f"Error analyzing projection: {str(e)}")
                 continue
         
-        # Sort by SPORT PRIORITY FIRST, then confidence
-        def sort_key(prop):
-            sport = prop.get('sport', '')
-            confidence = prop.get('confidence_score', 0)
-            
-            # FOOTBALL GETS MASSIVE PRIORITY BOOST
-            if sport == 'NFL':
-                return (1000 + confidence, confidence)  # NFL gets 1000+ boost
-            elif sport == 'CFB':
-                return (900 + confidence, confidence)   # CFB gets 900+ boost
-            elif sport == 'NBA':
-                return (100 + confidence, confidence)   # NBA gets small boost
-            elif sport == 'CBB':
-                return (50 + confidence, confidence)    # CBB gets tiny boost
-            else:
-                return (confidence, confidence)         # Others no boost
+        # Sort by confidence first
+        analyzed_props.sort(key=lambda x: x.get('confidence_score', 0), reverse=True)
         
-        analyzed_props.sort(key=sort_key, reverse=True)
+        # NEW: Diversify by player to avoid repetition
+        diversified_props = self.diversify_player_picks(analyzed_props)
         
-        # Diversify by player but HEAVILY FAVOR FOOTBALL
-        diversified_props = self.diversify_player_picks_football_first(analyzed_props)
-        
-        # Group by sport and PRIORITIZE FOOTBALL ALLOCATION
+        # Group by sport and limit - FOCUS ON NFL AND CFB ONLY
         sport_props = {}
-        football_picks = 0
-        other_picks = 0
-        
         for prop in diversified_props:
-            sport = prop.get('sport', '')
+            sport = self.map_league_to_sport(prop.get('league', ''))
             
+            # ONLY INCLUDE NFL AND CFB
+            if sport not in ['NFL', 'CFB']:
+                continue
+                
             if sport not in sport_props:
                 sport_props[sport] = []
-            
-            # FOOTBALL GETS MUCH HIGHER LIMITS
-            if sport in ['NFL', 'CFB']:
-                if len(sport_props[sport]) < 40:  # 40 picks per football sport
-                    sport_props[sport].append(prop)
-                    football_picks += 1
-            else:
-                # Other sports get reduced limits until we have enough football
-                if football_picks < 50:  # Only allow 5 non-football if we have <50 football
-                    max_other = 5
-                else:
-                    max_other = 15  # Allow more others if we have enough football
-                
-                if len(sport_props[sport]) < max_other:
-                    sport_props[sport].append(prop)
-                    other_picks += 1
+            if len(sport_props[sport]) < self.max_picks_per_sport:
+                sport_props[sport].append(prop)
         
-        # Flatten and return, maintaining football priority
+        # Flatten and return
         top_props = []
+        for sport_list in sport_props.values():
+            top_props.extend(sport_list)
         
-        # Add football first
-        for sport in ['NFL', 'CFB']:
-            if sport in sport_props:
-                top_props.extend(sport_props[sport])
-        
-        # Then add others
-        for sport, props in sport_props.items():
-            if sport not in ['NFL', 'CFB']:
-                top_props.extend(props)
-        
-        print(f"Final pick distribution: Football={football_picks}, Other={other_picks}")
         return top_props
 
-    def diversify_player_picks_football_first(self, analyzed_props, max_per_player=6):
-        """Diversify but prioritize football players heavily"""
+    def diversify_player_picks(self, analyzed_props, max_per_player=2):
+        """Ensure variety by limiting picks per player"""
         player_picks = {}
         diversified = []
         
-        # Group by player AND sport
+        # Group by player
         for prop in analyzed_props:
             player = prop.get('player_name', 'Unknown')
-            sport = prop.get('sport', '')
-            key = f"{player}_{sport}"
-            
-            if key not in player_picks:
-                player_picks[key] = []
-            player_picks[key].append(prop)
+            if player not in player_picks:
+                player_picks[player] = []
+            player_picks[player].append(prop)
         
-        # Process football players first with higher limits
-        football_players = {k: v for k, v in player_picks.items() if any(sport in k for sport in ['NFL', 'CFB'])}
-        other_players = {k: v for k, v in player_picks.items() if k not in football_players}
-        
-        # Football players get more picks per player
-        for player_key, picks in football_players.items():
+        # Take top picks per player, prioritizing different stat types
+        for player, picks in player_picks.items():
+            # Sort by confidence
             picks.sort(key=lambda x: x.get('confidence_score', 0), reverse=True)
             
+            # Group by stat type for this player
             stat_types_seen = set()
             player_selected = []
             
             for pick in picks:
                 stat_type = pick.get('stat_type', '').lower()
                 
+                # Prioritize different stat types for variety
                 if stat_type not in stat_types_seen or len(player_selected) == 0:
                     player_selected.append(pick)
                     stat_types_seen.add(stat_type)
@@ -407,41 +347,15 @@ class BettingAIAnalyzer:
                     if len(player_selected) >= max_per_player:
                         break
             
-            # For high confidence football picks, add extras regardless of stat type
-            if len(player_selected) < max_per_player:
-                for pick in picks:
-                    if pick not in player_selected and pick.get('confidence_score', 0) >= 6.0:
-                        player_selected.append(pick)
-                        if len(player_selected) >= max_per_player:
-                            break
-            
             diversified.extend(player_selected)
         
-        # Other sports get reduced limits
-        for player_key, picks in other_players.items():
-            picks.sort(key=lambda x: x.get('confidence_score', 0), reverse=True)
-            
-            # Only take top 2 picks for non-football
-            diversified.extend(picks[:2])
-        
-        # Sort final list: football first, then by confidence
-        def final_sort_key(prop):
-            sport = prop.get('sport', '')
-            confidence = prop.get('confidence_score', 0)
-            
-            if sport == 'NFL':
-                return (2000 + confidence, confidence)
-            elif sport == 'CFB':  
-                return (1900 + confidence, confidence)
-            else:
-                return (confidence, confidence)
-        
-        diversified.sort(key=final_sort_key, reverse=True)
+        # Sort final list by confidence
+        diversified.sort(key=lambda x: x.get('confidence_score', 0), reverse=True)
         
         return diversified
 
     def analyze_single_projection(self, proj):
-        """Analyze a single PrizePicks projection - MORE GENEROUS"""
+        """Analyze a single PrizePicks projection"""
         try:
             player = proj.get('player_name', 'Unknown Player')
             stat_type = proj.get('stat_type', '')
@@ -452,7 +366,6 @@ class BettingAIAnalyzer:
             # Calculate confidence based on multiple factors
             confidence = self.calculate_prop_confidence(proj)
             
-            # LOWERED threshold from 5.0 to 3.5
             if confidence < self.confidence_threshold:
                 return None
             
@@ -475,50 +388,34 @@ class BettingAIAnalyzer:
             return None
 
     def calculate_prop_confidence(self, proj):
-        """Calculate confidence score - BOOST FOOTBALL MASSIVELY"""
-        confidence = 4.0
+        """Calculate confidence score for a prop bet"""
+        confidence = 5.0
         
         stat_type = proj.get('stat_type', '').lower()
         line = proj.get('line_score', 0)
         player = proj.get('player_name', '').lower()
+        
+        # Boost confidence for certain stat types
+        if any(stat in stat_type for stat in ['points', 'yards', 'strikeouts', 'hits']):
+            confidence += 1.0
+        
+        # Boost for round numbers
+        if line in [0.5, 1.5, 2.5, 20.5, 25.5]:
+            confidence += 0.5
+        
+        # Boost for star players
+        star_indicators = ['lebron', 'curry', 'mahomes', 'aaron', 'judge', 'ohtani', 'tatum', 'luka']
+        if any(name in player for name in star_indicators):
+            confidence += 1.0
+        
+        # Boost for favorable stat types by sport
         league = proj.get('league', '').lower()
-        
-        # MASSIVE FOOTBALL BOOST
-        if 'nfl' in league:
-            confidence += 3.0  # Huge NFL boost
-        elif 'ncaaf' in league or 'cfb' in league:
-            confidence += 2.5  # Big CFB boost
-        elif 'nba' in league:
-            confidence += 0.5  # Small NBA boost
-        else:
-            confidence += 0.0  # No boost for others
-        
-        # EXTRA boosts for football stat types
-        if 'nfl' in league or 'ncaaf' in league:
-            if any(stat in stat_type for stat in ['pass', 'rush', 'receiving', 'yards', 'touchdown', 'completion']):
-                confidence += 1.5  # Big boost for football stats
-        
-        # Regular boosts
-        if any(stat in stat_type for stat in ['points', 'yards', 'strikeouts', 'hits', 'receptions']):
-            confidence += 1.0
-        
-        if line in [0.5, 1.5, 2.5, 20.5, 25.5, 50.5, 100.5, 200.5, 250.5]:
-            confidence += 0.8
-        
-        # EXPANDED football player detection
-        football_stars = [
-            'mahomes', 'allen', 'burrow', 'herbert', 'lamar', 'jackson', 'josh', 'patrick',
-            'kelce', 'adams', 'hill', 'jefferson', 'chase', 'diggs', 'hopkins', 'kupp',
-            'mccaffrey', 'henry', 'cook', 'jones', 'elliott', 'kamara', 'barkley',
-            'williams', 'daniels', 'caleb', 'rome', 'nabers', 'harrison'
-        ]
-        if any(name in player for name in football_stars):
-            confidence += 2.0  # HUGE boost for football stars
-        
-        # Regular star boost for others
-        other_stars = ['lebron', 'curry', 'durant', 'giannis', 'tatum', 'luka', 'judge', 'ohtani']
-        if any(name in player for name in other_stars):
-            confidence += 1.0
+        if 'nfl' in league and any(stat in stat_type for stat in ['pass', 'rush', 'receiving']):
+            confidence += 0.5
+        elif 'nba' in league and any(stat in stat_type for stat in ['points', 'rebounds', 'assists']):
+            confidence += 0.5
+        elif 'mlb' in league and any(stat in stat_type for stat in ['hits', 'strikeouts', 'runs']):
+            confidence += 0.5
         
         return min(10.0, confidence)
 
@@ -531,26 +428,22 @@ class BettingAIAnalyzer:
         
         reasoning_parts = []
         
-        if confidence >= 8.0:  # Lowered from 8.5
-            reasoning_parts.append("Excellent analytical edge identified.")
-        elif confidence >= 6.5:  # Lowered from 7.5
-            reasoning_parts.append("Strong value spotted in market pricing.")
-        elif confidence >= 5.0:
-            reasoning_parts.append("Good edge with solid upside.")
+        if confidence >= 8.5:
+            reasoning_parts.append("Strong analytical edge identified.")
+        elif confidence >= 7.5:
+            reasoning_parts.append("Good value spotted in market pricing.")
         else:
             reasoning_parts.append("Decent edge with manageable risk.")
         
         if 'over' in odds_type:
-            reasoning_parts.append(f"{player} has strong potential to exceed {line} {stat}.")
+            reasoning_parts.append(f"{player} has shown ability to exceed {line} {stat} consistently.")
         else:
-            reasoning_parts.append(f"Market may be overvaluing {player}'s {stat} potential at this line.")
+            reasoning_parts.append(f"Market appears to be overvaluing {player}'s {stat} potential.")
         
-        if confidence >= 7.5:  # Lowered from 8
+        if confidence >= 8:
             reasoning_parts.append("High confidence play.")
-        elif confidence >= 6.0:  # Lowered from 7
-            reasoning_parts.append("Solid medium-high confidence bet.")
-        elif confidence >= 4.5:
-            reasoning_parts.append("Good medium confidence opportunity.")
+        elif confidence >= 7:
+            reasoning_parts.append("Solid medium confidence bet.")
         
         return " ".join(reasoning_parts)
 
@@ -596,42 +489,38 @@ class BettingAIAnalyzer:
         return max(0, (fair_prob - implied_prob) / implied_prob)
 
     def map_league_to_sport(self, league):
-        """Map league name to sport - NOW INCLUDES ALL SPORTS"""
+        """Map league name to sport - UPDATED to focus on football only"""
         league_lower = league.lower()
         if 'nfl' in league_lower:
             return 'NFL'
         elif 'ncaaf' in league_lower or 'college football' in league_lower:
             return 'CFB'
-        elif 'nba' in league_lower:
-            return 'NBA'
-        elif 'ncaab' in league_lower or 'college basketball' in league_lower:
-            return 'CBB'
-        elif 'mlb' in league_lower or 'baseball' in league_lower:
-            return 'MLB'
-        elif 'nhl' in league_lower or 'hockey' in league_lower:
-            return 'NHL'
-        elif 'soccer' in league_lower or 'mls' in league_lower:
-            return 'Soccer'
         else:
-            return 'Other'
+            return 'Other'  # This will be filtered out
 
     def format_analysis_for_discord(self, bovada_analysis, prizepicks_analysis):
         """Format analysis results for Discord"""
-        message = f"AI BETTING ANALYSIS - MAXIMUM PICKS MODE\n"
+        message = f"AI BETTING ANALYSIS\n"
         message += f"{datetime.now().strftime('%m/%d/%Y %I:%M %p')}\n\n"
         
         # Bovada section
         if bovada_analysis:
             message += f"TOP BOVADA PICKS ({len(bovada_analysis)} games)\n"
             
-            for analysis in bovada_analysis[:12]:  # Increased from 8 to 12
+            for analysis in bovada_analysis[:8]:
                 message += f"\n**{analysis['matchup']}**\n"
                 
                 for rec in analysis['recommendations']:
                     message += f"• {rec['bet_type']}: **{rec['recommendation']}** ({rec['odds']})\n"
                     message += f"  Confidence: {rec['confidence']:.1f}/10 | Edge: {rec.get('value_edge', 'N/A')}\n"
+                
+                reasoning = analysis.get('ai_commentary', '')
+                if reasoning and len(reasoning) > 50:
+                    first_line = reasoning.split('\n')[0].replace('**', '').replace('Analysis:', '')
+                    if len(first_line) < 80:
+                        message += f"{first_line}\n"
         
-        # PrizePicks section - Show MORE diverse props
+        # PrizePicks section - Show diverse props
         if prizepicks_analysis:
             message += f"\nPRIZEPICKS PROPS ({len(prizepicks_analysis)} total)\n"
             
@@ -648,12 +537,12 @@ class BettingAIAnalyzer:
                     continue
                     
                 message += f"\n**{sport} ({len(props)} props):**\n"
-                for prop in props[:8]:  # Increased from 5 to 8 per sport
+                for prop in props:
                     message += f"• **{prop['recommendation']}**\n"
                     message += f"  Confidence: {prop['confidence_score']:.1f}/10\n"
                     
                     reasoning = prop.get('reasoning', '')
-                    if reasoning and len(reasoning) < 80:
+                    if reasoning and len(reasoning) < 60:
                         message += f"  {reasoning}\n"
                     
                     message += "\n"
@@ -662,4 +551,4 @@ class BettingAIAnalyzer:
 
 if __name__ == "__main__":
     analyzer = BettingAIAnalyzer()
-    print("AI Betting Analyzer initialized - MAXIMUM PICKS MODE")
+    print("AI Betting Analyzer initialized")

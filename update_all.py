@@ -85,7 +85,7 @@ def deploy_to_github():
                 print(f"Git commit failed: {commit_result.stderr}")
                 return False
         
-        # Push to GitHub
+        # FIXED: Try main first, then master
         push_result = subprocess.run(
             ["git", "push", "origin", "main"],
             capture_output=True,
@@ -93,7 +93,7 @@ def deploy_to_github():
         )
         
         if push_result.returncode != 0:
-            # Try 'master' if 'main' fails
+            print("Failed to push to 'main', trying 'master'...")
             push_result = subprocess.run(
                 ["git", "push", "origin", "master"],
                 capture_output=True,
@@ -101,7 +101,8 @@ def deploy_to_github():
             )
             
             if push_result.returncode != 0:
-                print(f"Git push failed: {push_result.stderr}")
+                print(f"Git push failed on both branches: {push_result.stderr}")
+                print("Try running: git push origin main --force")
                 return False
         
         print(f"Successfully pushed to GitHub: {commit_message}")
@@ -111,6 +112,7 @@ def deploy_to_github():
     except Exception as e:
         print(f"GitHub deployment failed: {str(e)}")
         return False
+
 
 class BettingAI:
     def __init__(self, discord_webhook=None):
