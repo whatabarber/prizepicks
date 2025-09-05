@@ -474,6 +474,130 @@ class BettingAIAnalyzer:
         except Exception as e:
             return None
 
+    # Add this function to your ai_analyzer.py
+
+def validate_pick_data(self, proj):
+    """Validate that pick data makes logical sense"""
+    try:
+        player = proj.get('player_name', '').lower()
+        stat_type = proj.get('stat_type', '').lower()
+        line_score = proj.get('line_score', 0)
+        
+        # Skip picks with obviously wrong data
+        if not player or not stat_type or line_score <= 0:
+            return False
+        
+        # Position-based validation
+        # RBs shouldn't have high receiving yards (unless they're pass-catching backs)
+        rb_names = ['henry', 'elliott', 'chubb', 'hunt', 'harris', 'sanders']
+        if any(rb in player for rb in rb_names):
+            if 'receiv' in stat_type and line_score > 50:
+                print(f"⚠️ Suspicious: {player} - {stat_type} {line_score} (RB with high receiving)")
+                return False
+        
+        # QBs shouldn't have receiving stats
+        qb_names = ['mahomes', 'allen', 'burrow', 'herbert', 'jackson', 'prescott']
+        if any(qb in player for qb in qb_names):
+            if 'receiv' in stat_type or 'catch' in stat_type:
+                print(f"⚠️ Suspicious: {player} - {stat_type} {line_score} (QB receiving)")
+                return False
+        
+        # Reasonable ranges for different stats
+        stat_ranges = {
+            'pass': {'min': 150, 'max': 400},      # Passing yards
+            'rush': {'min': 10, 'max': 200},       # Rushing yards  
+            'receiv': {'min': 10, 'max': 150},     # Receiving yards
+            'reception': {'min': 1, 'max': 15},    # Receptions
+            'completion': {'min': 15, 'max': 45},  # Completions
+            'attempt': {'min': 20, 'max': 50},     # Attempts
+            'touchdown': {'min': 0.5, 'max': 4}    # TDs
+        }
+        
+        for stat_key, ranges in stat_ranges.items():
+            if stat_key in stat_type:
+                if line_score < ranges['min'] or line_score > ranges['max']:
+                    print(f"⚠️ Suspicious: {player} - {stat_type} {line_score} (outside normal range)")
+                    return False
+        
+        return True
+        
+    except Exception as e:
+        print(f"Validation error: {str(e)}")
+        return False
+
+# Update your analyze_single_projection function to use validation:
+
+def analyze_single_projection(self, proj):
+    """Analyze a single PrizePicks projection - WITH VALIDATION"""
+    try:
+        # FIRST: Validate the data makes sense
+        if not self.validate_pick_data(proj):
+            return None
+        
+        player = proj.get('player_name', 'Unknown Player')
+        stat_type = proj.get('stat_type', '')
+        line = proj.get('line_score', 0)
+        odds_type = proj.get('odds_type', '')
+        league = proj.get('league', '')
+        
+        # Calculate confidence based on multiple factors
+        confidence = self.calculate_prop_confidence(proj)
+        
+        # LOWERED threshold from 5.0 to 3.5
+        if confidence < self.confidence_threshold:
+            return None
+        
+        # Clean up the stat type display
+        clean_stat_type = self.clean_stat_type(stat_type)
+        
+        analysis = {
+            'id': proj.get('id', ''),
+            'player_name': player,
+            'league': league,
+            'sport': self.map_league_to_sport(league),
+            'stat_type': clean_stat_type,  # Use cleaned version
+            'line_score': line,
+            'recommendation': f"{player} {odds_type} {line} {clean_stat_type}",
+            'confidence_score': confidence,
+            'reasoning': self.generate_prop_reasoning(proj, confidence),
+            'source': 'PrizePicks'
+        }
+        
+        return analysis
+        
+    except Exception as e:
+        return None
+
+def clean_stat_type(self, stat_type):
+    """Clean up stat type names for better display"""
+    stat_type = stat_type.lower().strip()
+    
+    # Common mappings
+    mappings = {
+        'passing yards': 'Pass Yards',
+        'rushing yards': 'Rush Yards', 
+        'receiving yards': 'Receiving Yards',
+        'receptions': 'Receptions',
+        'completions': 'Completions',
+        'pass attempts': 'Pass Attempts',
+        'rushing attempts': 'Rush Attempts',
+        'passing touchdowns': 'Pass TDs',
+        'rushing touchdowns': 'Rush TDs',
+        'receiving touchdowns': 'Receiving TDs'
+    }
+    
+    # Check exact matches first
+    if stat_type in mappings:
+        return mappings[stat_type]
+    
+    # Check partial matches
+    for key, value in mappings.items():
+        if key in stat_type:
+            return value
+    
+    # Capitalize first letter if no mapping found
+    return stat_type.title()
+
     def calculate_prop_confidence(self, proj):
         """Calculate confidence score - BOOST FOOTBALL MASSIVELY"""
         confidence = 4.0
