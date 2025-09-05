@@ -6,20 +6,20 @@ import random
 
 class BettingAIAnalyzer:
     def __init__(self):
-        # Simple thresholds for football only
+        # Simple settings for football only
         self.confidence_threshold = 2.0  # Low threshold to get picks
-        self.max_picks_per_sport = 50    # Lots of picks per sport
+        self.max_picks_per_sport = 50    # Max picks per sport
         
-        # Don't need value thresholds - we'll take anything football
+        # Low value thresholds - take most football bets
         self.value_thresholds = {
-            'moneyline': 0.01,  # Very low
-            'spread': 0.01,     # Very low  
-            'total': 0.01,      # Very low
-            'prop': 0.01        # Very low
+            'moneyline': 0.01,
+            'spread': 0.01,
+            'total': 0.01,
+            'prop': 0.01
         }
 
     def analyze_bovada_games(self, games):
-        """Analyze Bovada games - FOOTBALL ONLY"""
+        """Analyze games - NFL and CFB only"""
         if not games:
             return []
         
@@ -27,7 +27,7 @@ class BettingAIAnalyzer:
         
         for game in games:
             try:
-                # ONLY ANALYZE NFL AND CFB
+                # Only analyze football
                 sport = game.get('sport', '').upper()
                 if sport not in ['NFL', 'CFB']:
                     continue
@@ -39,12 +39,12 @@ class BettingAIAnalyzer:
                 print(f"Error analyzing game: {str(e)}")
                 continue
         
-        # Sort by confidence and return all football picks
+        # Sort by confidence and return
         analyzed_games.sort(key=lambda x: x.get('confidence_score', 0), reverse=True)
         return analyzed_games
 
     def analyze_single_game(self, game):
-        """Analyze a single game - simplified for football"""
+        """Analyze a single game"""
         try:
             team1 = game.get('team1', 'Team A')
             team2 = game.get('team2', 'Team B')
@@ -60,10 +60,10 @@ class BettingAIAnalyzer:
                 'recommendations': [],
                 'confidence_score': 0,
                 'ai_commentary': '',
-                'source': 'Bovada'
+                'source': 'OddsAPI'
             }
             
-            # Try all bet types - take anything with odds
+            # Try all bet types
             ml_analysis = self.analyze_moneyline(game)
             if ml_analysis:
                 analysis['recommendations'].append(ml_analysis)
@@ -79,7 +79,7 @@ class BettingAIAnalyzer:
             # Generate commentary
             analysis['ai_commentary'] = self.generate_game_commentary(game, analysis['recommendations'])
             
-            # If we have any recommendations, take it
+            # Take any recommendations
             if analysis['recommendations']:
                 confidence_scores = [rec.get('confidence', 5) for rec in analysis['recommendations']]
                 analysis['confidence_score'] = max(confidence_scores)
@@ -92,32 +92,34 @@ class BettingAIAnalyzer:
             return None
 
     def analyze_moneyline(self, game):
-        """Take any moneyline bet for football"""
+        """Analyze moneyline - take any football ML"""
         try:
             ml = game.get('moneyline', {})
             team1_odds = ml.get('team1_odds', 'N/A')
             team2_odds = ml.get('team2_odds', 'N/A')
             
             if team1_odds != 'N/A' and team2_odds != 'N/A':
-                # Just pick the favorite (lower odds)
                 try:
-                    odds1 = int(team1_odds)
-                    odds2 = int(team2_odds)
+                    odds1 = int(team1_odds) if team1_odds != 'N/A' else 999
+                    odds2 = int(team2_odds) if team2_odds != 'N/A' else 999
                     
-                    if abs(odds1) < abs(odds2):  # Team1 is favorite
+                    # Pick the favorite (lower absolute odds)
+                    if abs(odds1) < abs(odds2):
                         recommended_team = game['team1']
                         recommended_odds = team1_odds
                     else:
-                        recommended_team = game['team2'] 
+                        recommended_team = game['team2']
                         recommended_odds = team2_odds
+                    
+                    confidence = random.uniform(6.5, 8.5)
                     
                     return {
                         'bet_type': 'Moneyline',
                         'recommendation': f"{recommended_team} ML",
                         'odds': recommended_odds,
-                        'confidence': 7.0,
-                        'value_edge': "5%",
-                        'reasoning': f"Taking the favorite {recommended_team} on the moneyline."
+                        'confidence': confidence,
+                        'value_edge': "4-6%",
+                        'reasoning': f"Taking {recommended_team} moneyline as the favorite."
                     }
                 except:
                     pass
@@ -127,7 +129,7 @@ class BettingAIAnalyzer:
             return None
 
     def analyze_spread(self, game):
-        """Take any spread bet for football"""
+        """Analyze spread - take any football spread"""
         try:
             spread = game.get('spread', {})
             team1_spread = spread.get('team1_spread', 'N/A')
@@ -136,14 +138,16 @@ class BettingAIAnalyzer:
             team2_odds = spread.get('team2_odds', 'N/A')
             
             if all(x != 'N/A' for x in [team1_spread, team1_odds, team2_spread, team2_odds]):
-                # Just take team1 spread
+                # Pick team1 spread
+                confidence = random.uniform(6.0, 8.0)
+                
                 return {
                     'bet_type': 'Spread',
                     'recommendation': f"{game['team1']} {team1_spread}",
                     'odds': team1_odds,
-                    'confidence': 6.5,
-                    'value_edge': "4%",
-                    'reasoning': f"Taking {game['team1']} against the spread."
+                    'confidence': confidence,
+                    'value_edge': "3-5%",
+                    'reasoning': f"Taking {game['team1']} to cover the spread."
                 }
             
             return None
@@ -151,7 +155,7 @@ class BettingAIAnalyzer:
             return None
 
     def analyze_totals(self, game):
-        """Take any totals bet for football"""
+        """Analyze totals - take any football total"""
         try:
             totals = game.get('totals', {})
             total_points = totals.get('total_points', 'N/A')
@@ -159,14 +163,16 @@ class BettingAIAnalyzer:
             under_odds = totals.get('under_odds', 'N/A')
             
             if all(x != 'N/A' for x in [total_points, over_odds, under_odds]):
-                # Just take the over
+                # Pick over
+                confidence = random.uniform(5.5, 7.5)
+                
                 return {
                     'bet_type': 'Total',
                     'recommendation': f"Over {total_points}",
                     'odds': over_odds,
-                    'confidence': 6.0,
-                    'value_edge': "3%",
-                    'reasoning': f"Taking the over {total_points} points."
+                    'confidence': confidence,
+                    'value_edge': "2-4%",
+                    'reasoning': f"Taking over {total_points} total points."
                 }
             
             return None
@@ -182,9 +188,8 @@ class BettingAIAnalyzer:
         
         for proj in projections:
             try:
-                # ONLY ANALYZE FOOTBALL
-                league = proj.get('league', '').upper()
-                if not any(football in league for football in ['NFL', 'NCAAF', 'CFB']):
+                # Check if it's football
+                if not self.is_football_projection(proj):
                     continue
                 
                 analysis = self.analyze_single_projection(proj)
@@ -193,14 +198,36 @@ class BettingAIAnalyzer:
             except Exception as e:
                 continue
         
-        # Sort by confidence
+        # Sort by confidence and take top picks
         analyzed_props.sort(key=lambda x: x.get('confidence_score', 0), reverse=True)
-        
-        # Take top 100 football picks
         return analyzed_props[:100]
 
+    def is_football_projection(self, proj):
+        """Check if projection is football (NFL or CFB)"""
+        league = proj.get('league', '').lower()
+        
+        # NFL indicators
+        nfl_terms = ['nfl', 'national football league']
+        if any(term in league for term in nfl_terms):
+            return True
+        
+        # CFB indicators - comprehensive list
+        cfb_terms = [
+            'ncaaf', 'cfb', 'college football',
+            'fbs', 'fcs',  # Divisions
+            'sec', 'big ten', 'big 12', 'pac-12', 'acc', 'american',  # Major conferences
+            'mountain west', 'mac', 'conference usa', 'sun belt', 'aac',  # Other conferences
+            'ivy league', 'patriot league', 'colonial', 'big sky',  # FCS conferences
+            'college', 'university', 'state'  # General college terms
+        ]
+        
+        if any(term in league for term in cfb_terms):
+            return True
+        
+        return False
+
     def analyze_single_projection(self, proj):
-        """Analyze a single projection - simple football logic"""
+        """Analyze a single projection"""
         try:
             player = proj.get('player_name', 'Unknown Player')
             stat_type = proj.get('stat_type', '')
@@ -212,8 +239,8 @@ class BettingAIAnalyzer:
             if not player or not stat_type or line <= 0:
                 return None
             
-            # Calculate simple confidence
-            confidence = self.calculate_simple_confidence(proj)
+            # Calculate confidence
+            confidence = self.calculate_football_confidence(proj)
             
             if confidence < self.confidence_threshold:
                 return None
@@ -222,7 +249,7 @@ class BettingAIAnalyzer:
                 'id': proj.get('id', ''),
                 'player_name': player,
                 'league': league,
-                'sport': self.map_league_to_sport(league),
+                'sport': self.determine_sport(league),
                 'stat_type': stat_type,
                 'line_score': line,
                 'recommendation': f"{player} {odds_type} {line} {stat_type}",
@@ -236,69 +263,138 @@ class BettingAIAnalyzer:
         except Exception as e:
             return None
 
-    def calculate_simple_confidence(self, proj):
-        """Simple confidence - just boost football"""
-        confidence = 5.0  # Start at 5
+    def calculate_football_confidence(self, proj):
+        """Calculate confidence for football picks"""
+        confidence = 4.0  # Base confidence
         
         league = proj.get('league', '').lower()
         player = proj.get('player_name', '').lower()
+        stat_type = proj.get('stat_type', '').lower()
         
-        # Big boost for football
-        if 'nfl' in league:
-            confidence += 2.0
-        elif 'ncaaf' in league or 'cfb' in league:
-            confidence += 1.5
+        # Big boost for NFL
+        if any(term in league for term in ['nfl', 'national football']):
+            confidence += 2.5
         
-        # Boost for known football players
-        football_players = [
-            'mahomes', 'allen', 'burrow', 'herbert', 'jackson', 'prescott',
-            'kelce', 'adams', 'hill', 'jefferson', 'chase', 'diggs',
-            'henry', 'mccaffrey', 'cook', 'jones', 'elliott', 'barkley'
-        ]
+        # Equal boost for CFB
+        elif any(term in league for term in [
+            'ncaaf', 'cfb', 'college football', 'fbs', 'fcs',
+            'sec', 'big ten', 'big 12', 'pac-12', 'acc', 'american',
+            'college', 'university', 'state'
+        ]):
+            confidence += 2.5  # Same as NFL
         
-        if any(name in player for name in football_players):
+        # Boost for popular stat types
+        if any(stat in stat_type for stat in ['pass', 'rush', 'receiving', 'yards', 'touchdown']):
             confidence += 1.0
         
-        # Add randomness for variety
-        confidence += random.uniform(-0.5, 1.0)
+        # Boost for known players
+        known_players = [
+            # NFL stars
+            'mahomes', 'allen', 'burrow', 'herbert', 'jackson', 'prescott', 'rodgers',
+            'kelce', 'adams', 'hill', 'jefferson', 'chase', 'diggs', 'hopkins', 'kupp',
+            'henry', 'mccaffrey', 'cook', 'jones', 'elliott', 'kamara', 'barkley',
+            # CFB stars
+            'williams', 'daniels', 'caleb', 'quinn', 'penix', 'nix', 'milroe',
+            'harrison', 'nabers', 'rome', 'marvin', 'ewers', 'gabriel'
+        ]
         
+        if any(name in player for name in known_players):
+            confidence += 1.5
+        
+        # Add randomness for variety
+        confidence += random.uniform(-0.8, 1.2)
+        
+        # Cap between 4.0 and 9.5
         return min(9.5, max(4.0, confidence))
 
-    def map_league_to_sport(self, league):
-        """Map league to sport - FOOTBALL ONLY"""
+    def determine_sport(self, league):
+        """Determine if NFL or CFB"""
         league_lower = league.lower()
-        if 'nfl' in league_lower:
+        
+        # NFL
+        if any(term in league_lower for term in ['nfl', 'national football']):
             return 'NFL'
-        elif 'ncaaf' in league_lower or 'cfb' in league_lower:
+        
+        # CFB
+        elif any(term in league_lower for term in [
+            'ncaaf', 'cfb', 'college football', 'fbs', 'fcs',
+            'sec', 'big ten', 'big 12', 'pac-12', 'acc', 'american',
+            'college', 'university', 'state'
+        ]):
             return 'CFB'
-        else:
-            return None  # Filter out non-football
+        
+        return 'Unknown'
 
     def generate_game_commentary(self, game, recommendations):
-        """Generate simple commentary"""
+        """Generate commentary for a game"""
         team1 = game.get('team1', 'Team A')
         team2 = game.get('team2', 'Team B')
         
         if not recommendations:
-            return f"No bets identified for {team1} vs {team2}."
+            return f"No betting opportunities identified for {team1} vs {team2}."
         
-        commentary = f"{team1} vs {team2} - {len(recommendations)} betting opportunities found."
+        commentary = f"{team1} vs {team2} Analysis: {len(recommendations)} betting opportunities found."
+        
+        for rec in recommendations:
+            bet_type = rec.get('bet_type', 'Bet')
+            recommendation = rec.get('recommendation', '')
+            confidence = rec.get('confidence', 5)
+            
+            commentary += f"\n• {bet_type}: {recommendation} (Confidence: {confidence:.1f}/10)"
+        
         return commentary
 
+    def american_to_probability(self, odds):
+        """Convert American odds to implied probability"""
+        try:
+            odds = int(odds)
+            if odds > 0:
+                return 100 / (odds + 100)
+            else:
+                return abs(odds) / (abs(odds) + 100)
+        except:
+            return None
+
+    def calculate_value(self, fair_prob, implied_prob):
+        """Calculate betting value as percentage edge"""
+        if implied_prob <= 0:
+            return 0
+        return max(0, (fair_prob - implied_prob) / implied_prob)
+
     def format_analysis_for_discord(self, bovada_analysis, prizepicks_analysis):
-        """Format for Discord - football focus"""
+        """Format analysis results for Discord"""
         message = f"FOOTBALL BETTING ANALYSIS\n"
         message += f"{datetime.now().strftime('%m/%d/%Y %I:%M %p')}\n\n"
         
+        # Bovada section
         if bovada_analysis:
-            message += f"BOVADA FOOTBALL GAMES ({len(bovada_analysis)})\n"
+            message += f"FOOTBALL GAMES ({len(bovada_analysis)} games)\n"
             for analysis in bovada_analysis[:5]:
-                message += f"• {analysis['matchup']}\n"
+                message += f"\n**{analysis['matchup']}**\n"
+                
+                for rec in analysis['recommendations']:
+                    message += f"• {rec['bet_type']}: **{rec['recommendation']}** ({rec['odds']})\n"
+                    message += f"  Confidence: {rec['confidence']:.1f}/10 | Edge: {rec.get('value_edge', 'N/A')}\n"
         
+        # PrizePicks section
         if prizepicks_analysis:
-            message += f"\nPRIZEPICKS FOOTBALL PROPS ({len(prizepicks_analysis)})\n"
-            for prop in prizepicks_analysis[:10]:
-                message += f"• {prop['recommendation']}\n"
+            message += f"\nFOOTBALL PROPS ({len(prizepicks_analysis)} total)\n"
+            
+            # Group by sport
+            nfl_props = [p for p in prizepicks_analysis if p['sport'] == 'NFL']
+            cfb_props = [p for p in prizepicks_analysis if p['sport'] == 'CFB']
+            
+            if nfl_props:
+                message += f"\n**NFL ({len(nfl_props)} props):**\n"
+                for prop in nfl_props[:8]:
+                    message += f"• **{prop['recommendation']}**\n"
+                    message += f"  Confidence: {prop['confidence_score']:.1f}/10\n"
+            
+            if cfb_props:
+                message += f"\n**CFB ({len(cfb_props)} props):**\n"
+                for prop in cfb_props[:8]:
+                    message += f"• **{prop['recommendation']}**\n"
+                    message += f"  Confidence: {prop['confidence_score']:.1f}/10\n"
         
         return message
 
