@@ -599,52 +599,58 @@ def clean_stat_type(self, stat_type):
     return stat_type.title()
 
     def calculate_prop_confidence(self, proj):
-        """Calculate confidence score - BOOST FOOTBALL MASSIVELY"""
-        confidence = 4.0
-        
-        stat_type = proj.get('stat_type', '').lower()
-        line = proj.get('line_score', 0)
-        player = proj.get('player_name', '').lower()
-        league = proj.get('league', '').lower()
-        
-        # MASSIVE FOOTBALL BOOST
-        if 'nfl' in league:
-            confidence += 3.0  # Huge NFL boost
-        elif 'ncaaf' in league or 'cfb' in league:
-            confidence += 2.5  # Big CFB boost
-        elif 'nba' in league:
-            confidence += 0.5  # Small NBA boost
-        else:
-            confidence += 0.0  # No boost for others
-        
-        # EXTRA boosts for football stat types
-        if 'nfl' in league or 'ncaaf' in league:
-            if any(stat in stat_type for stat in ['pass', 'rush', 'receiving', 'yards', 'touchdown', 'completion']):
-                confidence += 1.5  # Big boost for football stats
-        
-        # Regular boosts
-        if any(stat in stat_type for stat in ['points', 'yards', 'strikeouts', 'hits', 'receptions']):
-            confidence += 1.0
-        
-        if line in [0.5, 1.5, 2.5, 20.5, 25.5, 50.5, 100.5, 200.5, 250.5]:
-            confidence += 0.8
-        
-        # EXPANDED football player detection
-        football_stars = [
-            'mahomes', 'allen', 'burrow', 'herbert', 'lamar', 'jackson', 'josh', 'patrick',
-            'kelce', 'adams', 'hill', 'jefferson', 'chase', 'diggs', 'hopkins', 'kupp',
-            'mccaffrey', 'henry', 'cook', 'jones', 'elliott', 'kamara', 'barkley',
-            'williams', 'daniels', 'caleb', 'rome', 'nabers', 'harrison'
-        ]
-        if any(name in player for name in football_stars):
-            confidence += 2.0  # HUGE boost for football stars
-        
-        # Regular star boost for others
-        other_stars = ['lebron', 'curry', 'durant', 'giannis', 'tatum', 'luka', 'judge', 'ohtani']
-        if any(name in player for name in other_stars):
-            confidence += 1.0
-        
-        return min(10.0, confidence)
+    """Calculate confidence score - FIXED to show realistic variation"""
+    confidence = 3.0  # Lower starting point
+    
+    stat_type = proj.get('stat_type', '').lower()
+    line = proj.get('line_score', 0)
+    player = proj.get('player_name', '').lower()
+    league = proj.get('league', '').lower()
+    
+    # REDUCED FOOTBALL BOOST - was too high
+    if 'nfl' in league:
+        confidence += 1.5  # Was 3.0, now 1.5
+    elif 'ncaaf' in league or 'cfb' in league:
+        confidence += 1.2  # Was 2.5, now 1.2
+    elif 'nba' in league:
+        confidence += 0.3  # Slight boost
+    else:
+        confidence += 0.0  # No boost for others
+    
+    # SMALLER boosts for football stat types
+    if 'nfl' in league or 'ncaaf' in league:
+        if any(stat in stat_type for stat in ['pass', 'rush', 'receiving', 'yards', 'touchdown', 'completion']):
+            confidence += 0.8  # Was 1.5, now 0.8
+    
+    # REDUCED regular stat boosts
+    if any(stat in stat_type for stat in ['points', 'yards', 'strikeouts', 'hits', 'receptions']):
+        confidence += 0.6  # Was 1.0, now 0.6
+    
+    # SMALLER boost for round numbers
+    if line in [0.5, 1.5, 2.5, 20.5, 25.5, 50.5, 100.5, 200.5, 250.5]:
+        confidence += 0.4  # Was 0.8, now 0.4
+    
+    # REDUCED football star boost
+    football_stars = [
+        'mahomes', 'allen', 'burrow', 'herbert', 'lamar', 'jackson', 'josh', 'patrick',
+        'kelce', 'adams', 'hill', 'jefferson', 'chase', 'diggs', 'hopkins', 'kupp',
+        'mccaffrey', 'henry', 'cook', 'jones', 'elliott', 'kamara', 'barkley',
+        'williams', 'daniels', 'caleb', 'rome', 'nabers', 'harrison'
+    ]
+    if any(name in player for name in football_stars):
+        confidence += 1.0  # Was 2.0, now 1.0
+    
+    # SMALLER boost for other stars
+    other_stars = ['lebron', 'curry', 'durant', 'giannis', 'tatum', 'luka', 'judge', 'ohtani']
+    if any(name in player for name in other_stars):
+        confidence += 0.6  # Was 1.0, now 0.6
+    
+    # ADD SOME RANDOMNESS for variety
+    import random
+    confidence += random.uniform(-0.3, 0.3)  # Add slight random variation
+    
+    # Ensure we have a good range from 4.0 to 9.5 instead of all 10s
+    return min(9.5, max(4.0, confidence))  # Cap at 9.5 instead of 10.0
 
     def generate_prop_reasoning(self, proj, confidence):
         """Generate AI reasoning for prop recommendation"""
