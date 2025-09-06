@@ -1,37 +1,13 @@
 [
   {
-    "id": "9535d3e3ee9d9fc83ea2b500ad0b587c",
-    "sport": "NFL",
-    "team1": "Kansas City Chiefs",
-    "team2": "Los Angeles Chargers",
-    "game_time": "2025-09-06T00:00:00Z",
-    "moneyline": {
-      "team1_odds": -166,
-      "team2_odds": 140
-    },
-    "spread": {
-      "team1_spread": -3.0,
-      "team1_odds": -115,
-      "team2_spread": 3.0,
-      "team2_odds": -105
-    },
-    "totals": {
-      "total_points": 46.5,
-      "over_odds": -110,
-      "under_odds": -110
-    },
-    "timestamp": "2025-09-05T02:08:26.916320",
-    "source": "OddsAPI"
-  },
-  {
     "id": "557d13ef8f4c1d21044f3a478cda6d0b",
     "sport": "NFL",
     "team1": "Arizona Cardinals",
     "team2": "New Orleans Saints",
     "game_time": "2025-09-07T17:00:00Z",
     "moneyline": {
-      "team1_odds": -298,
-      "team2_odds": 240
+      "team1_odds": -285,
+      "team2_odds": 230
     },
     "spread": {
       "team1_spread": -6.5,
@@ -41,10 +17,10 @@
     },
     "totals": {
       "total_points": 43.5,
-      "over_odds": -108,
-      "under_odds": -112
+      "over_odds": -112,
+      "under_odds": -108
     },
-    "timestamp": "2025-09-05T02:08:26.916339",
+    "timestamp": "2025-09-06T16:14:42.631501",
     "source": "OddsAPI"
   },
   {
@@ -54,21 +30,21 @@
     "team2": "Atlanta Falcons",
     "game_time": "2025-09-07T17:00:00Z",
     "moneyline": {
-      "team1_odds": -135,
-      "team2_odds": 114
+      "team1_odds": -122,
+      "team2_odds": 102
     },
     "spread": {
       "team1_spread": -1.5,
-      "team1_odds": -115,
+      "team1_odds": -108,
       "team2_spread": 1.5,
-      "team2_odds": -105
+      "team2_odds": -112
     },
     "totals": {
-      "total_points": 46.5,
-      "over_odds": -118,
-      "under_odds": -102
+      "total_points": 47.5,
+      "over_odds": -110,
+      "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916345",
+    "timestamp": "2025-09-06T16:14:42.631827",
     "source": "OddsAPI"
   },
   {
@@ -78,8 +54,8 @@
     "team2": "Jacksonville Jaguars",
     "game_time": "2025-09-07T17:00:00Z",
     "moneyline": {
-      "team1_odds": 154,
-      "team2_odds": -185
+      "team1_odds": 160,
+      "team2_odds": -192
     },
     "spread": {
       "team1_spread": 3.5,
@@ -92,7 +68,7 @@
       "over_odds": -115,
       "under_odds": -105
     },
-    "timestamp": "2025-09-05T02:08:26.916350",
+    "timestamp": "2025-09-06T16:14:42.631844",
     "source": "OddsAPI"
   },
   {
@@ -102,21 +78,21 @@
     "team2": "Cleveland Browns",
     "game_time": "2025-09-07T17:00:00Z",
     "moneyline": {
-      "team1_odds": -238,
-      "team2_odds": 195
+      "team1_odds": -245,
+      "team2_odds": 200
     },
     "spread": {
       "team1_spread": -5.5,
-      "team1_odds": -108,
+      "team1_odds": -110,
       "team2_spread": 5.5,
-      "team2_odds": -112
+      "team2_odds": -110
     },
     "totals": {
       "total_points": 48.5,
-      "over_odds": -108,
-      "under_odds": -112
+      "over_odds": -105,
+      "under_odds": -115
     },
-    "timestamp": "2025-09-05T02:08:26.916353",
+    "timestamp": "2025-09-06T16:14:42.631852",
     "source": "OddsAPI"
   },
   {
@@ -140,7 +116,7 @@
       "over_odds": 100,
       "under_odds": -120
     },
-    "timestamp": "2025-09-05T02:08:26.916359",
+    "timestamp": "2025-09-06T16:14:42.631859",
     "source": "OddsAPI"
   },
   {
@@ -150,8 +126,8 @@
     "team2": "New England Patriots",
     "game_time": "2025-09-07T17:00:00Z",
     "moneyline": {
-      "team1_odds": 130,
-      "team2_odds": -155
+      "team1_odds": 124,
+      "team2_odds": -148
     },
     "spread": {
       "team1_spread": 2.5,
@@ -161,10 +137,10 @@
     },
     "totals": {
       "total_points": 44.5,
-      "over_odds": -102,
-      "under_odds": -118
+      "over_odds": -108,
+      "under_odds": -112
     },
-    "timestamp": "2025-09-05T02:08:26.916363",
+    "timestamp": "2025-09-06T16:14:42.631874",
     "source": "OddsAPI"
   },
   {
@@ -174,21 +150,21 @@
     "team2": "Washington Commanders",
     "game_time": "2025-09-07T17:00:00Z",
     "moneyline": {
-      "team1_odds": 220,
-      "team2_odds": -270
+      "team1_odds": 215,
+      "team2_odds": -255
     },
     "spread": {
-      "team1_spread": 5.5,
-      "team1_odds": -102,
-      "team2_spread": -5.5,
-      "team2_odds": -120
+      "team1_spread": 6.5,
+      "team1_odds": -120,
+      "team2_spread": -6.5,
+      "team2_odds": -102
     },
     "totals": {
       "total_points": 45.5,
-      "over_odds": -112,
-      "under_odds": -108
+      "over_odds": -105,
+      "under_odds": -115
     },
-    "timestamp": "2025-09-05T02:08:26.916366",
+    "timestamp": "2025-09-06T16:14:42.631884",
     "source": "OddsAPI"
   },
   {
@@ -198,21 +174,21 @@
     "team2": "New York Jets",
     "game_time": "2025-09-07T17:00:00Z",
     "moneyline": {
-      "team1_odds": -162,
-      "team2_odds": 136
+      "team1_odds": -155,
+      "team2_odds": 130
     },
     "spread": {
       "team1_spread": -3.0,
-      "team1_odds": -105,
+      "team1_odds": -108,
       "team2_spread": 3.0,
-      "team2_odds": -115
+      "team2_odds": -112
     },
     "totals": {
-      "total_points": 38.5,
-      "over_odds": -105,
-      "under_odds": -115
+      "total_points": 37.5,
+      "over_odds": -115,
+      "under_odds": -105
     },
-    "timestamp": "2025-09-05T02:08:26.916371",
+    "timestamp": "2025-09-06T16:14:42.631891",
     "source": "OddsAPI"
   },
   {
@@ -236,7 +212,7 @@
       "over_odds": -104,
       "under_odds": -118
     },
-    "timestamp": "2025-09-05T02:08:26.916375",
+    "timestamp": "2025-09-06T16:14:42.631898",
     "source": "OddsAPI"
   },
   {
@@ -246,8 +222,8 @@
     "team2": "Seattle Seahawks",
     "game_time": "2025-09-07T20:05:00Z",
     "moneyline": {
-      "team1_odds": -126,
-      "team2_odds": 108
+      "team1_odds": -118,
+      "team2_odds": 100
     },
     "spread": {
       "team1_spread": -1.5,
@@ -260,7 +236,7 @@
       "over_odds": -104,
       "under_odds": -118
     },
-    "timestamp": "2025-09-05T02:08:26.916378",
+    "timestamp": "2025-09-06T16:14:42.631905",
     "source": "OddsAPI"
   },
   {
@@ -270,21 +246,21 @@
     "team2": "Green Bay Packers",
     "game_time": "2025-09-07T20:25:00Z",
     "moneyline": {
-      "team1_odds": 114,
-      "team2_odds": -134
+      "team1_odds": 108,
+      "team2_odds": -126
     },
     "spread": {
       "team1_spread": 2.5,
-      "team1_odds": -118,
+      "team1_odds": -120,
       "team2_spread": -2.5,
-      "team2_odds": -104
+      "team2_odds": -102
     },
     "totals": {
       "total_points": 47.5,
-      "over_odds": -110,
-      "under_odds": -110
+      "over_odds": -118,
+      "under_odds": -104
     },
-    "timestamp": "2025-09-05T02:08:26.916382",
+    "timestamp": "2025-09-06T16:14:42.631911",
     "source": "OddsAPI"
   },
   {
@@ -294,21 +270,21 @@
     "team2": "Los Angeles Rams",
     "game_time": "2025-09-07T20:25:00Z",
     "moneyline": {
-      "team1_odds": 132,
-      "team2_odds": -156
+      "team1_odds": 142,
+      "team2_odds": -168
     },
     "spread": {
       "team1_spread": 3.0,
-      "team1_odds": -110,
+      "team1_odds": -104,
       "team2_spread": -3.0,
-      "team2_odds": -110
+      "team2_odds": -118
     },
     "totals": {
       "total_points": 43.5,
       "over_odds": -105,
       "under_odds": -115
     },
-    "timestamp": "2025-09-05T02:08:26.916385",
+    "timestamp": "2025-09-06T16:14:42.631918",
     "source": "OddsAPI"
   },
   {
@@ -318,21 +294,21 @@
     "team2": "Buffalo Bills",
     "game_time": "2025-09-08T00:20:00Z",
     "moneyline": {
-      "team1_odds": -116,
-      "team2_odds": -102
+      "team1_odds": -118,
+      "team2_odds": 100
     },
     "spread": {
       "team1_spread": -1.5,
-      "team1_odds": -105,
+      "team1_odds": -108,
       "team2_spread": 1.5,
-      "team2_odds": -115
+      "team2_odds": -112
     },
     "totals": {
       "total_points": 50.5,
       "over_odds": -115,
       "under_odds": -105
     },
-    "timestamp": "2025-09-05T02:08:26.916389",
+    "timestamp": "2025-09-06T16:14:42.631924",
     "source": "OddsAPI"
   },
   {
@@ -353,10 +329,10 @@
     },
     "totals": {
       "total_points": 43.5,
-      "over_odds": -112,
-      "under_odds": -108
+      "over_odds": -110,
+      "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916393",
+    "timestamp": "2025-09-06T16:14:42.631931",
     "source": "OddsAPI"
   },
   {
@@ -380,7 +356,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916396",
+    "timestamp": "2025-09-06T16:14:42.631940",
     "source": "OddsAPI"
   },
   {
@@ -404,7 +380,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916401",
+    "timestamp": "2025-09-06T16:14:42.631951",
     "source": "OddsAPI"
   },
   {
@@ -414,8 +390,8 @@
     "team2": "New York Jets",
     "game_time": "2025-09-14T17:00:00Z",
     "moneyline": {
-      "team1_odds": -395,
-      "team2_odds": 310
+      "team1_odds": -410,
+      "team2_odds": 320
     },
     "spread": {
       "team1_spread": -8.5,
@@ -428,7 +404,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916404",
+    "timestamp": "2025-09-06T16:14:42.631958",
     "source": "OddsAPI"
   },
   {
@@ -452,7 +428,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916409",
+    "timestamp": "2025-09-06T16:14:42.631965",
     "source": "OddsAPI"
   },
   {
@@ -462,8 +438,8 @@
     "team2": "Cincinnati Bengals",
     "game_time": "2025-09-14T17:00:00Z",
     "moneyline": {
-      "team1_odds": 195,
-      "team2_odds": -238
+      "team1_odds": 200,
+      "team2_odds": -245
     },
     "spread": {
       "team1_spread": 5.5,
@@ -476,7 +452,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916412",
+    "timestamp": "2025-09-06T16:14:42.631971",
     "source": "OddsAPI"
   },
   {
@@ -486,8 +462,8 @@
     "team2": "Dallas Cowboys",
     "game_time": "2025-09-14T17:00:00Z",
     "moneyline": {
-      "team1_odds": 140,
-      "team2_odds": -166
+      "team1_odds": 145,
+      "team2_odds": -175
     },
     "spread": {
       "team1_spread": 3.0,
@@ -500,7 +476,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916416",
+    "timestamp": "2025-09-06T16:14:42.631978",
     "source": "OddsAPI"
   },
   {
@@ -510,8 +486,8 @@
     "team2": "Tennessee Titans",
     "game_time": "2025-09-14T17:00:00Z",
     "moneyline": {
-      "team1_odds": -245,
-      "team2_odds": 200
+      "team1_odds": -238,
+      "team2_odds": 195
     },
     "spread": {
       "team1_spread": -5.5,
@@ -524,7 +500,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916421",
+    "timestamp": "2025-09-06T16:14:42.631985",
     "source": "OddsAPI"
   },
   {
@@ -548,7 +524,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916424",
+    "timestamp": "2025-09-06T16:14:42.631991",
     "source": "OddsAPI"
   },
   {
@@ -558,8 +534,8 @@
     "team2": "New Orleans Saints",
     "game_time": "2025-09-14T17:00:00Z",
     "moneyline": {
-      "team1_odds": -340,
-      "team2_odds": 270
+      "team1_odds": -325,
+      "team2_odds": 260
     },
     "spread": {
       "team1_spread": -7.0,
@@ -572,7 +548,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916428",
+    "timestamp": "2025-09-06T16:14:42.631998",
     "source": "OddsAPI"
   },
   {
@@ -596,7 +572,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916431",
+    "timestamp": "2025-09-06T16:14:42.632004",
     "source": "OddsAPI"
   },
   {
@@ -620,7 +596,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916435",
+    "timestamp": "2025-09-06T16:14:42.632010",
     "source": "OddsAPI"
   },
   {
@@ -644,7 +620,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916438",
+    "timestamp": "2025-09-06T16:14:42.632017",
     "source": "OddsAPI"
   },
   {
@@ -652,23 +628,23 @@
     "sport": "NFL",
     "team1": "Philadelphia Eagles",
     "team2": "Kansas City Chiefs",
-    "game_time": "2025-09-14T20:25:00Z",
+    "game_time": "2025-09-14T20:26:00Z",
     "moneyline": {
-      "team1_odds": 105,
-      "team2_odds": -125
+      "team1_odds": -108,
+      "team2_odds": -108
     },
     "spread": {
-      "team1_spread": 1.5,
-      "team1_odds": -110,
-      "team2_spread": -1.5,
-      "team2_odds": -110
+      "team1_spread": -1.5,
+      "team1_odds": -102,
+      "team2_spread": 1.5,
+      "team2_odds": -120
     },
     "totals": {
-      "total_points": 46.5,
-      "over_odds": -118,
-      "under_odds": -102
+      "total_points": 45.5,
+      "over_odds": -105,
+      "under_odds": -115
     },
-    "timestamp": "2025-09-05T02:08:26.916442",
+    "timestamp": "2025-09-06T16:14:42.632036",
     "source": "OddsAPI"
   },
   {
@@ -678,8 +654,8 @@
     "team2": "Minnesota Vikings",
     "game_time": "2025-09-15T00:20:00Z",
     "moneyline": {
-      "team1_odds": 185,
-      "team2_odds": -225
+      "team1_odds": 180,
+      "team2_odds": -218
     },
     "spread": {
       "team1_spread": 4.5,
@@ -692,7 +668,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916445",
+    "timestamp": "2025-09-06T16:14:42.632046",
     "source": "OddsAPI"
   },
   {
@@ -716,7 +692,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916450",
+    "timestamp": "2025-09-06T16:14:42.632056",
     "source": "OddsAPI"
   },
   {
@@ -726,13 +702,13 @@
     "team2": "Las Vegas Raiders",
     "game_time": "2025-09-16T02:00:00Z",
     "moneyline": {
-      "team1_odds": -162,
-      "team2_odds": 136
+      "team1_odds": -185,
+      "team2_odds": 154
     },
     "spread": {
-      "team1_spread": -3.0,
+      "team1_spread": -3.5,
       "team1_odds": -110,
-      "team2_spread": 3.0,
+      "team2_spread": 3.5,
       "team2_odds": -110
     },
     "totals": {
@@ -740,7 +716,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916453",
+    "timestamp": "2025-09-06T16:14:42.632065",
     "source": "OddsAPI"
   },
   {
@@ -764,7 +740,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916457",
+    "timestamp": "2025-09-06T16:14:42.632075",
     "source": "OddsAPI"
   },
   {
@@ -788,7 +764,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916460",
+    "timestamp": "2025-09-06T16:14:42.632104",
     "source": "OddsAPI"
   },
   {
@@ -812,7 +788,7 @@
       "over_odds": -115,
       "under_odds": -105
     },
-    "timestamp": "2025-09-05T02:08:26.916464",
+    "timestamp": "2025-09-06T16:14:42.632115",
     "source": "OddsAPI"
   },
   {
@@ -836,7 +812,7 @@
       "over_odds": -105,
       "under_odds": -115
     },
-    "timestamp": "2025-09-05T02:08:26.916467",
+    "timestamp": "2025-09-06T16:14:42.632125",
     "source": "OddsAPI"
   },
   {
@@ -860,7 +836,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916471",
+    "timestamp": "2025-09-06T16:14:42.632134",
     "source": "OddsAPI"
   },
   {
@@ -884,7 +860,7 @@
       "over_odds": -105,
       "under_odds": -115
     },
-    "timestamp": "2025-09-05T02:08:26.916475",
+    "timestamp": "2025-09-06T16:14:42.632143",
     "source": "OddsAPI"
   },
   {
@@ -894,8 +870,8 @@
     "team2": "Washington Commanders",
     "game_time": "2025-09-21T17:00:00Z",
     "moneyline": {
-      "team1_odds": 280,
-      "team2_odds": -355
+      "team1_odds": 285,
+      "team2_odds": -360
     },
     "spread": {
       "team1_spread": 7.5,
@@ -908,7 +884,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916480",
+    "timestamp": "2025-09-06T16:14:42.632153",
     "source": "OddsAPI"
   },
   {
@@ -932,7 +908,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916483",
+    "timestamp": "2025-09-06T16:14:42.632167",
     "source": "OddsAPI"
   },
   {
@@ -942,8 +918,8 @@
     "team2": "Tampa Bay Buccaneers",
     "game_time": "2025-09-21T17:00:00Z",
     "moneyline": {
-      "team1_odds": 270,
-      "team2_odds": -340
+      "team1_odds": 275,
+      "team2_odds": -345
     },
     "spread": {
       "team1_spread": 7.5,
@@ -956,31 +932,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916488",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "0ee3f5a0078c21cfdffd1b97002e7da5",
-    "sport": "NFL",
-    "team1": "Denver Broncos",
-    "team2": "Los Angeles Chargers",
-    "game_time": "2025-09-21T20:05:00Z",
-    "moneyline": {
-      "team1_odds": 105,
-      "team2_odds": -125
-    },
-    "spread": {
-      "team1_spread": 1.5,
-      "team1_odds": -110,
-      "team2_spread": -1.5,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": 44.5,
-      "over_odds": -110,
-      "under_odds": -110
-    },
-    "timestamp": "2025-09-05T02:08:26.916493",
+    "timestamp": "2025-09-06T16:14:42.632177",
     "source": "OddsAPI"
   },
   {
@@ -1004,7 +956,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916496",
+    "timestamp": "2025-09-06T16:14:42.632187",
     "source": "OddsAPI"
   },
   {
@@ -1028,31 +980,7 @@
       "over_odds": -115,
       "under_odds": -105
     },
-    "timestamp": "2025-09-05T02:08:26.916500",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "ee840f13db8bd150fcdd8f6670fa7041",
-    "sport": "NFL",
-    "team1": "Kansas City Chiefs",
-    "team2": "New York Giants",
-    "game_time": "2025-09-22T00:20:00Z",
-    "moneyline": {
-      "team1_odds": -290,
-      "team2_odds": 235
-    },
-    "spread": {
-      "team1_spread": -6.5,
-      "team1_odds": -110,
-      "team2_spread": 6.5,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": 43.5,
-      "over_odds": -110,
-      "under_odds": -110
-    },
-    "timestamp": "2025-09-05T02:08:26.916503",
+    "timestamp": "2025-09-06T16:14:42.632196",
     "source": "OddsAPI"
   },
   {
@@ -1076,7 +1004,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916507",
+    "timestamp": "2025-09-06T16:14:42.632206",
     "source": "OddsAPI"
   },
   {
@@ -1100,7 +1028,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916510",
+    "timestamp": "2025-09-06T16:14:42.632216",
     "source": "OddsAPI"
   },
   {
@@ -1124,7 +1052,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916513",
+    "timestamp": "2025-09-06T16:14:42.632225",
     "source": "OddsAPI"
   },
   {
@@ -1134,8 +1062,8 @@
     "team2": "Atlanta Falcons",
     "game_time": "2025-09-28T17:00:00Z",
     "moneyline": {
-      "team1_odds": -185,
-      "team2_odds": 154
+      "team1_odds": -192,
+      "team2_odds": 160
     },
     "spread": {
       "team1_spread": -3.5,
@@ -1148,7 +1076,7 @@
       "over_odds": -115,
       "under_odds": -105
     },
-    "timestamp": "2025-09-05T02:08:26.916517",
+    "timestamp": "2025-09-06T16:14:42.632234",
     "source": "OddsAPI"
   },
   {
@@ -1158,8 +1086,8 @@
     "team2": "Buffalo Bills",
     "game_time": "2025-09-28T17:00:00Z",
     "moneyline": {
-      "team1_odds": 470,
-      "team2_odds": -650
+      "team1_odds": 490,
+      "team2_odds": -675
     },
     "spread": {
       "team1_spread": 12.5,
@@ -1172,7 +1100,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916520",
+    "timestamp": "2025-09-06T16:14:42.632248",
     "source": "OddsAPI"
   },
   {
@@ -1196,7 +1124,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916523",
+    "timestamp": "2025-09-06T16:14:42.632257",
     "source": "OddsAPI"
   },
   {
@@ -1206,8 +1134,8 @@
     "team2": "Detroit Lions",
     "game_time": "2025-09-28T17:00:00Z",
     "moneyline": {
-      "team1_odds": 410,
-      "team2_odds": -550
+      "team1_odds": 400,
+      "team2_odds": -535
     },
     "spread": {
       "team1_spread": 10.5,
@@ -1220,7 +1148,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916528",
+    "timestamp": "2025-09-06T16:14:42.632273",
     "source": "OddsAPI"
   },
   {
@@ -1230,8 +1158,8 @@
     "team2": "Houston Texans",
     "game_time": "2025-09-28T17:00:00Z",
     "moneyline": {
-      "team1_odds": 210,
-      "team2_odds": -258
+      "team1_odds": 205,
+      "team2_odds": -250
     },
     "spread": {
       "team1_spread": 6.0,
@@ -1244,31 +1172,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916531",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "d921b1e86b0a30ad91000ffc360d302d",
-    "sport": "NFL",
-    "team1": "Los Angeles Chargers",
-    "team2": "New York Giants",
-    "game_time": "2025-09-28T17:00:00Z",
-    "moneyline": {
-      "team1_odds": -185,
-      "team2_odds": 154
-    },
-    "spread": {
-      "team1_spread": -3.5,
-      "team1_odds": -110,
-      "team2_spread": 3.5,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": 43.5,
-      "over_odds": -110,
-      "under_odds": -110
-    },
-    "timestamp": "2025-09-05T02:08:26.916535",
+    "timestamp": "2025-09-06T16:14:42.632283",
     "source": "OddsAPI"
   },
   {
@@ -1292,7 +1196,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916539",
+    "timestamp": "2025-09-06T16:14:42.632292",
     "source": "OddsAPI"
   },
   {
@@ -1316,31 +1220,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916543",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "051233db287b02fd3e7574955879ece2",
-    "sport": "NFL",
-    "team1": "Baltimore Ravens",
-    "team2": "Kansas City Chiefs",
-    "game_time": "2025-09-28T20:25:00Z",
-    "moneyline": {
-      "team1_odds": 105,
-      "team2_odds": -125
-    },
-    "spread": {
-      "team1_spread": 1.5,
-      "team1_odds": -112,
-      "team2_spread": -1.5,
-      "team2_odds": -108
-    },
-    "totals": {
-      "total_points": 48.5,
-      "over_odds": -112,
-      "under_odds": -108
-    },
-    "timestamp": "2025-09-05T02:08:26.916547",
+    "timestamp": "2025-09-06T16:14:42.632301",
     "source": "OddsAPI"
   },
   {
@@ -1364,7 +1244,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916550",
+    "timestamp": "2025-09-06T16:14:42.632311",
     "source": "OddsAPI"
   },
   {
@@ -1388,7 +1268,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916554",
+    "timestamp": "2025-09-06T16:14:42.632320",
     "source": "OddsAPI"
   },
   {
@@ -1398,8 +1278,8 @@
     "team2": "Denver Broncos",
     "game_time": "2025-09-30T00:15:00Z",
     "moneyline": {
-      "team1_odds": 120,
-      "team2_odds": -142
+      "team1_odds": 114,
+      "team2_odds": -135
     },
     "spread": {
       "team1_spread": 2.5,
@@ -1412,7 +1292,7 @@
       "over_odds": -112,
       "under_odds": -108
     },
-    "timestamp": "2025-09-05T02:08:26.916557",
+    "timestamp": "2025-09-06T16:14:42.632330",
     "source": "OddsAPI"
   },
   {
@@ -1436,7 +1316,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916561",
+    "timestamp": "2025-09-06T16:14:42.632339",
     "source": "OddsAPI"
   },
   {
@@ -1460,7 +1340,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916564",
+    "timestamp": "2025-09-06T16:14:42.632349",
     "source": "OddsAPI"
   },
   {
@@ -1484,7 +1364,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916569",
+    "timestamp": "2025-09-06T16:14:42.632358",
     "source": "OddsAPI"
   },
   {
@@ -1508,7 +1388,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916572",
+    "timestamp": "2025-09-06T16:14:42.632367",
     "source": "OddsAPI"
   },
   {
@@ -1532,7 +1412,7 @@
       "over_odds": -112,
       "under_odds": -108
     },
-    "timestamp": "2025-09-05T02:08:26.916575",
+    "timestamp": "2025-09-06T16:14:42.632380",
     "source": "OddsAPI"
   },
   {
@@ -1556,7 +1436,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916579",
+    "timestamp": "2025-09-06T16:14:42.632390",
     "source": "OddsAPI"
   },
   {
@@ -1580,7 +1460,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916582",
+    "timestamp": "2025-09-06T16:14:42.632399",
     "source": "OddsAPI"
   },
   {
@@ -1604,7 +1484,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916586",
+    "timestamp": "2025-09-06T16:14:42.632408",
     "source": "OddsAPI"
   },
   {
@@ -1628,31 +1508,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916589",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "79c4e9f40e2647dc2a7b377cf61c48cd",
-    "sport": "NFL",
-    "team1": "Washington Commanders",
-    "team2": "Los Angeles Chargers",
-    "game_time": "2025-10-05T20:25:00Z",
-    "moneyline": {
-      "team1_odds": 105,
-      "team2_odds": -125
-    },
-    "spread": {
-      "team1_spread": 1.5,
-      "team1_odds": -115,
-      "team2_spread": -1.5,
-      "team2_odds": -105
-    },
-    "totals": {
-      "total_points": 47.5,
-      "over_odds": -112,
-      "under_odds": -108
-    },
-    "timestamp": "2025-09-05T02:08:26.916592",
+    "timestamp": "2025-09-06T16:14:42.632417",
     "source": "OddsAPI"
   },
   {
@@ -1662,8 +1518,8 @@
     "team2": "Buffalo Bills",
     "game_time": "2025-10-06T00:20:00Z",
     "moneyline": {
-      "team1_odds": 310,
-      "team2_odds": -395
+      "team1_odds": 320,
+      "team2_odds": -410
     },
     "spread": {
       "team1_spread": 8.5,
@@ -1676,31 +1532,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916597",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "1910db6879dddf37e4f86f0bcf1c9547",
-    "sport": "NFL",
-    "team1": "Kansas City Chiefs",
-    "team2": "Jacksonville Jaguars",
-    "game_time": "2025-10-07T00:15:00Z",
-    "moneyline": {
-      "team1_odds": -218,
-      "team2_odds": 180
-    },
-    "spread": {
-      "team1_spread": -4.5,
-      "team1_odds": -110,
-      "team2_spread": 4.5,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": 47.5,
-      "over_odds": -110,
-      "under_odds": -110
-    },
-    "timestamp": "2025-09-05T02:08:26.916600",
+    "timestamp": "2025-09-06T16:14:42.632443",
     "source": "OddsAPI"
   },
   {
@@ -1710,8 +1542,8 @@
     "team2": "New York Jets",
     "game_time": "2025-10-12T13:30:00Z",
     "moneyline": {
-      "team1_odds": -290,
-      "team2_odds": 235
+      "team1_odds": -285,
+      "team2_odds": 230
     },
     "spread": {
       "team1_spread": -6.5,
@@ -1724,7 +1556,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916605",
+    "timestamp": "2025-09-06T16:14:42.632454",
     "source": "OddsAPI"
   },
   {
@@ -1748,7 +1580,7 @@
       "over_odds": -108,
       "under_odds": -112
     },
-    "timestamp": "2025-09-05T02:08:26.916608",
+    "timestamp": "2025-09-06T16:14:42.632470",
     "source": "OddsAPI"
   },
   {
@@ -1772,7 +1604,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916612",
+    "timestamp": "2025-09-06T16:14:42.632483",
     "source": "OddsAPI"
   },
   {
@@ -1782,8 +1614,8 @@
     "team2": "Pittsburgh Steelers",
     "game_time": "2025-10-12T17:00:00Z",
     "moneyline": {
-      "team1_odds": 230,
-      "team2_odds": -285
+      "team1_odds": 235,
+      "team2_odds": -290
     },
     "spread": {
       "team1_spread": 6.5,
@@ -1796,7 +1628,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916615",
+    "timestamp": "2025-09-06T16:14:42.632513",
     "source": "OddsAPI"
   },
   {
@@ -1820,31 +1652,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916620",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "a7211a87bbd5fb2ee473eb9c93ee2e68",
-    "sport": "NFL",
-    "team1": "Los Angeles Chargers",
-    "team2": "Miami Dolphins",
-    "game_time": "2025-10-12T17:00:00Z",
-    "moneyline": {
-      "team1_odds": -142,
-      "team2_odds": 120
-    },
-    "spread": {
-      "team1_spread": -2.5,
-      "team1_odds": -112,
-      "team2_spread": 2.5,
-      "team2_odds": -108
-    },
-    "totals": {
-      "total_points": 45.5,
-      "over_odds": -110,
-      "under_odds": -110
-    },
-    "timestamp": "2025-09-05T02:08:26.916623",
+    "timestamp": "2025-09-06T16:14:42.632527",
     "source": "OddsAPI"
   },
   {
@@ -1868,7 +1676,7 @@
       "over_odds": -115,
       "under_odds": -105
     },
-    "timestamp": "2025-09-05T02:08:26.916627",
+    "timestamp": "2025-09-06T16:14:42.632537",
     "source": "OddsAPI"
   },
   {
@@ -1892,7 +1700,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916631",
+    "timestamp": "2025-09-06T16:14:42.632546",
     "source": "OddsAPI"
   },
   {
@@ -1916,7 +1724,7 @@
       "over_odds": -115,
       "under_odds": -105
     },
-    "timestamp": "2025-09-05T02:08:26.916634",
+    "timestamp": "2025-09-06T16:14:42.632555",
     "source": "OddsAPI"
   },
   {
@@ -1940,31 +1748,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916637",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "82e432d5d8bc0b5a6cbe0c324de90de3",
-    "sport": "NFL",
-    "team1": "Detroit Lions",
-    "team2": "Kansas City Chiefs",
-    "game_time": "2025-10-13T00:20:00Z",
-    "moneyline": {
-      "team1_odds": 136,
-      "team2_odds": -162
-    },
-    "spread": {
-      "team1_spread": 3.0,
-      "team1_odds": -115,
-      "team2_spread": -3.0,
-      "team2_odds": -105
-    },
-    "totals": {
-      "total_points": 48.5,
-      "over_odds": -110,
-      "under_odds": -110
-    },
-    "timestamp": "2025-09-05T02:08:26.916640",
+    "timestamp": "2025-09-06T16:14:42.632564",
     "source": "OddsAPI"
   },
   {
@@ -1988,7 +1772,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916645",
+    "timestamp": "2025-09-06T16:14:42.632574",
     "source": "OddsAPI"
   },
   {
@@ -2012,7 +1796,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916648",
+    "timestamp": "2025-09-06T16:14:42.632583",
     "source": "OddsAPI"
   },
   {
@@ -2036,7 +1820,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916653",
+    "timestamp": "2025-09-06T16:14:42.632592",
     "source": "OddsAPI"
   },
   {
@@ -2060,7 +1844,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916656",
+    "timestamp": "2025-09-06T16:14:42.632601",
     "source": "OddsAPI"
   },
   {
@@ -2084,7 +1868,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916660",
+    "timestamp": "2025-09-06T16:14:42.632614",
     "source": "OddsAPI"
   },
   {
@@ -2108,7 +1892,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916663",
+    "timestamp": "2025-09-06T16:14:42.632623",
     "source": "OddsAPI"
   },
   {
@@ -2132,31 +1916,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916666",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "3127c0dd6ed51a44354af51791bc3e5a",
-    "sport": "NFL",
-    "team1": "Las Vegas Raiders",
-    "team2": "Kansas City Chiefs",
-    "game_time": "2025-10-19T17:00:00Z",
-    "moneyline": {
-      "team1_odds": 340,
-      "team2_odds": -440
-    },
-    "spread": {
-      "team1_spread": 9.5,
-      "team1_odds": -110,
-      "team2_spread": -9.5,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": 45.5,
-      "over_odds": -110,
-      "under_odds": -110
-    },
-    "timestamp": "2025-09-05T02:08:26.916670",
+    "timestamp": "2025-09-06T16:14:42.632639",
     "source": "OddsAPI"
   },
   {
@@ -2180,7 +1940,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916674",
+    "timestamp": "2025-09-06T16:14:42.632648",
     "source": "OddsAPI"
   },
   {
@@ -2190,8 +1950,8 @@
     "team2": "Denver Broncos",
     "game_time": "2025-10-19T20:05:00Z",
     "moneyline": {
-      "team1_odds": 270,
-      "team2_odds": -340
+      "team1_odds": 275,
+      "team2_odds": -345
     },
     "spread": {
       "team1_spread": 7.5,
@@ -2204,31 +1964,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916677",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "a0ad5501e9d1d2ee9f61d9f293374f17",
-    "sport": "NFL",
-    "team1": "Indianapolis Colts",
-    "team2": "Los Angeles Chargers",
-    "game_time": "2025-10-19T20:05:00Z",
-    "moneyline": {
-      "team1_odds": 205,
-      "team2_odds": -250
-    },
-    "spread": {
-      "team1_spread": 6.0,
-      "team1_odds": -110,
-      "team2_spread": -6.0,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": 45.5,
-      "over_odds": -110,
-      "under_odds": -110
-    },
-    "timestamp": "2025-09-05T02:08:26.916682",
+    "timestamp": "2025-09-06T16:14:42.632657",
     "source": "OddsAPI"
   },
   {
@@ -2252,7 +1988,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916686",
+    "timestamp": "2025-09-06T16:14:42.632667",
     "source": "OddsAPI"
   },
   {
@@ -2276,7 +2012,7 @@
       "over_odds": -105,
       "under_odds": -115
     },
-    "timestamp": "2025-09-05T02:08:26.916693",
+    "timestamp": "2025-09-06T16:14:42.632676",
     "source": "OddsAPI"
   },
   {
@@ -2300,7 +2036,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916696",
+    "timestamp": "2025-09-06T16:14:42.632688",
     "source": "OddsAPI"
   },
   {
@@ -2324,31 +2060,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916700",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "6439b16f4a038f1c351dc3f1aef27471",
-    "sport": "NFL",
-    "team1": "Minnesota Vikings",
-    "team2": "Los Angeles Chargers",
-    "game_time": "2025-10-24T00:15:00Z",
-    "moneyline": {
-      "team1_odds": 136,
-      "team2_odds": -162
-    },
-    "spread": {
-      "team1_spread": 3.0,
-      "team1_odds": -110,
-      "team2_spread": -3.0,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": 44.5,
-      "over_odds": -110,
-      "under_odds": -110
-    },
-    "timestamp": "2025-09-05T02:08:26.916703",
+    "timestamp": "2025-09-06T16:14:42.632698",
     "source": "OddsAPI"
   },
   {
@@ -2372,7 +2084,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916707",
+    "timestamp": "2025-09-06T16:14:42.632707",
     "source": "OddsAPI"
   },
   {
@@ -2396,7 +2108,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916710",
+    "timestamp": "2025-09-06T16:14:42.632716",
     "source": "OddsAPI"
   },
   {
@@ -2420,7 +2132,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916715",
+    "timestamp": "2025-09-06T16:14:42.632725",
     "source": "OddsAPI"
   },
   {
@@ -2430,8 +2142,8 @@
     "team2": "Cincinnati Bengals",
     "game_time": "2025-10-26T17:00:00Z",
     "moneyline": {
-      "team1_odds": 280,
-      "team2_odds": -355
+      "team1_odds": 285,
+      "team2_odds": -360
     },
     "spread": {
       "team1_spread": 7.5,
@@ -2444,7 +2156,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916718",
+    "timestamp": "2025-09-06T16:14:42.632738",
     "source": "OddsAPI"
   },
   {
@@ -2468,7 +2180,7 @@
       "over_odds": -108,
       "under_odds": -112
     },
-    "timestamp": "2025-09-05T02:08:26.916722",
+    "timestamp": "2025-09-06T16:14:42.632747",
     "source": "OddsAPI"
   },
   {
@@ -2492,7 +2204,7 @@
       "over_odds": -115,
       "under_odds": -105
     },
-    "timestamp": "2025-09-05T02:08:26.916726",
+    "timestamp": "2025-09-06T16:14:42.632756",
     "source": "OddsAPI"
   },
   {
@@ -2516,7 +2228,7 @@
       "over_odds": -112,
       "under_odds": -108
     },
-    "timestamp": "2025-09-05T02:08:26.916729",
+    "timestamp": "2025-09-06T16:14:42.632765",
     "source": "OddsAPI"
   },
   {
@@ -2526,8 +2238,8 @@
     "team2": "Indianapolis Colts",
     "game_time": "2025-10-26T20:25:00Z",
     "moneyline": {
-      "team1_odds": 154,
-      "team2_odds": -185
+      "team1_odds": 160,
+      "team2_odds": -192
     },
     "spread": {
       "team1_spread": 3.5,
@@ -2540,7 +2252,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916733",
+    "timestamp": "2025-09-06T16:14:42.632776",
     "source": "OddsAPI"
   },
   {
@@ -2550,8 +2262,8 @@
     "team2": "Pittsburgh Steelers",
     "game_time": "2025-10-27T00:20:00Z",
     "moneyline": {
-      "team1_odds": -135,
-      "team2_odds": 114
+      "team1_odds": -142,
+      "team2_odds": 120
     },
     "spread": {
       "team1_spread": -2.5,
@@ -2564,31 +2276,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916736",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "7e3361e84d5223a8d210a887b249f247",
-    "sport": "NFL",
-    "team1": "Washington Commanders",
-    "team2": "Kansas City Chiefs",
-    "game_time": "2025-10-28T00:15:00Z",
-    "moneyline": {
-      "team1_odds": 164,
-      "team2_odds": -198
-    },
-    "spread": {
-      "team1_spread": 3.5,
-      "team1_odds": -105,
-      "team2_spread": -3.5,
-      "team2_odds": -115
-    },
-    "totals": {
-      "total_points": 48.5,
-      "over_odds": -110,
-      "under_odds": -110
-    },
-    "timestamp": "2025-09-05T02:08:26.916739",
+    "timestamp": "2025-09-06T16:14:42.632785",
     "source": "OddsAPI"
   },
   {
@@ -2612,7 +2300,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916743",
+    "timestamp": "2025-09-06T16:14:42.632799",
     "source": "OddsAPI"
   },
   {
@@ -2636,7 +2324,7 @@
       "over_odds": -115,
       "under_odds": -105
     },
-    "timestamp": "2025-09-05T02:08:26.916747",
+    "timestamp": "2025-09-06T16:14:42.632808",
     "source": "OddsAPI"
   },
   {
@@ -2646,8 +2334,8 @@
     "team2": "Green Bay Packers",
     "game_time": "2025-11-02T18:00:00Z",
     "moneyline": {
-      "team1_odds": 285,
-      "team2_odds": -360
+      "team1_odds": 295,
+      "team2_odds": -375
     },
     "spread": {
       "team1_spread": 7.5,
@@ -2660,7 +2348,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916750",
+    "timestamp": "2025-09-06T16:14:42.632817",
     "source": "OddsAPI"
   },
   {
@@ -2670,8 +2358,8 @@
     "team2": "Cincinnati Bengals",
     "game_time": "2025-11-02T18:00:00Z",
     "moneyline": {
-      "team1_odds": 142,
-      "team2_odds": -170
+      "team1_odds": 140,
+      "team2_odds": -166
     },
     "spread": {
       "team1_spread": 3.0,
@@ -2684,7 +2372,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916753",
+    "timestamp": "2025-09-06T16:14:42.632826",
     "source": "OddsAPI"
   },
   {
@@ -2708,7 +2396,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916757",
+    "timestamp": "2025-09-06T16:14:42.632836",
     "source": "OddsAPI"
   },
   {
@@ -2732,7 +2420,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916760",
+    "timestamp": "2025-09-06T16:14:42.632848",
     "source": "OddsAPI"
   },
   {
@@ -2756,31 +2444,7 @@
       "over_odds": -105,
       "under_odds": -115
     },
-    "timestamp": "2025-09-05T02:08:26.916766",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "b60025aea576e2e89ef7bc7303f847ec",
-    "sport": "NFL",
-    "team1": "Los Angeles Chargers",
-    "team2": "Tennessee Titans",
-    "game_time": "2025-11-02T18:00:00Z",
-    "moneyline": {
-      "team1_odds": -205,
-      "team2_odds": 170
-    },
-    "spread": {
-      "team1_spread": -4.5,
-      "team1_odds": -110,
-      "team2_spread": 4.5,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": 44.5,
-      "over_odds": -110,
-      "under_odds": -110
-    },
-    "timestamp": "2025-09-05T02:08:26.916769",
+    "timestamp": "2025-09-06T16:14:42.632857",
     "source": "OddsAPI"
   },
   {
@@ -2804,7 +2468,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916774",
+    "timestamp": "2025-09-06T16:14:42.632866",
     "source": "OddsAPI"
   },
   {
@@ -2828,7 +2492,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916777",
+    "timestamp": "2025-09-06T16:14:42.632875",
     "source": "OddsAPI"
   },
   {
@@ -2838,8 +2502,8 @@
     "team2": "Los Angeles Rams",
     "game_time": "2025-11-02T21:05:00Z",
     "moneyline": {
-      "team1_odds": 340,
-      "team2_odds": -440
+      "team1_odds": 350,
+      "team2_odds": -455
     },
     "spread": {
       "team1_spread": 9.5,
@@ -2852,31 +2516,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916781",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "61531628516decd1ee8116da5f6f9056",
-    "sport": "NFL",
-    "team1": "Kansas City Chiefs",
-    "team2": "Buffalo Bills",
-    "game_time": "2025-11-02T21:25:00Z",
-    "moneyline": {
-      "team1_odds": 124,
-      "team2_odds": -148
-    },
-    "spread": {
-      "team1_spread": 2.5,
-      "team1_odds": -105,
-      "team2_spread": -2.5,
-      "team2_odds": -115
-    },
-    "totals": {
-      "total_points": 48.5,
-      "over_odds": -110,
-      "under_odds": -110
-    },
-    "timestamp": "2025-09-05T02:08:26.916784",
+    "timestamp": "2025-09-06T16:14:42.632888",
     "source": "OddsAPI"
   },
   {
@@ -2900,7 +2540,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916788",
+    "timestamp": "2025-09-06T16:14:42.632898",
     "source": "OddsAPI"
   },
   {
@@ -2910,8 +2550,8 @@
     "team2": "Denver Broncos",
     "game_time": "2025-11-07T01:15:00Z",
     "moneyline": {
-      "team1_odds": 235,
-      "team2_odds": -290
+      "team1_odds": 240,
+      "team2_odds": -298
     },
     "spread": {
       "team1_spread": 6.5,
@@ -2924,7 +2564,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916791",
+    "timestamp": "2025-09-06T16:14:42.632907",
     "source": "OddsAPI"
   },
   {
@@ -2948,7 +2588,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916795",
+    "timestamp": "2025-09-06T16:14:42.632918",
     "source": "OddsAPI"
   },
   {
@@ -2972,7 +2612,7 @@
       "over_odds": -115,
       "under_odds": -105
     },
-    "timestamp": "2025-09-05T02:08:26.916798",
+    "timestamp": "2025-09-06T16:14:42.632927",
     "source": "OddsAPI"
   },
   {
@@ -2982,8 +2622,8 @@
     "team2": "Miami Dolphins",
     "game_time": "2025-11-09T18:00:00Z",
     "moneyline": {
-      "team1_odds": -245,
-      "team2_odds": 200
+      "team1_odds": -238,
+      "team2_odds": 195
     },
     "spread": {
       "team1_spread": -5.5,
@@ -2996,7 +2636,7 @@
       "over_odds": -105,
       "under_odds": -115
     },
-    "timestamp": "2025-09-05T02:08:26.916803",
+    "timestamp": "2025-09-06T16:14:42.632937",
     "source": "OddsAPI"
   },
   {
@@ -3020,7 +2660,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916807",
+    "timestamp": "2025-09-06T16:14:42.632946",
     "source": "OddsAPI"
   },
   {
@@ -3044,7 +2684,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916810",
+    "timestamp": "2025-09-06T16:14:42.632962",
     "source": "OddsAPI"
   },
   {
@@ -3068,7 +2708,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916814",
+    "timestamp": "2025-09-06T16:14:42.632971",
     "source": "OddsAPI"
   },
   {
@@ -3092,7 +2732,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916817",
+    "timestamp": "2025-09-06T16:14:42.632980",
     "source": "OddsAPI"
   },
   {
@@ -3116,7 +2756,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916821",
+    "timestamp": "2025-09-06T16:14:42.632989",
     "source": "OddsAPI"
   },
   {
@@ -3140,7 +2780,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916825",
+    "timestamp": "2025-09-06T16:14:42.632998",
     "source": "OddsAPI"
   },
   {
@@ -3164,7 +2804,7 @@
       "over_odds": -115,
       "under_odds": -105
     },
-    "timestamp": "2025-09-05T02:08:26.916828",
+    "timestamp": "2025-09-06T16:14:42.633010",
     "source": "OddsAPI"
   },
   {
@@ -3188,31 +2828,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916833",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "349d53a4f89591312ea528e81b786474",
-    "sport": "NFL",
-    "team1": "Pittsburgh Steelers",
-    "team2": "Los Angeles Chargers",
-    "game_time": "2025-11-10T01:20:00Z",
-    "moneyline": {
-      "team1_odds": 180,
-      "team2_odds": -218
-    },
-    "spread": {
-      "team1_spread": 4.5,
-      "team1_odds": -110,
-      "team2_spread": -4.5,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": 43.5,
-      "over_odds": -110,
-      "under_odds": -110
-    },
-    "timestamp": "2025-09-05T02:08:26.916837",
+    "timestamp": "2025-09-06T16:14:42.633019",
     "source": "OddsAPI"
   },
   {
@@ -3236,7 +2852,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916841",
+    "timestamp": "2025-09-06T16:14:42.633028",
     "source": "OddsAPI"
   },
   {
@@ -3246,8 +2862,8 @@
     "team2": "Miami Dolphins",
     "game_time": "2025-11-16T14:30:00Z",
     "moneyline": {
-      "team1_odds": -225,
-      "team2_odds": 185
+      "team1_odds": -218,
+      "team2_odds": 180
     },
     "spread": {
       "team1_spread": -4.5,
@@ -3260,7 +2876,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916845",
+    "timestamp": "2025-09-06T16:14:42.633038",
     "source": "OddsAPI"
   },
   {
@@ -3284,7 +2900,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916848",
+    "timestamp": "2025-09-06T16:14:42.633047",
     "source": "OddsAPI"
   },
   {
@@ -3308,7 +2924,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916852",
+    "timestamp": "2025-09-06T16:14:42.633059",
     "source": "OddsAPI"
   },
   {
@@ -3332,7 +2948,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916855",
+    "timestamp": "2025-09-06T16:14:42.633069",
     "source": "OddsAPI"
   },
   {
@@ -3356,7 +2972,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916858",
+    "timestamp": "2025-09-06T16:14:42.633082",
     "source": "OddsAPI"
   },
   {
@@ -3366,8 +2982,8 @@
     "team2": "New York Giants",
     "game_time": "2025-11-16T18:00:00Z",
     "moneyline": {
-      "team1_odds": -218,
-      "team2_odds": 180
+      "team1_odds": -205,
+      "team2_odds": 170
     },
     "spread": {
       "team1_spread": -4.5,
@@ -3380,7 +2996,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916862",
+    "timestamp": "2025-09-06T16:14:42.633091",
     "source": "OddsAPI"
   },
   {
@@ -3404,31 +3020,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916866",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "591fd7cff37201a14cbdfbd457592445",
-    "sport": "NFL",
-    "team1": "Los Angeles Chargers",
-    "team2": "Jacksonville Jaguars",
-    "game_time": "2025-11-16T18:00:00Z",
-    "moneyline": {
-      "team1_odds": -125,
-      "team2_odds": 105
-    },
-    "spread": {
-      "team1_spread": -1.5,
-      "team1_odds": -110,
-      "team2_spread": 1.5,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": 46.5,
-      "over_odds": -110,
-      "under_odds": -110
-    },
-    "timestamp": "2025-09-05T02:08:26.916870",
+    "timestamp": "2025-09-06T16:14:42.633101",
     "source": "OddsAPI"
   },
   {
@@ -3452,7 +3044,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916873",
+    "timestamp": "2025-09-06T16:14:42.633110",
     "source": "OddsAPI"
   },
   {
@@ -3476,7 +3068,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916877",
+    "timestamp": "2025-09-06T16:14:42.633123",
     "source": "OddsAPI"
   },
   {
@@ -3500,31 +3092,7 @@
       "over_odds": -105,
       "under_odds": -115
     },
-    "timestamp": "2025-09-05T02:08:26.916881",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "96ce7785b0980b03282c7e10d4c58d4a",
-    "sport": "NFL",
-    "team1": "Kansas City Chiefs",
-    "team2": "Denver Broncos",
-    "game_time": "2025-11-16T21:25:00Z",
-    "moneyline": {
-      "team1_odds": -125,
-      "team2_odds": 105
-    },
-    "spread": {
-      "team1_spread": -1.5,
-      "team1_odds": -110,
-      "team2_spread": 1.5,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": 45.5,
-      "over_odds": -110,
-      "under_odds": -110
-    },
-    "timestamp": "2025-09-05T02:08:26.916884",
+    "timestamp": "2025-09-06T16:14:42.633133",
     "source": "OddsAPI"
   },
   {
@@ -3534,8 +3102,8 @@
     "team2": "Houston Texans",
     "game_time": "2025-11-21T01:15:00Z",
     "moneyline": {
-      "team1_odds": -192,
-      "team2_odds": 160
+      "team1_odds": -185,
+      "team2_odds": 154
     },
     "spread": {
       "team1_spread": -3.5,
@@ -3548,7 +3116,7 @@
       "over_odds": -115,
       "under_odds": -105
     },
-    "timestamp": "2025-09-05T02:08:26.916888",
+    "timestamp": "2025-09-06T16:14:42.633143",
     "source": "OddsAPI"
   },
   {
@@ -3572,7 +3140,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916892",
+    "timestamp": "2025-09-06T16:14:42.633152",
     "source": "OddsAPI"
   },
   {
@@ -3596,7 +3164,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916896",
+    "timestamp": "2025-09-06T16:14:42.633161",
     "source": "OddsAPI"
   },
   {
@@ -3620,7 +3188,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916899",
+    "timestamp": "2025-09-06T16:14:42.633174",
     "source": "OddsAPI"
   },
   {
@@ -3644,7 +3212,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916903",
+    "timestamp": "2025-09-06T16:14:42.633183",
     "source": "OddsAPI"
   },
   {
@@ -3668,31 +3236,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916906",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "8b39d8dc550ced94f9faa91878ebf6b6",
-    "sport": "NFL",
-    "team1": "Indianapolis Colts",
-    "team2": "Kansas City Chiefs",
-    "game_time": "2025-11-23T18:00:00Z",
-    "moneyline": {
-      "team1_odds": 350,
-      "team2_odds": -455
-    },
-    "spread": {
-      "team1_spread": 9.5,
-      "team1_odds": -110,
-      "team2_spread": -9.5,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": 45.5,
-      "over_odds": -110,
-      "under_odds": -110
-    },
-    "timestamp": "2025-09-05T02:08:26.916916",
+    "timestamp": "2025-09-06T16:14:42.633192",
     "source": "OddsAPI"
   },
   {
@@ -3716,7 +3260,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916920",
+    "timestamp": "2025-09-06T16:14:42.633202",
     "source": "OddsAPI"
   },
   {
@@ -3740,7 +3284,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916923",
+    "timestamp": "2025-09-06T16:14:42.633211",
     "source": "OddsAPI"
   },
   {
@@ -3764,7 +3308,7 @@
       "over_odds": -112,
       "under_odds": -108
     },
-    "timestamp": "2025-09-05T02:08:26.916928",
+    "timestamp": "2025-09-06T16:14:42.633220",
     "source": "OddsAPI"
   },
   {
@@ -3778,17 +3322,17 @@
       "team2_odds": 110
     },
     "spread": {
-      "team1_spread": -1.5,
-      "team1_odds": -115,
-      "team2_spread": 1.5,
-      "team2_odds": -105
+      "team1_spread": -2.5,
+      "team1_odds": -105,
+      "team2_spread": 2.5,
+      "team2_odds": -115
     },
     "totals": {
       "total_points": 43.5,
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916931",
+    "timestamp": "2025-09-06T16:14:42.633229",
     "source": "OddsAPI"
   },
   {
@@ -3798,8 +3342,8 @@
     "team2": "Los Angeles Rams",
     "game_time": "2025-11-24T01:20:00Z",
     "moneyline": {
-      "team1_odds": 120,
-      "team2_odds": -142
+      "team1_odds": 124,
+      "team2_odds": -148
     },
     "spread": {
       "team1_spread": 2.5,
@@ -3812,7 +3356,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916935",
+    "timestamp": "2025-09-06T16:14:42.633238",
     "source": "OddsAPI"
   },
   {
@@ -3836,7 +3380,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916938",
+    "timestamp": "2025-09-06T16:14:42.633247",
     "source": "OddsAPI"
   },
   {
@@ -3846,8 +3390,8 @@
     "team2": "Detroit Lions",
     "game_time": "2025-11-27T18:00:00Z",
     "moneyline": {
-      "team1_odds": 124,
-      "team2_odds": -148
+      "team1_odds": 120,
+      "team2_odds": -142
     },
     "spread": {
       "team1_spread": 2.5,
@@ -3860,7 +3404,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916942",
+    "timestamp": "2025-09-06T16:14:42.633256",
     "source": "OddsAPI"
   },
   {
@@ -3884,7 +3428,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916945",
+    "timestamp": "2025-09-06T16:14:42.633269",
     "source": "OddsAPI"
   },
   {
@@ -3908,7 +3452,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916949",
+    "timestamp": "2025-09-06T16:14:42.633284",
     "source": "OddsAPI"
   },
   {
@@ -3932,7 +3476,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916952",
+    "timestamp": "2025-09-06T16:14:42.633294",
     "source": "OddsAPI"
   },
   {
@@ -3956,7 +3500,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916957",
+    "timestamp": "2025-09-06T16:14:42.633304",
     "source": "OddsAPI"
   },
   {
@@ -3966,8 +3510,8 @@
     "team2": "Cleveland Browns",
     "game_time": "2025-11-30T18:00:00Z",
     "moneyline": {
-      "team1_odds": -258,
-      "team2_odds": 210
+      "team1_odds": -250,
+      "team2_odds": 205
     },
     "spread": {
       "team1_spread": -6.0,
@@ -3980,7 +3524,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916960",
+    "timestamp": "2025-09-06T16:14:42.633313",
     "source": "OddsAPI"
   },
   {
@@ -4004,7 +3548,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916965",
+    "timestamp": "2025-09-06T16:14:42.633322",
     "source": "OddsAPI"
   },
   {
@@ -4028,7 +3572,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916968",
+    "timestamp": "2025-09-06T16:14:42.633331",
     "source": "OddsAPI"
   },
   {
@@ -4052,7 +3596,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916972",
+    "timestamp": "2025-09-06T16:14:42.633342",
     "source": "OddsAPI"
   },
   {
@@ -4076,7 +3620,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916975",
+    "timestamp": "2025-09-06T16:14:42.633352",
     "source": "OddsAPI"
   },
   {
@@ -4100,31 +3644,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916978",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "76ac5a8d2c8679ae6ea8861114791bd8",
-    "sport": "NFL",
-    "team1": "Las Vegas Raiders",
-    "team2": "Los Angeles Chargers",
-    "game_time": "2025-11-30T21:25:00Z",
-    "moneyline": {
-      "team1_odds": 225,
-      "team2_odds": -278
-    },
-    "spread": {
-      "team1_spread": 6.5,
-      "team1_odds": -110,
-      "team2_spread": -6.5,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": 44.5,
-      "over_odds": -108,
-      "under_odds": -112
-    },
-    "timestamp": "2025-09-05T02:08:26.916981",
+    "timestamp": "2025-09-06T16:14:42.633361",
     "source": "OddsAPI"
   },
   {
@@ -4148,7 +3668,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916986",
+    "timestamp": "2025-09-06T16:14:42.633369",
     "source": "OddsAPI"
   },
   {
@@ -4158,8 +3678,8 @@
     "team2": "New England Patriots",
     "game_time": "2025-12-02T01:15:00Z",
     "moneyline": {
-      "team1_odds": 140,
-      "team2_odds": -166
+      "team1_odds": 142,
+      "team2_odds": -170
     },
     "spread": {
       "team1_spread": 3.0,
@@ -4172,7 +3692,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916990",
+    "timestamp": "2025-09-06T16:14:42.633383",
     "source": "OddsAPI"
   },
   {
@@ -4196,7 +3716,7 @@
       "over_odds": -108,
       "under_odds": -112
     },
-    "timestamp": "2025-09-05T02:08:26.916993",
+    "timestamp": "2025-09-06T16:14:42.633392",
     "source": "OddsAPI"
   },
   {
@@ -4220,7 +3740,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.916996",
+    "timestamp": "2025-09-06T16:14:42.633401",
     "source": "OddsAPI"
   },
   {
@@ -4244,7 +3764,7 @@
       "over_odds": -105,
       "under_odds": -115
     },
-    "timestamp": "2025-09-05T02:08:26.917000",
+    "timestamp": "2025-09-06T16:14:42.633411",
     "source": "OddsAPI"
   },
   {
@@ -4268,7 +3788,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917004",
+    "timestamp": "2025-09-06T16:14:42.633420",
     "source": "OddsAPI"
   },
   {
@@ -4292,7 +3812,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917007",
+    "timestamp": "2025-09-06T16:14:42.633429",
     "source": "OddsAPI"
   },
   {
@@ -4316,7 +3836,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917011",
+    "timestamp": "2025-09-06T16:14:42.633443",
     "source": "OddsAPI"
   },
   {
@@ -4340,7 +3860,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917015",
+    "timestamp": "2025-09-06T16:14:42.633452",
     "source": "OddsAPI"
   },
   {
@@ -4364,7 +3884,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917019",
+    "timestamp": "2025-09-06T16:14:42.633461",
     "source": "OddsAPI"
   },
   {
@@ -4374,8 +3894,8 @@
     "team2": "Las Vegas Raiders",
     "game_time": "2025-12-07T21:05:00Z",
     "moneyline": {
-      "team1_odds": -185,
-      "team2_odds": 154
+      "team1_odds": -180,
+      "team2_odds": 150
     },
     "spread": {
       "team1_spread": -3.5,
@@ -4388,7 +3908,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917022",
+    "timestamp": "2025-09-06T16:14:42.633474",
     "source": "OddsAPI"
   },
   {
@@ -4412,7 +3932,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917025",
+    "timestamp": "2025-09-06T16:14:42.633483",
     "source": "OddsAPI"
   },
   {
@@ -4422,8 +3942,8 @@
     "team2": "Buffalo Bills",
     "game_time": "2025-12-07T21:25:00Z",
     "moneyline": {
-      "team1_odds": 200,
-      "team2_odds": -245
+      "team1_odds": 195,
+      "team2_odds": -238
     },
     "spread": {
       "team1_spread": 5.5,
@@ -4436,31 +3956,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917028",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "4727a6cfcd3d604dbfcb898c5a4d40a6",
-    "sport": "NFL",
-    "team1": "Houston Texans",
-    "team2": "Kansas City Chiefs",
-    "game_time": "2025-12-08T01:20:00Z",
-    "moneyline": {
-      "team1_odds": 225,
-      "team2_odds": -278
-    },
-    "spread": {
-      "team1_spread": 6.5,
-      "team1_odds": -110,
-      "team2_spread": -6.5,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": 45.5,
-      "over_odds": -105,
-      "under_odds": -115
-    },
-    "timestamp": "2025-09-05T02:08:26.917031",
+    "timestamp": "2025-09-06T16:14:42.633516",
     "source": "OddsAPI"
   },
   {
@@ -4470,8 +3966,8 @@
     "team2": "Tampa Bay Buccaneers",
     "game_time": "2025-12-12T01:15:00Z",
     "moneyline": {
-      "team1_odds": 195,
-      "team2_odds": -238
+      "team1_odds": 190,
+      "team2_odds": -230
     },
     "spread": {
       "team1_spread": 5.5,
@@ -4484,7 +3980,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917035",
+    "timestamp": "2025-09-06T16:14:42.633527",
     "source": "OddsAPI"
   },
   {
@@ -4494,8 +3990,8 @@
     "team2": "Houston Texans",
     "game_time": "2025-12-14T18:00:00Z",
     "moneyline": {
-      "team1_odds": 114,
-      "team2_odds": -135
+      "team1_odds": 120,
+      "team2_odds": -142
     },
     "spread": {
       "team1_spread": 2.5,
@@ -4508,7 +4004,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917038",
+    "timestamp": "2025-09-06T16:14:42.633536",
     "source": "OddsAPI"
   },
   {
@@ -4532,7 +4028,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917042",
+    "timestamp": "2025-09-06T16:14:42.633548",
     "source": "OddsAPI"
   },
   {
@@ -4556,7 +4052,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917046",
+    "timestamp": "2025-09-06T16:14:42.633558",
     "source": "OddsAPI"
   },
   {
@@ -4566,8 +4062,8 @@
     "team2": "Chicago Bears",
     "game_time": "2025-12-14T18:00:00Z",
     "moneyline": {
-      "team1_odds": 250,
-      "team2_odds": -310
+      "team1_odds": 260,
+      "team2_odds": -325
     },
     "spread": {
       "team1_spread": 7.0,
@@ -4580,7 +4076,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917049",
+    "timestamp": "2025-09-06T16:14:42.633567",
     "source": "OddsAPI"
   },
   {
@@ -4590,8 +4086,8 @@
     "team2": "Jacksonville Jaguars",
     "game_time": "2025-12-14T18:00:00Z",
     "moneyline": {
-      "team1_odds": 180,
-      "team2_odds": -218
+      "team1_odds": 170,
+      "team2_odds": -205
     },
     "spread": {
       "team1_spread": 4.5,
@@ -4604,31 +4100,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917052",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "cd5151f8a1e7fcba4901929e77b94acd",
-    "sport": "NFL",
-    "team1": "Los Angeles Chargers",
-    "team2": "Kansas City Chiefs",
-    "game_time": "2025-12-14T18:00:00Z",
-    "moneyline": {
-      "team1_odds": 180,
-      "team2_odds": -218
-    },
-    "spread": {
-      "team1_spread": 4.5,
-      "team1_odds": -110,
-      "team2_spread": -4.5,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": 45.5,
-      "over_odds": -110,
-      "under_odds": -110
-    },
-    "timestamp": "2025-09-05T02:08:26.917058",
+    "timestamp": "2025-09-06T16:14:42.633576",
     "source": "OddsAPI"
   },
   {
@@ -4652,7 +4124,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917061",
+    "timestamp": "2025-09-06T16:14:42.633585",
     "source": "OddsAPI"
   },
   {
@@ -4676,7 +4148,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917064",
+    "timestamp": "2025-09-06T16:14:42.633594",
     "source": "OddsAPI"
   },
   {
@@ -4700,7 +4172,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917068",
+    "timestamp": "2025-09-06T16:14:42.633606",
     "source": "OddsAPI"
   },
   {
@@ -4724,7 +4196,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917072",
+    "timestamp": "2025-09-06T16:14:42.633622",
     "source": "OddsAPI"
   },
   {
@@ -4748,7 +4220,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917076",
+    "timestamp": "2025-09-06T16:14:42.633631",
     "source": "OddsAPI"
   },
   {
@@ -4772,7 +4244,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917081",
+    "timestamp": "2025-09-06T16:14:42.633641",
     "source": "OddsAPI"
   },
   {
@@ -4782,8 +4254,8 @@
     "team2": "Pittsburgh Steelers",
     "game_time": "2025-12-16T01:15:00Z",
     "moneyline": {
-      "team1_odds": 130,
-      "team2_odds": -155
+      "team1_odds": 136,
+      "team2_odds": -162
     },
     "spread": {
       "team1_spread": 3.0,
@@ -4796,7 +4268,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917084",
+    "timestamp": "2025-09-06T16:14:42.633650",
     "source": "OddsAPI"
   },
   {
@@ -4820,7 +4292,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917087",
+    "timestamp": "2025-09-06T16:14:42.633659",
     "source": "OddsAPI"
   },
   {
@@ -4844,7 +4316,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917091",
+    "timestamp": "2025-09-06T16:14:42.633668",
     "source": "OddsAPI"
   },
   {
@@ -4854,8 +4326,8 @@
     "team2": "Baltimore Ravens",
     "game_time": "2025-12-21T18:00:00Z",
     "moneyline": {
-      "team1_odds": 330,
-      "team2_odds": -425
+      "team1_odds": 320,
+      "team2_odds": -410
     },
     "spread": {
       "team1_spread": 8.5,
@@ -4868,7 +4340,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917094",
+    "timestamp": "2025-09-06T16:14:42.633677",
     "source": "OddsAPI"
   },
   {
@@ -4878,8 +4350,8 @@
     "team2": "Cleveland Browns",
     "game_time": "2025-12-21T18:00:00Z",
     "moneyline": {
-      "team1_odds": -410,
-      "team2_odds": 320
+      "team1_odds": -395,
+      "team2_odds": 310
     },
     "spread": {
       "team1_spread": -8.5,
@@ -4892,7 +4364,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917098",
+    "timestamp": "2025-09-06T16:14:42.633686",
     "source": "OddsAPI"
   },
   {
@@ -4916,31 +4388,7 @@
       "over_odds": -108,
       "under_odds": -112
     },
-    "timestamp": "2025-09-05T02:08:26.917101",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "0cce34b9a49c4c6bdc1e65449e37a0f9",
-    "sport": "NFL",
-    "team1": "Kansas City Chiefs",
-    "team2": "Tennessee Titans",
-    "game_time": "2025-12-21T18:00:00Z",
-    "moneyline": {
-      "team1_odds": -325,
-      "team2_odds": 260
-    },
-    "spread": {
-      "team1_spread": -7.0,
-      "team1_odds": -120,
-      "team2_spread": 7.0,
-      "team2_odds": 100
-    },
-    "totals": {
-      "total_points": 44.5,
-      "over_odds": -110,
-      "under_odds": -110
-    },
-    "timestamp": "2025-09-05T02:08:26.917104",
+    "timestamp": "2025-09-06T16:14:42.633699",
     "source": "OddsAPI"
   },
   {
@@ -4964,7 +4412,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917108",
+    "timestamp": "2025-09-06T16:14:42.633709",
     "source": "OddsAPI"
   },
   {
@@ -4988,7 +4436,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917111",
+    "timestamp": "2025-09-06T16:14:42.633718",
     "source": "OddsAPI"
   },
   {
@@ -5012,7 +4460,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917115",
+    "timestamp": "2025-09-06T16:14:42.633731",
     "source": "OddsAPI"
   },
   {
@@ -5022,8 +4470,8 @@
     "team2": "Denver Broncos",
     "game_time": "2025-12-21T21:05:00Z",
     "moneyline": {
-      "team1_odds": 200,
-      "team2_odds": -245
+      "team1_odds": 190,
+      "team2_odds": -230
     },
     "spread": {
       "team1_spread": 5.5,
@@ -5036,7 +4484,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917119",
+    "timestamp": "2025-09-06T16:14:42.633740",
     "source": "OddsAPI"
   },
   {
@@ -5060,7 +4508,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917122",
+    "timestamp": "2025-09-06T16:14:42.633749",
     "source": "OddsAPI"
   },
   {
@@ -5084,7 +4532,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917127",
+    "timestamp": "2025-09-06T16:14:42.633758",
     "source": "OddsAPI"
   },
   {
@@ -5108,7 +4556,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917131",
+    "timestamp": "2025-09-06T16:14:42.633767",
     "source": "OddsAPI"
   },
   {
@@ -5118,8 +4566,8 @@
     "team2": "Indianapolis Colts",
     "game_time": "2025-12-23T01:15:00Z",
     "moneyline": {
-      "team1_odds": -166,
-      "team2_odds": 140
+      "team1_odds": -170,
+      "team2_odds": 142
     },
     "spread": {
       "team1_spread": -3.0,
@@ -5132,7 +4580,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917134",
+    "timestamp": "2025-09-06T16:14:42.633779",
     "source": "OddsAPI"
   },
   {
@@ -5156,31 +4604,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917138",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "29164a99a917051c6e1778270033d362",
-    "sport": "NFL",
-    "team1": "Denver Broncos",
-    "team2": "Kansas City Chiefs",
-    "game_time": "2025-12-26T01:15:00Z",
-    "moneyline": {
-      "team1_odds": 170,
-      "team2_odds": -205
-    },
-    "spread": {
-      "team1_spread": 4.5,
-      "team1_odds": -110,
-      "team2_spread": -4.5,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": 44.5,
-      "over_odds": -105,
-      "under_odds": -115
-    },
-    "timestamp": "2025-09-05T02:08:26.917141",
+    "timestamp": "2025-09-06T16:14:42.633788",
     "source": "OddsAPI"
   },
   {
@@ -5204,7 +4628,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917144",
+    "timestamp": "2025-09-06T16:14:42.633797",
     "source": "OddsAPI"
   },
   {
@@ -5228,7 +4652,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917148",
+    "timestamp": "2025-09-06T16:14:42.633807",
     "source": "OddsAPI"
   },
   {
@@ -5252,7 +4676,7 @@
       "over_odds": -115,
       "under_odds": -105
     },
-    "timestamp": "2025-09-05T02:08:26.917151",
+    "timestamp": "2025-09-06T16:14:42.633816",
     "source": "OddsAPI"
   },
   {
@@ -5276,31 +4700,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917155",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "832c36c4b6d5132e88cf11391797c194",
-    "sport": "NFL",
-    "team1": "Houston Texans",
-    "team2": "Los Angeles Chargers",
-    "game_time": "2025-12-28T18:00:00Z",
-    "moneyline": {
-      "team1_odds": 154,
-      "team2_odds": -185
-    },
-    "spread": {
-      "team1_spread": 3.5,
-      "team1_odds": -110,
-      "team2_spread": -3.5,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": 43.5,
-      "over_odds": -110,
-      "under_odds": -110
-    },
-    "timestamp": "2025-09-05T02:08:26.917159",
+    "timestamp": "2025-09-06T16:14:42.633828",
     "source": "OddsAPI"
   },
   {
@@ -5324,7 +4724,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917162",
+    "timestamp": "2025-09-06T16:14:42.633838",
     "source": "OddsAPI"
   },
   {
@@ -5348,7 +4748,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917165",
+    "timestamp": "2025-09-06T16:14:42.633847",
     "source": "OddsAPI"
   },
   {
@@ -5372,7 +4772,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917169",
+    "timestamp": "2025-09-06T16:14:42.633856",
     "source": "OddsAPI"
   },
   {
@@ -5396,7 +4796,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917172",
+    "timestamp": "2025-09-06T16:14:42.633865",
     "source": "OddsAPI"
   },
   {
@@ -5420,7 +4820,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917176",
+    "timestamp": "2025-09-06T16:14:42.633874",
     "source": "OddsAPI"
   },
   {
@@ -5430,8 +4830,8 @@
     "team2": "San Francisco 49ers",
     "game_time": "2025-12-29T01:20:00Z",
     "moneyline": {
-      "team1_odds": 160,
-      "team2_odds": -192
+      "team1_odds": 164,
+      "team2_odds": -198
     },
     "spread": {
       "team1_spread": 3.5,
@@ -5444,7 +4844,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917179",
+    "timestamp": "2025-09-06T16:14:42.633888",
     "source": "OddsAPI"
   },
   {
@@ -5468,7 +4868,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917182",
+    "timestamp": "2025-09-06T16:14:42.633898",
     "source": "OddsAPI"
   },
   {
@@ -5478,8 +4878,8 @@
     "team2": "Los Angeles Rams",
     "game_time": "2026-01-04T18:00:00Z",
     "moneyline": {
-      "team1_odds": 170,
-      "team2_odds": -205
+      "team1_odds": 180,
+      "team2_odds": -218
     },
     "spread": {
       "team1_spread": 4.5,
@@ -5492,7 +4892,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917187",
+    "timestamp": "2025-09-06T16:14:42.633907",
     "source": "OddsAPI"
   },
   {
@@ -5516,7 +4916,7 @@
       "over_odds": "N/A",
       "under_odds": "N/A"
     },
-    "timestamp": "2025-09-05T02:08:26.917190",
+    "timestamp": "2025-09-06T16:14:42.633916",
     "source": "OddsAPI"
   },
   {
@@ -5540,7 +4940,7 @@
       "over_odds": "N/A",
       "under_odds": "N/A"
     },
-    "timestamp": "2025-09-05T02:08:26.917194",
+    "timestamp": "2025-09-06T16:14:42.633924",
     "source": "OddsAPI"
   },
   {
@@ -5564,7 +4964,7 @@
       "over_odds": "N/A",
       "under_odds": "N/A"
     },
-    "timestamp": "2025-09-05T02:08:26.917198",
+    "timestamp": "2025-09-06T16:14:42.633939",
     "source": "OddsAPI"
   },
   {
@@ -5574,8 +4974,8 @@
     "team2": "Tampa Bay Buccaneers",
     "game_time": "2026-01-04T18:00:00Z",
     "moneyline": {
-      "team1_odds": 245,
-      "team2_odds": -305
+      "team1_odds": 260,
+      "team2_odds": -325
     },
     "spread": {
       "team1_spread": 7.0,
@@ -5588,7 +4988,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917201",
+    "timestamp": "2025-09-06T16:14:42.633948",
     "source": "OddsAPI"
   },
   {
@@ -5612,7 +5012,7 @@
       "over_odds": "N/A",
       "under_odds": "N/A"
     },
-    "timestamp": "2025-09-05T02:08:26.917205",
+    "timestamp": "2025-09-06T16:14:42.633956",
     "source": "OddsAPI"
   },
   {
@@ -5636,7 +5036,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917208",
+    "timestamp": "2025-09-06T16:14:42.633966",
     "source": "OddsAPI"
   },
   {
@@ -5660,7 +5060,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917212",
+    "timestamp": "2025-09-06T16:14:42.633975",
     "source": "OddsAPI"
   },
   {
@@ -5684,7 +5084,7 @@
       "over_odds": "N/A",
       "under_odds": "N/A"
     },
-    "timestamp": "2025-09-05T02:08:26.917215",
+    "timestamp": "2025-09-06T16:14:42.633983",
     "source": "OddsAPI"
   },
   {
@@ -5708,31 +5108,7 @@
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:26.917218",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "de4ae000f7f94eecf9d827eabff2991b",
-    "sport": "NFL",
-    "team1": "Kansas City Chiefs",
-    "team2": "Las Vegas Raiders",
-    "game_time": "2026-01-04T18:00:00Z",
-    "moneyline": {
-      "team1_odds": -250,
-      "team2_odds": 205
-    },
-    "spread": {
-      "team1_spread": -6.0,
-      "team1_odds": -110,
-      "team2_spread": 6.0,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": "N/A",
-      "over_odds": "N/A",
-      "under_odds": "N/A"
-    },
-    "timestamp": "2025-09-05T02:08:26.917221",
+    "timestamp": "2025-09-06T16:14:42.633992",
     "source": "OddsAPI"
   },
   {
@@ -5756,7 +5132,7 @@
       "over_odds": "N/A",
       "under_odds": "N/A"
     },
-    "timestamp": "2025-09-05T02:08:26.917224",
+    "timestamp": "2025-09-06T16:14:42.634000",
     "source": "OddsAPI"
   },
   {
@@ -5780,111 +5156,735 @@
       "over_odds": -115,
       "under_odds": -105
     },
-    "timestamp": "2025-09-05T02:08:26.917227",
+    "timestamp": "2025-09-06T16:14:42.634009",
     "source": "OddsAPI"
   },
   {
-    "id": "30621f6a1072712bee795c15eafe9768",
-    "sport": "NFL",
-    "team1": "Los Angeles Chargers",
-    "team2": "Denver Broncos",
-    "game_time": "2026-01-04T21:05:00Z",
+    "id": "4be8ee33ee54d89bf2bca677f33972fe",
+    "sport": "CFB",
+    "team1": "Western Carolina Catamounts",
+    "team2": "Wake Forest Demon Deacons",
+    "game_time": "2025-09-06T18:03:08Z",
     "moneyline": {
-      "team1_odds": 114,
-      "team2_odds": -135
+      "team1_odds": "N/A",
+      "team2_odds": "N/A"
+    },
+    "spread": {
+      "team1_spread": 30.5,
+      "team1_odds": -108,
+      "team2_spread": -30.5,
+      "team2_odds": -120
+    },
+    "totals": {
+      "total_points": 63.5,
+      "over_odds": -114,
+      "under_odds": -114
+    },
+    "timestamp": "2025-09-06T16:14:43.953095",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "3975575c3ff9da1842f4019db37825e7",
+    "sport": "CFB",
+    "team1": "Austin Peay Governors",
+    "team2": "Georgia Bulldogs",
+    "game_time": "2025-09-06T18:30:00Z",
+    "moneyline": {
+      "team1_odds": "N/A",
+      "team2_odds": "N/A"
+    },
+    "spread": {
+      "team1_spread": 28.5,
+      "team1_odds": -115,
+      "team2_spread": -28.5,
+      "team2_odds": -113
+    },
+    "totals": {
+      "total_points": 40.5,
+      "over_odds": -114,
+      "under_odds": -114
+    },
+    "timestamp": "2025-09-06T16:14:43.953114",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "768fd5137a06619d87538d884eddbcc8",
+    "sport": "CFB",
+    "team1": "Howard Bison",
+    "team2": "Temple Owls",
+    "game_time": "2025-09-06T18:32:32Z",
+    "moneyline": {
+      "team1_odds": "N/A",
+      "team2_odds": "N/A"
+    },
+    "spread": {
+      "team1_spread": 48.5,
+      "team1_odds": -450,
+      "team2_spread": -48.5,
+      "team2_odds": 305
+    },
+    "totals": {
+      "total_points": 63.5,
+      "over_odds": 100,
+      "under_odds": -130
+    },
+    "timestamp": "2025-09-06T16:14:43.953118",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "ea67a3db1f2b5827009f6d8e63c5c721",
+    "sport": "CFB",
+    "team1": "Idaho State Bengals",
+    "team2": "New Mexico Lobos",
+    "game_time": "2025-09-06T19:00:00Z",
+    "moneyline": {
+      "team1_odds": 240,
+      "team2_odds": -330
+    },
+    "spread": {
+      "team1_spread": 4.5,
+      "team1_odds": -122,
+      "team2_spread": -4.5,
+      "team2_odds": -106
+    },
+    "totals": {
+      "total_points": 49.5,
+      "over_odds": -110,
+      "under_odds": -118
+    },
+    "timestamp": "2025-09-06T16:14:43.953123",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "26dc6f197e66104d32d01209b8ad80f2",
+    "sport": "CFB",
+    "team1": "East Tennessee State Buccaneers",
+    "team2": "Tennessee Volunteers",
+    "game_time": "2025-09-06T19:30:00Z",
+    "moneyline": {
+      "team1_odds": "N/A",
+      "team2_odds": "N/A"
+    },
+    "spread": {
+      "team1_spread": 61.5,
+      "team1_odds": -106,
+      "team2_spread": -61.5,
+      "team2_odds": -120
+    },
+    "totals": {
+      "total_points": 82.5,
+      "over_odds": -113,
+      "under_odds": -115
+    },
+    "timestamp": "2025-09-06T16:14:43.953126",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "6c45601f8d031fc1d9051354e7341c88",
+    "sport": "CFB",
+    "team1": "Gardner-Webb Runnin Bulldogs",
+    "team2": "Georgia Tech Yellow Jackets",
+    "game_time": "2025-09-06T19:30:00Z",
+    "moneyline": {
+      "team1_odds": "N/A",
+      "team2_odds": "N/A"
+    },
+    "spread": {
+      "team1_spread": 39.5,
+      "team1_odds": -114,
+      "team2_spread": -39.5,
+      "team2_odds": -114
+    },
+    "totals": {
+      "total_points": 64.5,
+      "over_odds": -114,
+      "under_odds": -114
+    },
+    "timestamp": "2025-09-06T16:14:43.953130",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "71a02bb7a06ec61fbcc90614e1709887",
+    "sport": "CFB",
+    "team1": "Grambling State Tigers",
+    "team2": "Ohio State Buckeyes",
+    "game_time": "2025-09-06T19:30:00Z",
+    "moneyline": {
+      "team1_odds": "N/A",
+      "team2_odds": "N/A"
+    },
+    "spread": {
+      "team1_spread": 57.5,
+      "team1_odds": -118,
+      "team2_spread": -57.5,
+      "team2_odds": -110
+    },
+    "totals": {
+      "total_points": 62.5,
+      "over_odds": -120,
+      "under_odds": -108
+    },
+    "timestamp": "2025-09-06T16:14:43.953133",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "2b9526d89cef299d27d40df2c7d089cc",
+    "sport": "CFB",
+    "team1": "St. Francis (PA) Red Flash",
+    "team2": "Buffalo Bulls",
+    "game_time": "2025-09-06T19:32:22Z",
+    "moneyline": {
+      "team1_odds": "N/A",
+      "team2_odds": "N/A"
+    },
+    "spread": {
+      "team1_spread": 41.5,
+      "team1_odds": -125,
+      "team2_spread": -41.5,
+      "team2_odds": -105
+    },
+    "totals": {
+      "total_points": 47.5,
+      "over_odds": -110,
+      "under_odds": -120
+    },
+    "timestamp": "2025-09-06T16:14:43.953136",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "7e7fec9c9790702ee91c2bb9ab777e76",
+    "sport": "CFB",
+    "team1": "Bowling Green Falcons",
+    "team2": "Cincinnati Bearcats",
+    "game_time": "2025-09-06T19:32:34Z",
+    "moneyline": {
+      "team1_odds": "N/A",
+      "team2_odds": "N/A"
+    },
+    "spread": {
+      "team1_spread": 28.5,
+      "team1_odds": -125,
+      "team2_spread": -28.5,
+      "team2_odds": -105
+    },
+    "totals": {
+      "total_points": 45.5,
+      "over_odds": -110,
+      "under_odds": -120
+    },
+    "timestamp": "2025-09-06T16:14:43.953139",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "7fd2b35cdf431bfdacae0b428f1b8550",
+    "sport": "CFB",
+    "team1": "Texas State Bobcats",
+    "team2": "UTSA Roadrunners",
+    "game_time": "2025-09-06T19:32:35Z",
+    "moneyline": {
+      "team1_odds": -105,
+      "team2_odds": -125
+    },
+    "spread": {
+      "team1_spread": 1.5,
+      "team1_odds": -125,
+      "team2_spread": -1.5,
+      "team2_odds": -105
+    },
+    "totals": {
+      "total_points": 64.5,
+      "over_odds": -120,
+      "under_odds": -110
+    },
+    "timestamp": "2025-09-06T16:14:43.953143",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "cc6d57b7668726c93fde64f6de4a7c68",
+    "sport": "CFB",
+    "team1": "Lindenwood Lions",
+    "team2": "Appalachian State Mountaineers",
+    "game_time": "2025-09-06T19:32:49Z",
+    "moneyline": {
+      "team1_odds": 1800,
+      "team2_odds": -10000
+    },
+    "spread": {
+      "team1_spread": 20.5,
+      "team1_odds": -114,
+      "team2_spread": -20.5,
+      "team2_odds": -114
+    },
+    "totals": {
+      "total_points": 45.5,
+      "over_odds": -114,
+      "under_odds": -114
+    },
+    "timestamp": "2025-09-06T16:14:43.953147",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "10651a24aaafce3c973435290bb5cc58",
+    "sport": "CFB",
+    "team1": "North Texas Mean Green",
+    "team2": "Western Michigan Broncos",
+    "game_time": "2025-09-06T19:33:16Z",
+    "moneyline": {
+      "team1_odds": 110,
+      "team2_odds": -140
     },
     "spread": {
       "team1_spread": 2.5,
       "team1_odds": -110,
       "team2_spread": -2.5,
-      "team2_odds": -110
+      "team2_odds": -120
     },
     "totals": {
-      "total_points": 42.5,
-      "over_odds": -110,
-      "under_odds": -110
+      "total_points": 50.5,
+      "over_odds": -125,
+      "under_odds": -105
     },
-    "timestamp": "2025-09-05T02:08:26.917232",
+    "timestamp": "2025-09-06T16:14:43.953151",
     "source": "OddsAPI"
   },
   {
-    "id": "3e06ec27bf0f5024ab751815479d9c4e",
+    "id": "60385595d3e501feeba3a45fafead46f",
     "sport": "CFB",
-    "team1": "James Madison Dukes",
-    "team2": "Louisville Cardinals",
-    "game_time": "2025-09-05T23:00:00Z",
+    "team1": "Kansas Jayhawks",
+    "team2": "Missouri Tigers",
+    "game_time": "2025-09-06T19:35:14Z",
     "moneyline": {
-      "team1_odds": 455,
-      "team2_odds": -625
+      "team1_odds": 140,
+      "team2_odds": -180
     },
     "spread": {
-      "team1_spread": 14.5,
-      "team1_odds": -110,
-      "team2_spread": -14.5,
-      "team2_odds": -110
+      "team1_spread": 3.5,
+      "team1_odds": -130,
+      "team2_spread": -3.5,
+      "team2_odds": 100
     },
     "totals": {
-      "total_points": 55.5,
-      "over_odds": -108,
-      "under_odds": -112
+      "total_points": 67.5,
+      "over_odds": -115,
+      "under_odds": -115
     },
-    "timestamp": "2025-09-05T02:08:28.212670",
+    "timestamp": "2025-09-06T16:14:43.953155",
     "source": "OddsAPI"
   },
   {
-    "id": "319bff020a1a38e8a0b8123c6d9f06c5",
+    "id": "2147ecdbd826245e414d585251ef87e1",
     "sport": "CFB",
-    "team1": "Northern Illinois Huskies",
-    "team2": "Maryland Terrapins",
-    "game_time": "2025-09-05T23:30:00Z",
+    "team1": "Delaware Blue Hens",
+    "team2": "Colorado Buffaloes",
+    "game_time": "2025-09-06T19:36:00Z",
     "moneyline": {
-      "team1_odds": 575,
+      "team1_odds": 4000,
+      "team2_odds": -100000
+    },
+    "spread": {
+      "team1_spread": 21.5,
+      "team1_odds": -120,
+      "team2_spread": -21.5,
+      "team2_odds": -110
+    },
+    "totals": {
+      "total_points": 47.5,
+      "over_odds": -110,
+      "under_odds": -120
+    },
+    "timestamp": "2025-09-06T16:14:43.953159",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "52db5ee0ae390264d46abf260d58d239",
+    "sport": "CFB",
+    "team1": "Troy Trojans",
+    "team2": "Clemson Tigers",
+    "game_time": "2025-09-06T19:36:05Z",
+    "moneyline": {
+      "team1_odds": 750,
+      "team2_odds": -1450
+    },
+    "spread": {
+      "team1_spread": 20.5,
+      "team1_odds": -115,
+      "team2_spread": -20.5,
+      "team2_odds": -115
+    },
+    "totals": {
+      "total_points": 54.5,
+      "over_odds": -115,
+      "under_odds": -115
+    },
+    "timestamp": "2025-09-06T16:14:43.953163",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "82a0730f5bc12bc2bd0b3e77b2e6d343",
+    "sport": "CFB",
+    "team1": "UAB Blazers",
+    "team2": "Navy Midshipmen",
+    "game_time": "2025-09-06T19:39:39Z",
+    "moneyline": {
+      "team1_odds": 1300,
+      "team2_odds": -3200
+    },
+    "spread": {
+      "team1_spread": 18.5,
+      "team1_odds": -115,
+      "team2_spread": -18.5,
+      "team2_odds": -115
+    },
+    "totals": {
+      "total_points": 74.5,
+      "over_odds": -115,
+      "under_odds": -115
+    },
+    "timestamp": "2025-09-06T16:14:43.953166",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "aae11c793bc039b1fe617662aa7a30ac",
+    "sport": "CFB",
+    "team1": "Oklahoma State Cowboys",
+    "team2": "Oregon Ducks",
+    "game_time": "2025-09-06T19:40:48Z",
+    "moneyline": {
+      "team1_odds": "N/A",
+      "team2_odds": "N/A"
+    },
+    "spread": {
+      "team1_spread": 46.5,
+      "team1_odds": -115,
+      "team2_spread": -46.5,
+      "team2_odds": -115
+    },
+    "totals": {
+      "total_points": 67.5,
+      "over_odds": -125,
+      "under_odds": -105
+    },
+    "timestamp": "2025-09-06T16:14:43.953170",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "4dfcb17f8f10fd2ee8f5794cdabebf94",
+    "sport": "CFB",
+    "team1": "Fresno State Bulldogs",
+    "team2": "Oregon State Beavers",
+    "game_time": "2025-09-06T19:45:28Z",
+    "moneyline": {
+      "team1_odds": -130,
+      "team2_odds": 100
+    },
+    "spread": {
+      "team1_spread": -1.5,
+      "team1_odds": -120,
+      "team2_spread": 1.5,
+      "team2_odds": -110
+    },
+    "totals": {
+      "total_points": 50.5,
+      "over_odds": -110,
+      "under_odds": -120
+    },
+    "timestamp": "2025-09-06T16:14:43.953176",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "d531b8e12cb18d265d2a68e50008904c",
+    "sport": "CFB",
+    "team1": "Ole Miss Rebels",
+    "team2": "Kentucky Wildcats",
+    "game_time": "2025-09-06T19:50:44Z",
+    "moneyline": {
+      "team1_odds": -425,
+      "team2_odds": 300
+    },
+    "spread": {
+      "team1_spread": -7.5,
+      "team1_odds": -120,
+      "team2_spread": 7.5,
+      "team2_odds": -110
+    },
+    "totals": {
+      "total_points": 56.5,
+      "over_odds": -125,
+      "under_odds": -105
+    },
+    "timestamp": "2025-09-06T16:14:43.953180",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "d27640d7a7262d1212283491984a25e3",
+    "sport": "CFB",
+    "team1": "Northern Iowa Panthers",
+    "team2": "Wyoming Cowboys",
+    "game_time": "2025-09-06T20:00:00Z",
+    "moneyline": {
+      "team1_odds": 560,
+      "team2_odds": -1000
+    },
+    "spread": {
+      "team1_spread": 10.5,
+      "team1_odds": -120,
+      "team2_spread": -10.5,
+      "team2_odds": -108
+    },
+    "totals": {
+      "total_points": 41.5,
+      "over_odds": -102,
+      "under_odds": -128
+    },
+    "timestamp": "2025-09-06T16:14:43.953184",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "ef5e4d5fdd91ba13abea3c1b880bf6cb",
+    "sport": "CFB",
+    "team1": "Middle Tennessee Blue Raiders",
+    "team2": "Wisconsin Badgers",
+    "game_time": "2025-09-06T20:05:27Z",
+    "moneyline": {
+      "team1_odds": 2000,
+      "team2_odds": -8500
+    },
+    "spread": {
+      "team1_spread": 20.5,
+      "team1_odds": -110,
+      "team2_spread": -20.5,
+      "team2_odds": -120
+    },
+    "totals": {
+      "total_points": 33.5,
+      "over_odds": -115,
+      "under_odds": -115
+    },
+    "timestamp": "2025-09-06T16:14:43.953188",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "116fcf63d006815e16ad77e27a1b7ec6",
+    "sport": "CFB",
+    "team1": "West Virginia Mountaineers",
+    "team2": "Ohio Bobcats",
+    "game_time": "2025-09-06T20:05:46Z",
+    "moneyline": {
+      "team1_odds": -135,
+      "team2_odds": 105
+    },
+    "spread": {
+      "team1_spread": -1.5,
+      "team1_odds": -115,
+      "team2_spread": 1.5,
+      "team2_odds": -115
+    },
+    "totals": {
+      "total_points": 47.5,
+      "over_odds": -110,
+      "under_odds": -120
+    },
+    "timestamp": "2025-09-06T16:14:43.953192",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "adfb4c2e2052c3e066089e9b30c0e496",
+    "sport": "CFB",
+    "team1": "South Florida Bulls",
+    "team2": "Florida Gators",
+    "game_time": "2025-09-06T20:20:22Z",
+    "moneyline": {
+      "team1_odds": 450,
+      "team2_odds": -720
+    },
+    "spread": {
+      "team1_spread": 12.5,
+      "team1_odds": -115,
+      "team2_spread": -12.5,
+      "team2_odds": -115
+    },
+    "totals": {
+      "total_points": 41.5,
+      "over_odds": -110,
+      "under_odds": -120
+    },
+    "timestamp": "2025-09-06T16:14:43.953196",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "1637d24e5e78c310cc3a006e53d93d24",
+    "sport": "CFB",
+    "team1": "Miami (OH) RedHawks",
+    "team2": "Rutgers Scarlet Knights",
+    "game_time": "2025-09-06T20:30:46Z",
+    "moneyline": {
+      "team1_odds": 520,
       "team2_odds": -850
     },
     "spread": {
-      "team1_spread": 16.5,
-      "team1_odds": -108,
-      "team2_spread": -16.5,
-      "team2_odds": -112
-    },
-    "totals": {
-      "total_points": 46.5,
-      "over_odds": -108,
-      "under_odds": -112
-    },
-    "timestamp": "2025-09-05T02:08:28.212697",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "d4edaa264115d6aa5601ac5094c3fcbf",
-    "sport": "CFB",
-    "team1": "Western Illinois Leathernecks",
-    "team2": "Northwestern Wildcats",
-    "game_time": "2025-09-05T23:30:00Z",
-    "moneyline": {
-      "team1_odds": 2400,
-      "team2_odds": -10000
-    },
-    "spread": {
-      "team1_spread": 28.5,
-      "team1_odds": -110,
-      "team2_spread": -28.5,
+      "team1_spread": 13.5,
+      "team1_odds": -120,
+      "team2_spread": -13.5,
       "team2_odds": -110
     },
     "totals": {
-      "total_points": 51.5,
-      "over_odds": -110,
-      "under_odds": -110
+      "total_points": 47.5,
+      "over_odds": -105,
+      "under_odds": -125
     },
-    "timestamp": "2025-09-05T02:08:28.212707",
+    "timestamp": "2025-09-06T16:14:43.953200",
     "source": "OddsAPI"
   },
   {
-    "id": "5d261118034763fb8926590e23054879",
+    "id": "9a9297190f7b672f20a8c2169e4e0dda",
     "sport": "CFB",
-    "team1": "Eastern Washington Eagles",
-    "team2": "Boise State Broncos",
-    "game_time": "2025-09-06T01:00:00Z",
+    "team1": "Jackson State Tigers",
+    "team2": "Southern Mississippi Golden Eagles",
+    "game_time": "2025-09-06T21:00:00Z",
+    "moneyline": {
+      "team1_odds": 900,
+      "team2_odds": -2500
+    },
+    "spread": {
+      "team1_spread": 20.5,
+      "team1_odds": -114,
+      "team2_spread": -20.5,
+      "team2_odds": -114
+    },
+    "totals": {
+      "total_points": 57.5,
+      "over_odds": -110,
+      "under_odds": -118
+    },
+    "timestamp": "2025-09-06T16:14:43.953204",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "189f13a5956430a8b8bc19a071dbe396",
+    "sport": "CFB",
+    "team1": "Sacramento State Hornets",
+    "team2": "Nevada Wolf Pack",
+    "game_time": "2025-09-06T21:00:00Z",
+    "moneyline": {
+      "team1_odds": 158,
+      "team2_odds": -205
+    },
+    "spread": {
+      "team1_spread": 4.5,
+      "team1_odds": -114,
+      "team2_spread": -4.5,
+      "team2_odds": -114
+    },
+    "totals": {
+      "total_points": 57.5,
+      "over_odds": -118,
+      "under_odds": -110
+    },
+    "timestamp": "2025-09-06T16:14:43.953209",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "b3afa7e549f06046d220f15be8f57bdd",
+    "sport": "CFB",
+    "team1": "Arkansas State Red Wolves",
+    "team2": "Arkansas Razorbacks",
+    "game_time": "2025-09-06T21:02:45Z",
+    "moneyline": {
+      "team1_odds": 2500,
+      "team2_odds": -15000
+    },
+    "spread": {
+      "team1_spread": 27.5,
+      "team1_odds": -110,
+      "team2_spread": -27.5,
+      "team2_odds": -120
+    },
+    "totals": {
+      "total_points": 63.5,
+      "over_odds": -115,
+      "under_odds": -115
+    },
+    "timestamp": "2025-09-06T16:14:43.953212",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "5ec37f47324f863bca4140bf9742c2b3",
+    "sport": "CFB",
+    "team1": "Bryant Bulldogs",
+    "team2": "UMass Minutemen",
+    "game_time": "2025-09-06T21:35:00Z",
+    "moneyline": {
+      "team1_odds": 450,
+      "team2_odds": -630
+    },
+    "spread": {
+      "team1_spread": 14.5,
+      "team1_odds": -112,
+      "team2_spread": -14.5,
+      "team2_odds": -108
+    },
+    "totals": {
+      "total_points": 52.5,
+      "over_odds": -105,
+      "under_odds": -115
+    },
+    "timestamp": "2025-09-06T16:14:43.953216",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "fee631583a9845afb9bf9d8b3b0b8251",
+    "sport": "CFB",
+    "team1": "Missouri State Bears",
+    "team2": "Marshall Thundering Herd",
+    "game_time": "2025-09-06T22:00:00Z",
+    "moneyline": {
+      "team1_odds": 245,
+      "team2_odds": -305
+    },
+    "spread": {
+      "team1_spread": 7.0,
+      "team1_odds": -108,
+      "team2_spread": -7.0,
+      "team2_odds": -112
+    },
+    "totals": {
+      "total_points": 53.5,
+      "over_odds": -112,
+      "under_odds": -108
+    },
+    "timestamp": "2025-09-06T16:14:43.953220",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "e4921c9abbbc6fad654953b98a917c85",
+    "sport": "CFB",
+    "team1": "Cal Poly Mustangs",
+    "team2": "Utah Utes",
+    "game_time": "2025-09-06T22:05:00Z",
+    "moneyline": {
+      "team1_odds": "N/A",
+      "team2_odds": "N/A"
+    },
+    "spread": {
+      "team1_spread": 42.5,
+      "team1_odds": -110,
+      "team2_spread": -42.5,
+      "team2_odds": -110
+    },
+    "totals": {
+      "total_points": 52.5,
+      "over_odds": -115,
+      "under_odds": -105
+    },
+    "timestamp": "2025-09-06T16:14:43.953223",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "56cf14d9ec460e3d925d15a74ff96480",
+    "sport": "CFB",
+    "team1": "Campbell Fighting Camels",
+    "team2": "East Carolina Pirates",
+    "game_time": "2025-09-06T22:05:00Z",
     "moneyline": {
       "team1_odds": 2200,
       "team2_odds": -8000
@@ -5896,683 +5896,59 @@
       "team2_odds": -110
     },
     "totals": {
-      "total_points": 56.5,
-      "over_odds": -110,
-      "under_odds": -110
+      "total_points": 55.5,
+      "over_odds": -112,
+      "under_odds": -108
     },
-    "timestamp": "2025-09-05T02:08:28.212715",
+    "timestamp": "2025-09-06T16:14:43.953227",
     "source": "OddsAPI"
   },
   {
-    "id": "d617ea38af0130201ac40d901bf13d0f",
+    "id": "3f8386d941941a0dfabcc52c2d49a779",
     "sport": "CFB",
-    "team1": "Baylor Bears",
-    "team2": "SMU Mustangs",
-    "game_time": "2025-09-06T16:00:00Z",
+    "team1": "Florida A&M Rattlers",
+    "team2": "Florida Atlantic Owls",
+    "game_time": "2025-09-06T22:05:00Z",
     "moneyline": {
-      "team1_odds": 110,
-      "team2_odds": -132
-    },
-    "spread": {
-      "team1_spread": 2.5,
-      "team1_odds": -110,
-      "team2_spread": -2.5,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": 62.5,
-      "over_odds": -115,
-      "under_odds": -105
-    },
-    "timestamp": "2025-09-05T02:08:28.212724",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "851e2c80e37b4bc2a49538ea658fce35",
-    "sport": "CFB",
-    "team1": "Central Michigan Chippewas",
-    "team2": "Pittsburgh Panthers",
-    "game_time": "2025-09-06T16:00:00Z",
-    "moneyline": {
-      "team1_odds": 1000,
-      "team2_odds": -1800
+      "team1_odds": 980,
+      "team2_odds": -2000
     },
     "spread": {
       "team1_spread": 21.5,
-      "team1_odds": -105,
+      "team1_odds": -115,
       "team2_spread": -21.5,
-      "team2_odds": -115
-    },
-    "totals": {
-      "total_points": 49.5,
-      "over_odds": -115,
-      "under_odds": -105
-    },
-    "timestamp": "2025-09-05T02:08:28.212734",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "22ef820a384ce82c9d0d9c530451b8ae",
-    "sport": "CFB",
-    "team1": "Illinois Fighting Illini",
-    "team2": "Duke Blue Devils",
-    "game_time": "2025-09-06T16:00:00Z",
-    "moneyline": {
-      "team1_odds": -154,
-      "team2_odds": 128
-    },
-    "spread": {
-      "team1_spread": -3.5,
-      "team1_odds": 100,
-      "team2_spread": 3.5,
-      "team2_odds": -122
-    },
-    "totals": {
-      "total_points": 49.5,
-      "over_odds": -110,
-      "under_odds": -110
-    },
-    "timestamp": "2025-09-05T02:08:28.212742",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "6f47dd0ec1e77d03b09f973a889a9888",
-    "sport": "CFB",
-    "team1": "Florida International Panthers",
-    "team2": "Penn State Nittany Lions",
-    "game_time": "2025-09-06T16:00:00Z",
-    "moneyline": {
-      "team1_odds": "N/A",
-      "team2_odds": "N/A"
-    },
-    "spread": {
-      "team1_spread": 41.5,
-      "team1_odds": -104,
-      "team2_spread": -41.5,
-      "team2_odds": -118
-    },
-    "totals": {
-      "total_points": 53.5,
-      "over_odds": -115,
-      "under_odds": -105
-    },
-    "timestamp": "2025-09-05T02:08:28.212750",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "31d94acd80bcf0d456a020d0ca96fd0e",
-    "sport": "CFB",
-    "team1": "Kennesaw State Owls",
-    "team2": "Indiana Hoosiers",
-    "game_time": "2025-09-06T16:00:00Z",
-    "moneyline": {
-      "team1_odds": "N/A",
-      "team2_odds": "N/A"
-    },
-    "spread": {
-      "team1_spread": 35.5,
-      "team1_odds": -115,
-      "team2_spread": -35.5,
       "team2_odds": -105
-    },
-    "totals": {
-      "total_points": 52.5,
-      "over_odds": -112,
-      "under_odds": -108
-    },
-    "timestamp": "2025-09-05T02:08:28.212757",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "601f11a56ce690549ff1275c569cddab",
-    "sport": "CFB",
-    "team1": "Iowa Hawkeyes",
-    "team2": "Iowa State Cyclones",
-    "game_time": "2025-09-06T16:00:00Z",
-    "moneyline": {
-      "team1_odds": 145,
-      "team2_odds": -175
-    },
-    "spread": {
-      "team1_spread": 3.5,
-      "team1_odds": -115,
-      "team2_spread": -3.5,
-      "team2_odds": -105
-    },
-    "totals": {
-      "total_points": 41.5,
-      "over_odds": -112,
-      "under_odds": -108
-    },
-    "timestamp": "2025-09-05T02:08:28.212765",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "6a92f4972c35c421f08a5bf601d60cdf",
-    "sport": "CFB",
-    "team1": "Liberty Flames",
-    "team2": "Jacksonville State Gamecocks",
-    "game_time": "2025-09-06T16:00:00Z",
-    "moneyline": {
-      "team1_odds": -258,
-      "team2_odds": 210
-    },
-    "spread": {
-      "team1_spread": -6.5,
-      "team1_odds": -115,
-      "team2_spread": 6.5,
-      "team2_odds": -105
-    },
-    "totals": {
-      "total_points": 51.5,
-      "over_odds": -110,
-      "under_odds": -110
-    },
-    "timestamp": "2025-09-05T02:08:28.212773",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "1d337b460d2d48e8cd152c4cfc0feb65",
-    "sport": "CFB",
-    "team1": "Kent State Golden Flashes",
-    "team2": "Texas Tech Red Raiders",
-    "game_time": "2025-09-06T16:00:00Z",
-    "moneyline": {
-      "team1_odds": "N/A",
-      "team2_odds": "N/A"
-    },
-    "spread": {
-      "team1_spread": 48.5,
-      "team1_odds": -115,
-      "team2_spread": -48.5,
-      "team2_odds": -105
-    },
-    "totals": {
-      "total_points": 58.5,
-      "over_odds": -115,
-      "under_odds": -105
-    },
-    "timestamp": "2025-09-05T02:08:28.212780",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "aa0b998acde7ec673cd145a43ec0d42a",
-    "sport": "CFB",
-    "team1": "Virginia Cavaliers",
-    "team2": "NC State Wolfpack",
-    "game_time": "2025-09-06T16:00:00Z",
-    "moneyline": {
-      "team1_odds": 126,
-      "team2_odds": -152
-    },
-    "spread": {
-      "team1_spread": 3.5,
-      "team1_odds": -124,
-      "team2_spread": -3.5,
-      "team2_odds": 102
-    },
-    "totals": {
-      "total_points": 54.5,
-      "over_odds": -105,
-      "under_odds": -115
-    },
-    "timestamp": "2025-09-05T02:08:28.212789",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "9c8c520f16b3fec7180880aa3a8305f6",
-    "sport": "CFB",
-    "team1": "San Jose State Spartans",
-    "team2": "Texas Longhorns",
-    "game_time": "2025-09-06T16:00:00Z",
-    "moneyline": {
-      "team1_odds": "N/A",
-      "team2_odds": "N/A"
-    },
-    "spread": {
-      "team1_spread": 36.5,
-      "team1_odds": -110,
-      "team2_spread": -36.5,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": 52.5,
-      "over_odds": -105,
-      "under_odds": -115
-    },
-    "timestamp": "2025-09-05T02:08:28.212796",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "aa65a4823f86a4a55119734ee9bf936d",
-    "sport": "CFB",
-    "team1": "UConn Huskies",
-    "team2": "Syracuse Orange",
-    "game_time": "2025-09-06T16:00:00Z",
-    "moneyline": {
-      "team1_odds": 215,
-      "team2_odds": -265
-    },
-    "spread": {
-      "team1_spread": 6.5,
-      "team1_odds": -108,
-      "team2_spread": -6.5,
-      "team2_odds": -112
-    },
-    "totals": {
-      "total_points": 57.5,
-      "over_odds": -112,
-      "under_odds": -108
-    },
-    "timestamp": "2025-09-05T02:08:28.212804",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "6a4da08f393ad5e4ee1e32e24ff0e280",
-    "sport": "CFB",
-    "team1": "Utah State Aggies",
-    "team2": "Texas A&M Aggies",
-    "game_time": "2025-09-06T16:45:00Z",
-    "moneyline": {
-      "team1_odds": 3000,
-      "team2_odds": -10000
-    },
-    "spread": {
-      "team1_spread": 31.5,
-      "team1_odds": -108,
-      "team2_spread": -31.5,
-      "team2_odds": -112
-    },
-    "totals": {
-      "total_points": 55.5,
-      "over_odds": -110,
-      "under_odds": -110
-    },
-    "timestamp": "2025-09-05T02:08:28.212812",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "7e7fec9c9790702ee91c2bb9ab777e76",
-    "sport": "CFB",
-    "team1": "Bowling Green Falcons",
-    "team2": "Cincinnati Bearcats",
-    "game_time": "2025-09-06T19:30:00Z",
-    "moneyline": {
-      "team1_odds": 1100,
-      "team2_odds": -2100
-    },
-    "spread": {
-      "team1_spread": 23.5,
-      "team1_odds": -115,
-      "team2_spread": -23.5,
-      "team2_odds": -105
-    },
-    "totals": {
-      "total_points": 46.5,
-      "over_odds": -108,
-      "under_odds": -112
-    },
-    "timestamp": "2025-09-05T02:08:28.212820",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "52db5ee0ae390264d46abf260d58d239",
-    "sport": "CFB",
-    "team1": "Troy Trojans",
-    "team2": "Clemson Tigers",
-    "game_time": "2025-09-06T19:30:00Z",
-    "moneyline": {
-      "team1_odds": "N/A",
-      "team2_odds": "N/A"
-    },
-    "spread": {
-      "team1_spread": 30.5,
-      "team1_odds": -102,
-      "team2_spread": -30.5,
-      "team2_odds": -118
-    },
-    "totals": {
-      "total_points": 51.5,
-      "over_odds": -115,
-      "under_odds": -105
-    },
-    "timestamp": "2025-09-05T02:08:28.212827",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "2147ecdbd826245e414d585251ef87e1",
-    "sport": "CFB",
-    "team1": "Delaware Blue Hens",
-    "team2": "Colorado Buffaloes",
-    "game_time": "2025-09-06T19:30:00Z",
-    "moneyline": {
-      "team1_odds": 1300,
-      "team2_odds": -2800
-    },
-    "spread": {
-      "team1_spread": 23.5,
-      "team1_odds": -105,
-      "team2_spread": -23.5,
-      "team2_odds": -115
     },
     "totals": {
       "total_points": 50.5,
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:28.212834",
+    "timestamp": "2025-09-06T16:14:43.953231",
     "source": "OddsAPI"
   },
   {
-    "id": "4dfcb17f8f10fd2ee8f5794cdabebf94",
+    "id": "ab853cd1e0b0c0ec52ed1281c0f4430b",
     "sport": "CFB",
-    "team1": "Fresno State Bulldogs",
-    "team2": "Oregon State Beavers",
-    "game_time": "2025-09-06T19:30:00Z",
+    "team1": "North Carolina Central Eagles",
+    "team2": "Old Dominion Monarchs",
+    "game_time": "2025-09-06T22:05:00Z",
     "moneyline": {
-      "team1_odds": 110,
-      "team2_odds": -130
+      "team1_odds": 980,
+      "team2_odds": -2000
     },
     "spread": {
-      "team1_spread": 2.5,
-      "team1_odds": -112,
-      "team2_spread": -2.5,
-      "team2_odds": -108
-    },
-    "totals": {
-      "total_points": 45.5,
-      "over_odds": -108,
-      "under_odds": -112
-    },
-    "timestamp": "2025-09-05T02:08:28.212843",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "60385595d3e501feeba3a45fafead46f",
-    "sport": "CFB",
-    "team1": "Kansas Jayhawks",
-    "team2": "Missouri Tigers",
-    "game_time": "2025-09-06T19:30:00Z",
-    "moneyline": {
-      "team1_odds": 200,
-      "team2_odds": -245
-    },
-    "spread": {
-      "team1_spread": 6.5,
-      "team1_odds": -105,
-      "team2_spread": -6.5,
-      "team2_odds": -115
-    },
-    "totals": {
-      "total_points": 50.5,
-      "over_odds": -115,
-      "under_odds": -105
-    },
-    "timestamp": "2025-09-05T02:08:28.212851",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "d531b8e12cb18d265d2a68e50008904c",
-    "sport": "CFB",
-    "team1": "Ole Miss Rebels",
-    "team2": "Kentucky Wildcats",
-    "game_time": "2025-09-06T19:30:00Z",
-    "moneyline": {
-      "team1_odds": -340,
-      "team2_odds": 270
-    },
-    "spread": {
-      "team1_spread": -8.5,
-      "team1_odds": -112,
-      "team2_spread": 8.5,
-      "team2_odds": -108
+      "team1_spread": 21.5,
+      "team1_odds": -115,
+      "team2_spread": -21.5,
+      "team2_odds": -105
     },
     "totals": {
       "total_points": 50.5,
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:28.212859",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "1637d24e5e78c310cc3a006e53d93d24",
-    "sport": "CFB",
-    "team1": "Miami (OH) RedHawks",
-    "team2": "Rutgers Scarlet Knights",
-    "game_time": "2025-09-06T19:30:00Z",
-    "moneyline": {
-      "team1_odds": 490,
-      "team2_odds": -675
-    },
-    "spread": {
-      "team1_spread": 15.5,
-      "team1_odds": -112,
-      "team2_spread": -15.5,
-      "team2_odds": -108
-    },
-    "totals": {
-      "total_points": 45.5,
-      "over_odds": -108,
-      "under_odds": -112
-    },
-    "timestamp": "2025-09-05T02:08:28.212867",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "82a0730f5bc12bc2bd0b3e77b2e6d343",
-    "sport": "CFB",
-    "team1": "UAB Blazers",
-    "team2": "Navy Midshipmen",
-    "game_time": "2025-09-06T19:30:00Z",
-    "moneyline": {
-      "team1_odds": 1000,
-      "team2_odds": -1800
-    },
-    "spread": {
-      "team1_spread": 21.0,
-      "team1_odds": -110,
-      "team2_spread": -21.0,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": 59.5,
-      "over_odds": -102,
-      "under_odds": -118
-    },
-    "timestamp": "2025-09-05T02:08:28.212875",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "10651a24aaafce3c973435290bb5cc58",
-    "sport": "CFB",
-    "team1": "North Texas Mean Green",
-    "team2": "Western Michigan Broncos",
-    "game_time": "2025-09-06T19:30:00Z",
-    "moneyline": {
-      "team1_odds": -360,
-      "team2_odds": 285
-    },
-    "spread": {
-      "team1_spread": -10.0,
-      "team1_odds": -108,
-      "team2_spread": 10.0,
-      "team2_odds": -112
-    },
-    "totals": {
-      "total_points": 57.5,
-      "over_odds": -108,
-      "under_odds": -112
-    },
-    "timestamp": "2025-09-05T02:08:28.212883",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "aae11c793bc039b1fe617662aa7a30ac",
-    "sport": "CFB",
-    "team1": "Oklahoma State Cowboys",
-    "team2": "Oregon Ducks",
-    "game_time": "2025-09-06T19:30:00Z",
-    "moneyline": {
-      "team1_odds": 1800,
-      "team2_odds": -5000
-    },
-    "spread": {
-      "team1_spread": 27.5,
-      "team1_odds": -108,
-      "team2_spread": -27.5,
-      "team2_odds": -112
-    },
-    "totals": {
-      "total_points": 55.5,
-      "over_odds": -108,
-      "under_odds": -112
-    },
-    "timestamp": "2025-09-05T02:08:28.212891",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "7fd2b35cdf431bfdacae0b428f1b8550",
-    "sport": "CFB",
-    "team1": "Texas State Bobcats",
-    "team2": "UTSA Roadrunners",
-    "game_time": "2025-09-06T19:30:00Z",
-    "moneyline": {
-      "team1_odds": 154,
-      "team2_odds": -185
-    },
-    "spread": {
-      "team1_spread": 4.0,
-      "team1_odds": -112,
-      "team2_spread": -4.0,
-      "team2_odds": -108
-    },
-    "totals": {
-      "total_points": 64.5,
-      "over_odds": -112,
-      "under_odds": -108
-    },
-    "timestamp": "2025-09-05T02:08:28.212899",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "ef5e4d5fdd91ba13abea3c1b880bf6cb",
-    "sport": "CFB",
-    "team1": "Middle Tennessee Blue Raiders",
-    "team2": "Wisconsin Badgers",
-    "game_time": "2025-09-06T20:00:00Z",
-    "moneyline": {
-      "team1_odds": 2200,
-      "team2_odds": -8000
-    },
-    "spread": {
-      "team1_spread": 28.5,
-      "team1_odds": -115,
-      "team2_spread": -28.5,
-      "team2_odds": -105
-    },
-    "totals": {
-      "total_points": 44.5,
-      "over_odds": -118,
-      "under_odds": -102
-    },
-    "timestamp": "2025-09-05T02:08:28.212907",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "116fcf63d006815e16ad77e27a1b7ec6",
-    "sport": "CFB",
-    "team1": "West Virginia Mountaineers",
-    "team2": "Ohio Bobcats",
-    "game_time": "2025-09-06T20:00:00Z",
-    "moneyline": {
-      "team1_odds": -162,
-      "team2_odds": 136
-    },
-    "spread": {
-      "team1_spread": -3.5,
-      "team1_odds": -108,
-      "team2_spread": 3.5,
-      "team2_odds": -112
-    },
-    "totals": {
-      "total_points": 59.5,
-      "over_odds": -108,
-      "under_odds": -112
-    },
-    "timestamp": "2025-09-05T02:08:28.212915",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "adfb4c2e2052c3e066089e9b30c0e496",
-    "sport": "CFB",
-    "team1": "South Florida Bulls",
-    "team2": "Florida Gators",
-    "game_time": "2025-09-06T20:15:00Z",
-    "moneyline": {
-      "team1_odds": 650,
-      "team2_odds": -1000
-    },
-    "spread": {
-      "team1_spread": 18.5,
-      "team1_odds": -115,
-      "team2_spread": -18.5,
-      "team2_odds": -105
-    },
-    "totals": {
-      "total_points": 56.5,
-      "over_odds": -105,
-      "under_odds": -115
-    },
-    "timestamp": "2025-09-05T02:08:28.212923",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "b3afa7e549f06046d220f15be8f57bdd",
-    "sport": "CFB",
-    "team1": "Arkansas State Red Wolves",
-    "team2": "Arkansas Razorbacks",
-    "game_time": "2025-09-06T21:00:00Z",
-    "moneyline": {
-      "team1_odds": 1300,
-      "team2_odds": -2800
-    },
-    "spread": {
-      "team1_spread": 23.5,
-      "team1_odds": -112,
-      "team2_spread": -23.5,
-      "team2_odds": -108
-    },
-    "totals": {
-      "total_points": 64.5,
-      "over_odds": -105,
-      "under_odds": -115
-    },
-    "timestamp": "2025-09-05T02:08:28.212931",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "fee631583a9845afb9bf9d8b3b0b8251",
-    "sport": "CFB",
-    "team1": "Missouri State Bears",
-    "team2": "Marshall Thundering Herd",
-    "game_time": "2025-09-06T22:00:00Z",
-    "moneyline": {
-      "team1_odds": 280,
-      "team2_odds": -355
-    },
-    "spread": {
-      "team1_spread": 8.5,
-      "team1_odds": -108,
-      "team2_spread": -8.5,
-      "team2_odds": -112
-    },
-    "totals": {
-      "total_points": 54.5,
-      "over_odds": -110,
-      "under_odds": -110
-    },
-    "timestamp": "2025-09-05T02:08:28.212939",
+    "timestamp": "2025-09-06T16:14:43.953235",
     "source": "OddsAPI"
   },
   {
@@ -6582,21 +5958,21 @@
     "team2": "Kansas State Wildcats",
     "game_time": "2025-09-06T23:00:00Z",
     "moneyline": {
-      "team1_odds": 550,
-      "team2_odds": -800
+      "team1_odds": 525,
+      "team2_odds": -750
     },
     "spread": {
       "team1_spread": 17.5,
-      "team1_odds": -112,
+      "team1_odds": -118,
       "team2_spread": -17.5,
-      "team2_odds": -108
+      "team2_odds": -102
     },
     "totals": {
       "total_points": 47.5,
-      "over_odds": -105,
-      "under_odds": -115
+      "over_odds": -118,
+      "under_odds": -102
     },
-    "timestamp": "2025-09-05T02:08:28.212947",
+    "timestamp": "2025-09-06T16:14:43.953240",
     "source": "OddsAPI"
   },
   {
@@ -6606,21 +5982,21 @@
     "team2": "Charlotte 49ers",
     "game_time": "2025-09-06T23:00:00Z",
     "moneyline": {
-      "team1_odds": -500,
-      "team2_odds": 380
+      "team1_odds": -675,
+      "team2_odds": 490
     },
     "spread": {
-      "team1_spread": -12.5,
-      "team1_odds": -115,
-      "team2_spread": 12.5,
-      "team2_odds": -105
+      "team1_spread": -15.5,
+      "team1_odds": -108,
+      "team2_spread": 15.5,
+      "team2_odds": -112
     },
     "totals": {
       "total_points": 49.5,
-      "over_odds": -108,
-      "under_odds": -112
+      "over_odds": -112,
+      "under_odds": -108
     },
-    "timestamp": "2025-09-05T02:08:28.212956",
+    "timestamp": "2025-09-06T16:14:43.953244",
     "source": "OddsAPI"
   },
   {
@@ -6630,21 +6006,21 @@
     "team2": "Georgia State Panthers",
     "game_time": "2025-09-06T23:00:00Z",
     "moneyline": {
-      "team1_odds": -520,
-      "team2_odds": 390
+      "team1_odds": -650,
+      "team2_odds": 470
     },
     "spread": {
-      "team1_spread": -13.5,
-      "team1_odds": -108,
-      "team2_spread": 13.5,
-      "team2_odds": -112
+      "team1_spread": -14.5,
+      "team1_odds": -110,
+      "team2_spread": 14.5,
+      "team2_odds": -110
     },
     "totals": {
-      "total_points": 58.5,
-      "over_odds": -105,
-      "under_odds": -115
+      "total_points": 57.5,
+      "over_odds": -112,
+      "under_odds": -108
     },
-    "timestamp": "2025-09-05T02:08:28.212964",
+    "timestamp": "2025-09-06T16:14:43.953248",
     "source": "OddsAPI"
   },
   {
@@ -6654,21 +6030,21 @@
     "team2": "Rice Owls",
     "game_time": "2025-09-06T23:00:00Z",
     "moneyline": {
-      "team1_odds": -600,
-      "team2_odds": 440
+      "team1_odds": -575,
+      "team2_odds": 425
     },
     "spread": {
-      "team1_spread": -14.0,
-      "team1_odds": -108,
-      "team2_spread": 14.0,
-      "team2_odds": -112
+      "team1_spread": -13.5,
+      "team1_odds": -112,
+      "team2_spread": 13.5,
+      "team2_odds": -108
     },
     "totals": {
       "total_points": 38.5,
-      "over_odds": -112,
-      "under_odds": -108
+      "over_odds": -110,
+      "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:28.212972",
+    "timestamp": "2025-09-06T16:14:43.953252",
     "source": "OddsAPI"
   },
   {
@@ -6678,21 +6054,21 @@
     "team2": "South Alabama Jaguars",
     "game_time": "2025-09-06T23:00:00Z",
     "moneyline": {
-      "team1_odds": -380,
-      "team2_odds": 300
+      "team1_odds": -455,
+      "team2_odds": 350
     },
     "spread": {
-      "team1_spread": -10.5,
-      "team1_odds": -105,
-      "team2_spread": 10.5,
-      "team2_odds": -115
+      "team1_spread": -13.5,
+      "team1_odds": -110,
+      "team2_spread": 13.5,
+      "team2_odds": -110
     },
     "totals": {
-      "total_points": 50.5,
-      "over_odds": -110,
-      "under_odds": -110
+      "total_points": 51.5,
+      "over_odds": -105,
+      "under_odds": -115
     },
-    "timestamp": "2025-09-05T02:08:28.212980",
+    "timestamp": "2025-09-06T16:14:43.953256",
     "source": "OddsAPI"
   },
   {
@@ -6702,21 +6078,141 @@
     "team2": "Toledo Rockets",
     "game_time": "2025-09-06T23:00:00Z",
     "moneyline": {
-      "team1_odds": 230,
-      "team2_odds": -285
+      "team1_odds": 240,
+      "team2_odds": -298
     },
     "spread": {
-      "team1_spread": 7.0,
-      "team1_odds": -105,
-      "team2_spread": -7.0,
-      "team2_odds": -115
+      "team1_spread": 7.5,
+      "team1_odds": -112,
+      "team2_spread": -7.5,
+      "team2_odds": -108
     },
     "totals": {
-      "total_points": 58.5,
+      "total_points": 57.5,
+      "over_odds": -115,
+      "under_odds": -105
+    },
+    "timestamp": "2025-09-06T16:14:43.953260",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "ba99311bb57bf1aefb82f82ac0b3fb88",
+    "sport": "CFB",
+    "team1": "Bethune-Cookman Wildcats",
+    "team2": "Miami Hurricanes",
+    "game_time": "2025-09-06T23:05:00Z",
+    "moneyline": {
+      "team1_odds": "N/A",
+      "team2_odds": "N/A"
+    },
+    "spread": {
+      "team1_spread": 54.5,
+      "team1_odds": -115,
+      "team2_spread": -54.5,
+      "team2_odds": -105
+    },
+    "totals": {
+      "total_points": 64.5,
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:28.212988",
+    "timestamp": "2025-09-06T16:14:43.953263",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "5405aa2c12cc8d8da76ee7abc8c53a91",
+    "sport": "CFB",
+    "team1": "Northern Colorado Bears",
+    "team2": "Colorado State Rams",
+    "game_time": "2025-09-06T23:05:00Z",
+    "moneyline": {
+      "team1_odds": "N/A",
+      "team2_odds": "N/A"
+    },
+    "spread": {
+      "team1_spread": 34.5,
+      "team1_odds": -110,
+      "team2_spread": -34.5,
+      "team2_odds": -110
+    },
+    "totals": {
+      "total_points": 52.5,
+      "over_odds": -110,
+      "under_odds": -110
+    },
+    "timestamp": "2025-09-06T16:14:43.953267",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "a936ece803772890be537dfaff8a10b2",
+    "sport": "CFB",
+    "team1": "LIU Sharks",
+    "team2": "Eastern Michigan Eagles",
+    "game_time": "2025-09-06T23:05:00Z",
+    "moneyline": {
+      "team1_odds": 920,
+      "team2_odds": -1800
+    },
+    "spread": {
+      "team1_spread": 21.5,
+      "team1_odds": -110,
+      "team2_spread": -21.5,
+      "team2_odds": -110
+    },
+    "totals": {
+      "total_points": 54.5,
+      "over_odds": -110,
+      "under_odds": -110
+    },
+    "timestamp": "2025-09-06T16:14:43.953271",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "c90ceed1e5d6fa2b9b18f41698e72ae3",
+    "sport": "CFB",
+    "team1": "North Carolina A&T Aggies",
+    "team2": "UCF Knights",
+    "game_time": "2025-09-06T23:05:00Z",
+    "moneyline": {
+      "team1_odds": "N/A",
+      "team2_odds": "N/A"
+    },
+    "spread": {
+      "team1_spread": 37.5,
+      "team1_odds": -105,
+      "team2_spread": -37.5,
+      "team2_odds": -115
+    },
+    "totals": {
+      "total_points": 51.5,
+      "over_odds": -110,
+      "under_odds": -110
+    },
+    "timestamp": "2025-09-06T16:14:43.953274",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "d1a993205667b96cd89e55d185d24593",
+    "sport": "CFB",
+    "team1": "South Carolina State Bulldogs",
+    "team2": "South Carolina Gamecocks",
+    "game_time": "2025-09-06T23:05:00Z",
+    "moneyline": {
+      "team1_odds": "N/A",
+      "team2_odds": "N/A"
+    },
+    "spread": {
+      "team1_spread": 42.5,
+      "team1_odds": -110,
+      "team2_spread": -42.5,
+      "team2_odds": -110
+    },
+    "totals": {
+      "total_points": 54.5,
+      "over_odds": -110,
+      "under_odds": -110
+    },
+    "timestamp": "2025-09-06T16:14:43.953278",
     "source": "OddsAPI"
   },
   {
@@ -6737,10 +6233,10 @@
     },
     "totals": {
       "total_points": 47.5,
-      "over_odds": -105,
-      "under_odds": -115
+      "over_odds": -110,
+      "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:28.212995",
+    "timestamp": "2025-09-06T16:14:43.953281",
     "source": "OddsAPI"
   },
   {
@@ -6761,10 +6257,10 @@
     },
     "totals": {
       "total_points": 58.5,
-      "over_odds": -115,
-      "under_odds": -105
+      "over_odds": -112,
+      "under_odds": -108
     },
-    "timestamp": "2025-09-05T02:08:28.213003",
+    "timestamp": "2025-09-06T16:14:43.953285",
     "source": "OddsAPI"
   },
   {
@@ -6779,16 +6275,16 @@
     },
     "spread": {
       "team1_spread": 43.5,
-      "team1_odds": -120,
+      "team1_odds": -115,
       "team2_spread": -43.5,
-      "team2_odds": -102
+      "team2_odds": -105
     },
     "totals": {
-      "total_points": 52.5,
-      "over_odds": -105,
-      "under_odds": -115
+      "total_points": 53.5,
+      "over_odds": -115,
+      "under_odds": -105
     },
-    "timestamp": "2025-09-05T02:08:28.213010",
+    "timestamp": "2025-09-06T16:14:43.953289",
     "source": "OddsAPI"
   },
   {
@@ -6798,21 +6294,21 @@
     "team2": "Michigan State Spartans",
     "game_time": "2025-09-06T23:30:00Z",
     "moneyline": {
-      "team1_odds": 154,
-      "team2_odds": -185
+      "team1_odds": 140,
+      "team2_odds": -166
     },
     "spread": {
-      "team1_spread": 4.5,
-      "team1_odds": -108,
-      "team2_spread": -4.5,
-      "team2_odds": -112
+      "team1_spread": 3.5,
+      "team1_odds": -112,
+      "team2_spread": -3.5,
+      "team2_odds": -108
     },
     "totals": {
       "total_points": 45.5,
-      "over_odds": -112,
-      "under_odds": -108
+      "over_odds": -108,
+      "under_odds": -112
     },
-    "timestamp": "2025-09-05T02:08:28.213018",
+    "timestamp": "2025-09-06T16:14:43.953293",
     "source": "OddsAPI"
   },
   {
@@ -6822,21 +6318,21 @@
     "team2": "USC Trojans",
     "game_time": "2025-09-06T23:30:00Z",
     "moneyline": {
-      "team1_odds": 2200,
-      "team2_odds": -8000
+      "team1_odds": 2000,
+      "team2_odds": -6500
     },
     "spread": {
-      "team1_spread": 28.5,
-      "team1_odds": -108,
-      "team2_spread": -28.5,
-      "team2_odds": -112
+      "team1_spread": 29.5,
+      "team1_odds": -112,
+      "team2_spread": -29.5,
+      "team2_odds": -108
     },
     "totals": {
-      "total_points": 60.5,
-      "over_odds": -115,
-      "under_odds": -105
+      "total_points": 61.5,
+      "over_odds": -105,
+      "under_odds": -115
     },
-    "timestamp": "2025-09-05T02:08:28.213026",
+    "timestamp": "2025-09-06T16:14:43.953297",
     "source": "OddsAPI"
   },
   {
@@ -6851,16 +6347,16 @@
     },
     "spread": {
       "team1_spread": 36.5,
-      "team1_odds": -105,
+      "team1_odds": -110,
       "team2_spread": -36.5,
-      "team2_odds": -115
+      "team2_odds": -110
     },
     "totals": {
-      "total_points": 50.5,
-      "over_odds": -105,
-      "under_odds": -115
+      "total_points": 49.5,
+      "over_odds": -112,
+      "under_odds": -108
     },
-    "timestamp": "2025-09-05T02:08:28.213034",
+    "timestamp": "2025-09-06T16:14:43.953300",
     "source": "OddsAPI"
   },
   {
@@ -6870,21 +6366,21 @@
     "team2": "Oklahoma Sooners",
     "game_time": "2025-09-06T23:30:00Z",
     "moneyline": {
-      "team1_odds": 170,
-      "team2_odds": -205
+      "team1_odds": 160,
+      "team2_odds": -192
     },
     "spread": {
       "team1_spread": 4.5,
-      "team1_odds": -105,
+      "team1_odds": -112,
       "team2_spread": -4.5,
-      "team2_odds": -115
+      "team2_odds": -108
     },
     "totals": {
-      "total_points": 44.5,
-      "over_odds": -110,
-      "under_odds": -110
+      "total_points": 43.5,
+      "over_odds": -112,
+      "under_odds": -108
     },
-    "timestamp": "2025-09-05T02:08:28.213042",
+    "timestamp": "2025-09-06T16:14:43.953304",
     "source": "OddsAPI"
   },
   {
@@ -6898,17 +6394,65 @@
       "team2_odds": -130
     },
     "spread": {
-      "team1_spread": 2.5,
-      "team1_odds": -115,
-      "team2_spread": -2.5,
-      "team2_odds": -105
+      "team1_spread": 1.5,
+      "team1_odds": -105,
+      "team2_spread": -1.5,
+      "team2_odds": -115
     },
     "totals": {
-      "total_points": 47.5,
-      "over_odds": -108,
-      "under_odds": -112
+      "total_points": 45.5,
+      "over_odds": -105,
+      "under_odds": -115
     },
-    "timestamp": "2025-09-05T02:08:28.213050",
+    "timestamp": "2025-09-06T16:14:43.953308",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "28baf07528786ceba750f04765da80f2",
+    "sport": "CFB",
+    "team1": "Charleston Southern Buccaneers",
+    "team2": "Coastal Carolina Chanticleers",
+    "game_time": "2025-09-06T23:35:00Z",
+    "moneyline": {
+      "team1_odds": 2400,
+      "team2_odds": -10000
+    },
+    "spread": {
+      "team1_spread": 28.5,
+      "team1_odds": -110,
+      "team2_spread": -28.5,
+      "team2_odds": -110
+    },
+    "totals": {
+      "total_points": 49.5,
+      "over_odds": -110,
+      "under_odds": -110
+    },
+    "timestamp": "2025-09-06T16:14:43.953312",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "f3fa678cb608349c6a01b82ea311cc98",
+    "sport": "CFB",
+    "team1": "Southern Illinois Salukis",
+    "team2": "Purdue Boilermakers",
+    "game_time": "2025-09-06T23:35:00Z",
+    "moneyline": {
+      "team1_odds": 810,
+      "team2_odds": -1450
+    },
+    "spread": {
+      "team1_spread": 20.5,
+      "team1_odds": -110,
+      "team2_spread": -20.5,
+      "team2_odds": -110
+    },
+    "totals": {
+      "total_points": 51.5,
+      "over_odds": -110,
+      "under_odds": -110
+    },
+    "timestamp": "2025-09-06T16:14:43.953316",
     "source": "OddsAPI"
   },
   {
@@ -6923,16 +6467,16 @@
     },
     "spread": {
       "team1_spread": 34.5,
-      "team1_odds": 102,
+      "team1_odds": -110,
       "team2_spread": -34.5,
-      "team2_odds": -124
+      "team2_odds": -110
     },
     "totals": {
       "total_points": 49.5,
       "over_odds": -110,
       "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:28.213057",
+    "timestamp": "2025-09-06T16:14:43.953319",
     "source": "OddsAPI"
   },
   {
@@ -6942,13 +6486,13 @@
     "team2": "UNLV Rebels",
     "game_time": "2025-09-07T00:00:00Z",
     "moneyline": {
-      "team1_odds": -135,
-      "team2_odds": 114
+      "team1_odds": -125,
+      "team2_odds": 105
     },
     "spread": {
-      "team1_spread": -2.5,
+      "team1_spread": -1.5,
       "team1_odds": -115,
-      "team2_spread": 2.5,
+      "team2_spread": 1.5,
       "team2_odds": -105
     },
     "totals": {
@@ -6956,7 +6500,31 @@
       "over_odds": -115,
       "under_odds": -105
     },
-    "timestamp": "2025-09-05T02:08:28.213065",
+    "timestamp": "2025-09-06T16:14:43.953323",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "c730d999aec044ecdb025b4b0aadca95",
+    "sport": "CFB",
+    "team1": "McNeese State Cowboys",
+    "team2": "Louisiana Ragin Cajuns",
+    "game_time": "2025-09-07T00:05:00Z",
+    "moneyline": {
+      "team1_odds": 640,
+      "team2_odds": -1050
+    },
+    "spread": {
+      "team1_spread": 19.5,
+      "team1_odds": -110,
+      "team2_spread": -19.5,
+      "team2_odds": -110
+    },
+    "totals": {
+      "total_points": 50.5,
+      "over_odds": -110,
+      "under_odds": -110
+    },
+    "timestamp": "2025-09-06T16:14:43.953327",
     "source": "OddsAPI"
   },
   {
@@ -6966,21 +6534,93 @@
     "team2": "New Mexico State Aggies",
     "game_time": "2025-09-07T01:00:00Z",
     "moneyline": {
-      "team1_odds": -192,
-      "team2_odds": 160
+      "team1_odds": -170,
+      "team2_odds": 142
     },
     "spread": {
-      "team1_spread": -4.5,
-      "team1_odds": -110,
-      "team2_spread": 4.5,
-      "team2_odds": -110
+      "team1_spread": -3.5,
+      "team1_odds": -108,
+      "team2_spread": 3.5,
+      "team2_odds": -112
     },
     "totals": {
       "total_points": 52.5,
       "over_odds": -108,
       "under_odds": -112
     },
-    "timestamp": "2025-09-05T02:08:28.213073",
+    "timestamp": "2025-09-06T16:14:43.953331",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "fe157539436ac33506849b9a37a657f5",
+    "sport": "CFB",
+    "team1": "Texas Southern Tigers",
+    "team2": "California Golden Bears",
+    "game_time": "2025-09-07T01:05:00Z",
+    "moneyline": {
+      "team1_odds": "N/A",
+      "team2_odds": "N/A"
+    },
+    "spread": {
+      "team1_spread": 44.5,
+      "team1_odds": -110,
+      "team2_spread": -44.5,
+      "team2_odds": -110
+    },
+    "totals": {
+      "total_points": 53.5,
+      "over_odds": -110,
+      "under_odds": -110
+    },
+    "timestamp": "2025-09-06T16:14:43.953335",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "643822150f0bf436abb517c7fc1c71f0",
+    "sport": "CFB",
+    "team1": "UT Martin Skyhawks",
+    "team2": "UTEP Miners",
+    "game_time": "2025-09-07T01:05:00Z",
+    "moneyline": {
+      "team1_odds": 220,
+      "team2_odds": -275
+    },
+    "spread": {
+      "team1_spread": 7.5,
+      "team1_odds": -115,
+      "team2_spread": -7.5,
+      "team2_odds": -105
+    },
+    "totals": {
+      "total_points": 49.5,
+      "over_odds": -110,
+      "under_odds": -110
+    },
+    "timestamp": "2025-09-06T16:14:43.953338",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "164279d656466280a5aae94c4a56855c",
+    "sport": "CFB",
+    "team1": "Weber State Wildcats",
+    "team2": "Arizona Wildcats",
+    "game_time": "2025-09-07T02:05:00Z",
+    "moneyline": {
+      "team1_odds": 3000,
+      "team2_odds": -10000
+    },
+    "spread": {
+      "team1_spread": 32.5,
+      "team1_odds": -110,
+      "team2_spread": -32.5,
+      "team2_odds": -110
+    },
+    "totals": {
+      "total_points": 56.5,
+      "over_odds": -110,
+      "under_odds": -110
+    },
+    "timestamp": "2025-09-06T16:14:43.953342",
     "source": "OddsAPI"
   },
   {
@@ -6990,21 +6630,21 @@
     "team2": "BYU Cougars",
     "game_time": "2025-09-07T02:15:00Z",
     "moneyline": {
-      "team1_odds": 810,
-      "team2_odds": -1450
+      "team1_odds": 1000,
+      "team2_odds": -2100
     },
     "spread": {
       "team1_spread": 20.5,
-      "team1_odds": -110,
+      "team1_odds": -106,
       "team2_spread": -20.5,
-      "team2_odds": -110
+      "team2_odds": -114
     },
     "totals": {
-      "total_points": 45.5,
-      "over_odds": -105,
-      "under_odds": -115
+      "total_points": 44.5,
+      "over_odds": -110,
+      "under_odds": -110
     },
-    "timestamp": "2025-09-05T02:08:28.213081",
+    "timestamp": "2025-09-06T16:14:43.953346",
     "source": "OddsAPI"
   },
   {
@@ -7025,10 +6665,34 @@
     },
     "totals": {
       "total_points": 46.5,
-      "over_odds": -108,
-      "under_odds": -112
+      "over_odds": -112,
+      "under_odds": -108
     },
-    "timestamp": "2025-09-05T02:08:28.213088",
+    "timestamp": "2025-09-06T16:14:43.953350",
+    "source": "OddsAPI"
+  },
+  {
+    "id": "dd516b114a67242fa7d18b57158981a6",
+    "sport": "CFB",
+    "team1": "UC Davis Aggies",
+    "team2": "Washington Huskies",
+    "game_time": "2025-09-07T03:00:00Z",
+    "moneyline": {
+      "team1_odds": 2200,
+      "team2_odds": -8000
+    },
+    "spread": {
+      "team1_spread": 28.5,
+      "team1_odds": -115,
+      "team2_spread": -28.5,
+      "team2_odds": -105
+    },
+    "totals": {
+      "total_points": 53.5,
+      "over_odds": -110,
+      "under_odds": -110
+    },
+    "timestamp": "2025-09-06T16:14:43.953354",
     "source": "OddsAPI"
   },
   {
@@ -7038,405 +6702,21 @@
     "team2": "Hawaii Rainbow Warriors",
     "game_time": "2025-09-07T04:00:00Z",
     "moneyline": {
-      "team1_odds": 215,
-      "team2_odds": -265
+      "team1_odds": 230,
+      "team2_odds": -285
     },
     "spread": {
-      "team1_spread": 6.5,
-      "team1_odds": -105,
-      "team2_spread": -6.5,
-      "team2_odds": -115
+      "team1_spread": 7.0,
+      "team1_odds": -108,
+      "team2_spread": -7.0,
+      "team2_odds": -112
     },
     "totals": {
       "total_points": 49.5,
       "over_odds": -105,
       "under_odds": -115
     },
-    "timestamp": "2025-09-05T02:08:28.213096",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "4448884985daf34694092893ff17f308",
-    "sport": "CFB",
-    "team1": "Wisconsin Badgers",
-    "team2": "Alabama Crimson Tide",
-    "game_time": "2025-09-13T16:00:00Z",
-    "moneyline": {
-      "team1_odds": "N/A",
-      "team2_odds": "N/A"
-    },
-    "spread": {
-      "team1_spread": 19.5,
-      "team1_odds": -110,
-      "team2_spread": -19.5,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": "N/A",
-      "over_odds": "N/A",
-      "under_odds": "N/A"
-    },
-    "timestamp": "2025-09-05T02:08:28.213102",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "ed60227b309e7c8b24a7fd098d830bca",
-    "sport": "CFB",
-    "team1": "Arkansas Razorbacks",
-    "team2": "Ole Miss Rebels",
-    "game_time": "2025-09-13T16:00:00Z",
-    "moneyline": {
-      "team1_odds": "N/A",
-      "team2_odds": "N/A"
-    },
-    "spread": {
-      "team1_spread": 12.5,
-      "team1_odds": -110,
-      "team2_spread": -12.5,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": "N/A",
-      "over_odds": "N/A",
-      "under_odds": "N/A"
-    },
-    "timestamp": "2025-09-05T02:08:28.213109",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "1e8f948c71b57bb3ab85019401680e55",
-    "sport": "CFB",
-    "team1": "Clemson Tigers",
-    "team2": "Georgia Tech Yellow Jackets",
-    "game_time": "2025-09-13T16:00:00Z",
-    "moneyline": {
-      "team1_odds": "N/A",
-      "team2_odds": "N/A"
-    },
-    "spread": {
-      "team1_spread": -7.5,
-      "team1_odds": -110,
-      "team2_spread": 7.5,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": "N/A",
-      "over_odds": "N/A",
-      "under_odds": "N/A"
-    },
-    "timestamp": "2025-09-05T02:08:28.213115",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "2f3b6a7a4a7b55d909fa1d7673b7c452",
-    "sport": "CFB",
-    "team1": "Vanderbilt Commodores",
-    "team2": "South Carolina Gamecocks",
-    "game_time": "2025-09-13T16:00:00Z",
-    "moneyline": {
-      "team1_odds": "N/A",
-      "team2_odds": "N/A"
-    },
-    "spread": {
-      "team1_spread": 8.5,
-      "team1_odds": -110,
-      "team2_spread": -8.5,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": "N/A",
-      "over_odds": "N/A",
-      "under_odds": "N/A"
-    },
-    "timestamp": "2025-09-05T02:08:28.213120",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "2f5eb17fc3460a510e64c0da17592c23",
-    "sport": "CFB",
-    "team1": "Georgia Bulldogs",
-    "team2": "Tennessee Volunteers",
-    "game_time": "2025-09-13T19:30:00Z",
-    "moneyline": {
-      "team1_odds": "N/A",
-      "team2_odds": "N/A"
-    },
-    "spread": {
-      "team1_spread": -6.5,
-      "team1_odds": -110,
-      "team2_spread": 6.5,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": "N/A",
-      "over_odds": "N/A",
-      "under_odds": "N/A"
-    },
-    "timestamp": "2025-09-05T02:08:28.213126",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "bd0a69e509effeb418dc2c02e2812904",
-    "sport": "CFB",
-    "team1": "Pittsburgh Panthers",
-    "team2": "West Virginia Mountaineers",
-    "game_time": "2025-09-13T19:30:00Z",
-    "moneyline": {
-      "team1_odds": "N/A",
-      "team2_odds": "N/A"
-    },
-    "spread": {
-      "team1_spread": -2.5,
-      "team1_odds": -110,
-      "team2_spread": 2.5,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": "N/A",
-      "over_odds": "N/A",
-      "under_odds": "N/A"
-    },
-    "timestamp": "2025-09-05T02:08:28.213131",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "abd9abc5f6d6a3cc918ef6796b35613a",
-    "sport": "CFB",
-    "team1": "South Florida Bulls",
-    "team2": "Miami Hurricanes",
-    "game_time": "2025-09-13T20:30:00Z",
-    "moneyline": {
-      "team1_odds": "N/A",
-      "team2_odds": "N/A"
-    },
-    "spread": {
-      "team1_spread": 18.5,
-      "team1_odds": -110,
-      "team2_spread": -18.5,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": "N/A",
-      "over_odds": "N/A",
-      "under_odds": "N/A"
-    },
-    "timestamp": "2025-09-05T02:08:28.213137",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "b83c7f30440d9f80736b1b7cc5b2fa7f",
-    "sport": "CFB",
-    "team1": "Florida Gators",
-    "team2": "LSU Tigers",
-    "game_time": "2025-09-13T23:30:00Z",
-    "moneyline": {
-      "team1_odds": "N/A",
-      "team2_odds": "N/A"
-    },
-    "spread": {
-      "team1_spread": 7.0,
-      "team1_odds": -110,
-      "team2_spread": -7.0,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": "N/A",
-      "over_odds": "N/A",
-      "under_odds": "N/A"
-    },
-    "timestamp": "2025-09-05T02:08:28.213143",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "d20307e8474bbfe4a52934a6af6fe2d9",
-    "sport": "CFB",
-    "team1": "Texas A&M Aggies",
-    "team2": "Notre Dame Fighting Irish",
-    "game_time": "2025-09-13T23:30:00Z",
-    "moneyline": {
-      "team1_odds": "N/A",
-      "team2_odds": "N/A"
-    },
-    "spread": {
-      "team1_spread": 7.0,
-      "team1_odds": -110,
-      "team2_spread": -7.0,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": "N/A",
-      "over_odds": "N/A",
-      "under_odds": "N/A"
-    },
-    "timestamp": "2025-09-05T02:08:28.213148",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "835d0fbb20287ee86ac00d5f3fa3b3b6",
-    "sport": "CFB",
-    "team1": "Duke Blue Devils",
-    "team2": "Tulane Green Wave",
-    "game_time": "2025-09-14T00:00:00Z",
-    "moneyline": {
-      "team1_odds": "N/A",
-      "team2_odds": "N/A"
-    },
-    "spread": {
-      "team1_spread": 1.5,
-      "team1_odds": -110,
-      "team2_spread": -1.5,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": "N/A",
-      "over_odds": "N/A",
-      "under_odds": "N/A"
-    },
-    "timestamp": "2025-09-05T02:08:28.213154",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "e12a027ef3182426888607f1aa77a6bc",
-    "sport": "CFB",
-    "team1": "Florida Gators",
-    "team2": "Miami Hurricanes",
-    "game_time": "2025-09-20T16:00:00Z",
-    "moneyline": {
-      "team1_odds": 158,
-      "team2_odds": -192
-    },
-    "spread": {
-      "team1_spread": 4.5,
-      "team1_odds": -105,
-      "team2_spread": -4.5,
-      "team2_odds": -115
-    },
-    "totals": {
-      "total_points": 55.5,
-      "over_odds": -110,
-      "under_odds": -110
-    },
-    "timestamp": "2025-09-05T02:08:28.213162",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "b41939807dad226f718eeb8fa56d7342",
-    "sport": "CFB",
-    "team1": "Alabama Crimson Tide",
-    "team2": "Georgia Bulldogs",
-    "game_time": "2025-09-27T23:30:00Z",
-    "moneyline": {
-      "team1_odds": 168,
-      "team2_odds": -205
-    },
-    "spread": {
-      "team1_spread": 6.5,
-      "team1_odds": -110,
-      "team2_spread": -6.5,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": 52.5,
-      "over_odds": -115,
-      "under_odds": -105
-    },
-    "timestamp": "2025-09-05T02:08:28.213170",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "ec5a3648e7b879155389f31cc523f840",
-    "sport": "CFB",
-    "team1": "Oklahoma Sooners",
-    "team2": "Texas Longhorns",
-    "game_time": "2025-10-11T19:30:00Z",
-    "moneyline": {
-      "team1_odds": 220,
-      "team2_odds": -275
-    },
-    "spread": {
-      "team1_spread": 7.5,
-      "team1_odds": -110,
-      "team2_spread": -7.5,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": 54.5,
-      "over_odds": -115,
-      "under_odds": -105
-    },
-    "timestamp": "2025-09-05T02:08:28.213178",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "6496fb908a00a0d0df24b47b120e87c8",
-    "sport": "CFB",
-    "team1": "Penn State Nittany Lions",
-    "team2": "Ohio State Buckeyes",
-    "game_time": "2025-11-01T16:00:00Z",
-    "moneyline": {
-      "team1_odds": 132,
-      "team2_odds": -160
-    },
-    "spread": {
-      "team1_spread": 3.5,
-      "team1_odds": -112,
-      "team2_spread": -3.5,
-      "team2_odds": -108
-    },
-    "totals": {
-      "total_points": 48.5,
-      "over_odds": -105,
-      "under_odds": -115
-    },
-    "timestamp": "2025-09-05T02:08:28.213187",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "10199f7e5c5b453746cded34d0b34e6f",
-    "sport": "CFB",
-    "team1": "Florida State Seminoles",
-    "team2": "Clemson Tigers",
-    "game_time": "2025-11-08T17:00:00Z",
-    "moneyline": {
-      "team1_odds": 290,
-      "team2_odds": -375
-    },
-    "spread": {
-      "team1_spread": 11.5,
-      "team1_odds": -110,
-      "team2_spread": -11.5,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": 55.5,
-      "over_odds": -105,
-      "under_odds": -115
-    },
-    "timestamp": "2025-09-05T02:08:28.213195",
-    "source": "OddsAPI"
-  },
-  {
-    "id": "a17c0bb6637ad2192754d6d1059f7e92",
-    "sport": "CFB",
-    "team1": "Ohio State Buckeyes",
-    "team2": "Michigan Wolverines",
-    "game_time": "2025-11-29T17:00:00Z",
-    "moneyline": {
-      "team1_odds": -196,
-      "team2_odds": 162
-    },
-    "spread": {
-      "team1_spread": -5.5,
-      "team1_odds": -110,
-      "team2_spread": 5.5,
-      "team2_odds": -110
-    },
-    "totals": {
-      "total_points": 45.5,
-      "over_odds": -110,
-      "under_odds": -110
-    },
-    "timestamp": "2025-09-05T02:08:28.213202",
+    "timestamp": "2025-09-06T16:14:43.953358",
     "source": "OddsAPI"
   }
 ]
